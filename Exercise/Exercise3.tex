@@ -1,0 +1,183 @@
+\section{Rings and Modules of Fractions}
+
+\begin{exercise}\label{ex3.1}
+	The only if part requires the finitely generated property.
+\end{exercise}
+
+\begin{exercise}\label{ex3.2}
+	Use \Cref{1.9}. Construct the inverse by elementary algebra.
+	
+	If $M=\mathfrak{a}M$, $S^{-1}M=S^{-1}\mathfrak{a}$, $S^{-1}M=\left(S^{-1}\mathfrak{a}\right)\left(S^{-1}M\right)$. Then use \hyperref[2.6]{Nakayama's lemma} and \Cref{ex3.1}.
+\end{exercise}
+
+\begin{exercise}\label{ex3.3}
+	Construct the isomorphism by $(a/s)/(t/1)\mapsto a/(st)$.
+\end{exercise}
+
+\begin{exercise}\label{ex3.4}
+	Construct the isomorphism.
+\end{exercise}
+
+\begin{exercise}\label{ex3.5}
+	If $a\in A$ is a nilpotent, let $\mathfrak{p}\supseteq\operatorname{Ann}(a)$. $a/1\in A_\mathfrak{p}$ is zero, so $sa=0$ for some $s\in A-\mathfrak{p}$.
+	
+	Counter example is $\mathbb{Z}/2\mathbb{Z}\times\mathbb{Z}/2\mathbb{Z}$.
+\end{exercise}
+
+\begin{exercise}\label{ex3.6}
+	Use the fact that for any multiplicatively closed set $S$, if $A-S$ is an ideal, it's automatically prime.
+\end{exercise}
+
+\begin{exercise}\label{ex3.7}
+	\begin{enumerate}
+		\item[(i),(ii)]More specifically, $A-\overline{S}=\bigcup_{\mathfrak{p}\cap S=\varnothing}\mathfrak{p}$.
+		\item[(iii)]$\mathfrak{p}\cap(1+\mathfrak{a})=\varnothing$ $\Leftrightarrow$ $\mathfrak{a}+\mathfrak{p}\neq(1)$ $\Leftrightarrow$ $\mathfrak{a}+\mathfrak{p}\subseteq\mathfrak{m}$ for some maximal ideal $\mathfrak{m}$. Note that the union of a chain of prime ideals is only a maximum ideal.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex3.8}
+	\begin{enumerate}
+		\item[(v) $\Rightarrow$ (ii)] If $t/1$ is not a unit in $S^{-1}A$, it is contained in a prime ideal $\mathfrak{q}\subseteq S^{-1}A$, so $t\in T\cap\mathfrak{q}^c$.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex3.9}
+	Let $S$ be maximal in \Cref{ex3.6}. If $S_0\nsubseteq S$, $S\subsetneq SS_0$. Then use \Cref{ex3.6}.
+	\begin{enumerate}[label=(\roman*),ref=\theexercise(\roman*)]\crefalias{enumi}{exercise}
+		\item Assume that $S_1$ is larger, then pick a zero-divisor $x\in S_1$.
+		\item If $a/s$ is not a zero-divisor, $a$ is not a zero-divisor, so $a\in S_0$.
+		\item Note that $s\in S_0$ is a unit.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex3.10}
+	\begin{enumerate}[label=(\roman*),ref=\theexercise(\roman*)]\crefalias{enumi}{exercise}
+		\item \Cref{ex2.27} says for any element $x\in A$, $x=ax^2$ for some $a\in A$.
+		\item $\Rightarrow$: Use \Cref{ex2.28}. $\Leftarrow$: Consider an $A_\mathfrak{m}$-module. Use \Cref{3.10}.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex3.11}
+	\begin{enumerate}
+		\item[(i) $\Rightarrow$ (ii)] Use \Cref{ex2.27} on $A/\mathfrak{p}$.
+		\item[(ii) $\Rightarrow$ (i)] Proof that $\left(A/\mathfrak{R}\right)_{\overline{\mathfrak{p}}}$ has no nilpotent, then use \Cref{ex1.10} and \Cref{ex3.10}.
+		\item[(ii) $\Rightarrow$ (iv)] Let $f\in\mathfrak{p}_1$ but $f\notin\mathfrak{p}_2$, then $f/1\in A_{\mathfrak{p}_1}$ is nilpotent, so $sf^n=0$. We have $\mathfrak{p}_1\in X_s$ and $\mathfrak{p}_2\in X_{f^n}$. By \Cref{ex1.17}, $X_s\cap X_{f^n}=X_{sf^n}=\varnothing$.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex3.12}
+	\begin{enumerate}
+		\item[(i)-(iii)] Use the torsion element definition.
+		\item[(iv)] Use \Cref{3.5}.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex3.13}
+	Proof they contain in each other. Use \Cref{3.8} for the equivalent conditions.
+\end{exercise}
+
+\begin{exercise}\label{ex3.14}
+	Pass to $M/\mathfrak{a}M$. Use \Cref{3.8}.
+\end{exercise}
+
+\begin{exercise}\label{ex3.15}
+	Let $\left\{x_i\right\}_{i=1}^n$ be generators and $\left\{e_i\right\}_{i=1}^n$ be the canonical basis. Let $\phi(e_i)=x_i$, so $\phi$ is surjective. Consider a residue field $k=A/\mathfrak{m}$, we have $\operatorname{Tor}_1(k,F)\rightarrow k\otimes\ker\phi\rightarrow k\otimes F\xrightarrow{1\otimes\phi}k\otimes F\rightarrow0$. $\operatorname{Tor}_1(k,F)=0$ by balancing Tor theorem; $1\otimes\phi$ bijective so $k\otimes\ker\phi=0$. By \Cref{ex2.3}, $\ker\phi=0$.
+	
+	If $\left\{x_i\right\}_{i=1}^m$ generate $F$ where $m<n$, pick some element $\left\{x_i\right\}_{i=m+1}^n$ so we also have $\phi(e_i)=x_i$. By injectiveness of $\phi$, $\left\{e_i\right\}_{i=1}^n$ are linearly dependent.
+\end{exercise}
+
+\begin{exercise}\label{ex3.16}
+	\begin{enumerate}
+		\item[(i) $\Rightarrow$ (ii)]$f^*\left(p^e\right)=p$.
+		\item[(ii) $\Rightarrow$ (iii)] Use \Cref{1.17}.
+		\item[(iii) $\Rightarrow$ (iv)] Every module contains a cyclic submodule, which is isomorphic to $A/\mathfrak{a}$. Then use $B\otimes_AA/\mathfrak{a}\cong B/\mathfrak{a}^e$ and $\mathfrak{a}^e\subseteq\mathfrak{m}^e$.
+		\item[(iv) $\Rightarrow$ (v)] Let the mapping be $\phi$. Since $B$ flat, $0\rightarrow(\ker\phi)_B\rightarrow M_B\rightarrow\left(M_B\right)_B$ exact. By \Cref{ex2.13}, $M_B\rightarrow\left(M_B\right)_B$ injective, so $(\ker\phi)_B=0$; by assumption, $\ker\phi=0$.
+		\item[(v) $\Rightarrow$ (i)] Take $M=A/\mathfrak{a}$. Then $M_B=B/\mathfrak{a}^e$.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex3.17}
+	If $M\rightarrow N$ injective, we have a diagram
+	\begin{equation*}
+		\begin{tikzcd}
+			B\otimes_AM\arrow[r,"\phi"]\arrow[d,"g\otimes\operatorname{id}_M"]&B\otimes_AN\arrow[d,"g\otimes\operatorname{id}_N"]\\
+			C\otimes_AM\arrow[r,"\psi"]&C\otimes_AN
+		\end{tikzcd}
+	\end{equation*}
+	$g\circ f$ flat, so $\psi$ injective. $g$ faithfully flat, by \hyperref[ex3.16]{\Cref*{ex3.16}(v)}, $B\otimes_AM\rightarrow C\otimes_B\left(B\otimes_AM\right)$ injective. By \Cref{2.15}, $C\otimes_B\left(B\otimes_AM\right)=C\otimes_AM$, so $g\otimes\operatorname{id}_M$ injective.
+\end{exercise}
+
+\begin{exercise}\label{ex3.18}
+	Use \Cref{ex3.3} to proof $B_\mathfrak{q}\cong\left(B_\mathfrak{p}\right)_{\mathfrak{q}B_\mathfrak{p}}$. By \Cref{3.3} and \Cref{3.5}, $B_\mathfrak{q}$ is flat over $B_\mathfrak{p}$. Hence $B_\mathfrak{q}$ is flat over $A_\mathfrak{p}$ and satisfies \hyperref[ex3.16]{\Cref*{ex3.16}(iii)}.
+\end{exercise}
+
+\begin{exercise}\label{ex3.19}
+	\begin{enumerate}[label=\textup{(\roman*)},ref=\theexercise(\roman*)]\crefalias{enumi}{exercise}
+		\addtocounter{enumi}{4}
+		\item\label{ex3.19.5} $M\cong\bigoplus_{i=1}^nA/\mathfrak{a}_i$, so $\operatorname{Supp}(M)=\bigcup_{i=1}^n\operatorname{Supp}\left(A/\mathfrak{a}_i\right)=\bigcup_{i=1}^nV(\mathfrak{a}_i)=V\left(\bigcap_{i=1}^n\mathfrak{a}_i\right)$. Proof that $\bigcap_{i=1}^n\mathfrak{a}_i=\operatorname{Ann}(M)$.
+		\item Use \Cref{ex2.3}.
+		\item Use \Cref{ex2.2}.
+		\item $\mathfrak{q}\in f^{*-1}\left(\operatorname{Supp}(M)\right)$ $\Leftrightarrow$ $M_{\mathfrak{q}^c}\neq0$ $\Leftrightarrow$ $M_{\mathfrak{p}}\neq0$ and $B_\mathfrak{q}\neq0$ $\Leftrightarrow$ $\mathfrak{q}\in\operatorname{Supp}(M)\cap\operatorname{Supp}(B)$.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex3.20}
+	Counter example is $A[x]/\left(x^2\right)$.
+\end{exercise}
+
+\begin{exercise}\label{ex3.21}
+	\begin{enumerate}[label=\textup{(\roman*)},ref=\theexercise(\roman*)]\crefalias{enumi}{exercise}
+		\item[(i),(ii)] Use \Cref{3.11.4}.
+		\item[(iii)] Use \hyperref[ex1.21]{\Cref*{ex1.21}(iv)}.
+		\item[(iv)] To proof $f^{*-1}(\mathfrak{p})=\operatorname{Spec}\left(B_\mathfrak{p}/\mathfrak{p}B_\mathfrak{p}\right)$, use $\mathfrak{q}\in\operatorname{Spec}\left(S^{-1}B\right)$ $\Leftrightarrow$ $\mathfrak{q}\cap f(S)=\varnothing$ and $\mathfrak{q}\in\operatorname{Spec}\left(C/\mathfrak{p}C\right)$ $\Leftrightarrow$ $f^{-1}(\mathfrak{q})\supseteq\mathfrak{p}$. To proof the equation, note that $A_\mathfrak{p}/\mathfrak{p}A_\mathfrak{p}=\operatorname{Frac}(A/\mathfrak{p})$, then apply \Cref{2.15} on $A_\mathfrak{p}/\mathfrak{p}A_\mathfrak{p}\otimes_{A/\mathfrak{p}}A/\mathfrak{p}\otimes_AB$.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex3.22}
+	Let $\mathfrak{p}\in X_f$, so $f\notin\mathfrak{p}$. Then $\mathfrak{q}\in\operatorname{Spec}\left(A_\mathfrak{p}\right)$ $\Leftrightarrow$ $\mathfrak{q}\subseteq\mathfrak{p}$ $\Leftrightarrow$ $f\notin\mathfrak{q}$ $\Leftrightarrow$ $\mathfrak{q}\in X_f$.
+\end{exercise}
+
+\begin{exercise}\label{ex3.23}
+	\begin{enumerate}[label=\textup{(\roman*)},ref=\theexercise(\roman*)]\crefalias{enumi}{exercise}
+		\item Use \hyperref[ex1.17]{\Cref*{ex1.17}(iv)}.
+		\addtocounter{enumi}{4}
+		\item[(v)] Define two homomorphisms by the universal properties of direct limit and local ring.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex3.24}
+	\Cref{ex1.17.5} asserts that there exists a finite open cover $\left(X_{f_i}\right)$ such that $\sum_{i=1}^n\left(f_i\right)=\left(f_1,...,f_n\right)=(1)$, hence $\sqrt{\sum_{i=1}^n\left(f_i^N\right)}=\sqrt{\sum_{i=1}^n\sqrt{\left(f_i^N\right)}}=(1)$ and therefore $\sum_{i=1}^n\left(f_i^N\right)=(1)$ for all $N$. We can find $b_i$ such that $\sum_{i=1}^nb_if_i^N=1$.
+	
+	Pick $N$ large enough and let $s_i=a_i^\prime/f_i^{m_i}=a_i/f_i^N$. Define $s=\sum_{i=1}^na_ib_i$. Note that $a_i/f_i^N=a_j/f_j^N$ in $A\left(U_i\cap U_j\right)$, and use it to verify $s$ satisfies the condition.
+	
+	If $t=s-s^\prime$, $t/1=0$ in all $A_f$. Pick $f_i$ are those correspond to the open cover, so $f_i^Mt=0$ for a large $M$. Then $t=\sum_{i=1}^nb_if_i^Nt=0$.
+\end{exercise}
+
+\begin{exercise}\label{ex3.25}
+	\textcolor{magenta}{The $h$ is not a homomorphism. Redifine $h(x)=f(x)\otimes1=1\otimes g(x)$.} We have fibers 
+	\begin{align*}
+		&f^{*-1}(\mathfrak{p})=\operatorname{Spec}\left(B\otimes_Ak(\mathfrak{p})\right)\qquad g^{*-1}(\mathfrak{p})=\operatorname{Spec}\left(C\otimes_Ak(\mathfrak{p})\right)\\
+		&h^{*-1}(\mathfrak{p})=\operatorname{Spec}\left(\left(B\otimes_AC\right)\otimes_Ak(\mathfrak{p})\right)\cong\operatorname{Spec}\left(\left(B\otimes_Ak(\mathfrak{p})\right)\otimes_{k(\mathfrak{p})}\left(C\otimes_Ak(\mathfrak{p})\right)\right)
+	\end{align*}
+	Note that $B\otimes_Ak(\mathfrak{p})$ and $C\otimes_Ak(\mathfrak{p})$ are vector space, so $\mathfrak{p}\in h^*(T)$ iff $\left(B\otimes_Ak\right)\otimes_k\left(C\otimes_Ak\right)\neq0$, iff $B\otimes_Ak\neq0$ and $C\otimes_Ak\neq0$, iff $\mathfrak{p}\in f^*(Y)$ and $\mathfrak{p}\in g^*(Z)$.
+\end{exercise}
+
+\begin{exercise}\label{ex3.26}
+	The fiber $f^{*-1}(\mathfrak{p})$ is the spectrum of $B\otimes_Ak(\mathfrak{p})$. By \Cref{ex2.20}, $B\otimes_Ak(\mathfrak{p})=\varinjlim\left(B_\alpha\otimes_Ak(\mathfrak{p})\right)$. By \Cref{ex2.21}, $f^{*-1}(\mathfrak{p})=\varnothing$ $\Rightarrow$ $B_\alpha\otimes_Ak(\mathfrak{p})=0$ for some $\alpha$, and the reverse is true by the definition of direct limit of rings.
+\end{exercise}
+
+\begin{exercise}\label{ex3.27}
+	
+\end{exercise}
+
+\begin{exercise}\label{ex3.28}
+	
+\end{exercise}
+
+\begin{exercise}\label{ex3.29}
+	
+\end{exercise}
+
+\begin{exercise}\label{ex3.30}
+	
+\end{exercise}

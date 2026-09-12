@@ -1,0 +1,79 @@
+\chapter{Sheaves of Modules}
+
+\section*{SHEAVES OF MODULES}
+
+\begin{definition}
+	Let $\left(X,\mathcal{O}_X\right)$ be a ringed space. A \textcolor{orange}{sheaf of $\mathcal{O}_X$-modules} is a sheaf $\mathcal{F}:\mathbf{Open}(X)^\text{op}\rightarrow\mathbf{Ab}$, such that for each open set $U\subseteq X$, the group $\mathcal{F}(U)$ is an $\mathcal{O}_X(U)$-module, and for each inclusion of open sets $V\subseteq U$, the restriction homomorphism $\mathcal{F}(U)\rightarrow\mathcal{F}(V)$ is compatible with the module structures via the ring homomorphism $\mathcal{O}_X(U)\rightarrow\mathcal{O}_X(V)$.
+	
+	A \textcolor{orange}{morphism of sheaves of $\mathcal{O}_X$-modules} is a morphism $\mathcal{F}\rightarrow\mathcal{G}$ of sheaves, such that for each open set $U\subseteq X$, the map $\mathcal{F}(U)\rightarrow\mathcal{G}(U)$ is a homomorphism of $\mathcal{O}_X(U)$-modules.
+\end{definition}
+
+\begin{definition}
+	Let $\mathcal{F}$ and $\mathcal{G}$ are $\mathcal{O}_X$-modules. The presheaf
+	\begin{equation*}
+		U\mapsto\operatorname{Hom}_{\mathcal{O}_X|_U}\!\left(\mathcal{F}|_U,\mathcal{G}|_U\right)
+	\end{equation*}
+	is a sheaf, which is called the \textcolor{orange}{sheaf $\mathcal{Hom}$}, and denote by \textcolor{orange}{$\mathcal{Hom}_{\mathcal{O}_X}(\mathcal{F},\mathcal{G})$}.
+	
+	The \textcolor{orange}{tensor product} of $\mathcal{F}$ and $\mathcal{G}$ is the sheaf associated to the preshheaf
+	\begin{equation*}
+		U\mapsto\mathcal{F}(U)\otimes_{\mathcal{O}_X(U)}\mathcal{G}(U),
+	\end{equation*}
+	denote by \textcolor{orange}{$\mathcal{F}\otimes_{\mathcal{O}_X}\mathcal{G}$}.
+\end{definition}
+
+\begin{definition}
+	An $\mathcal{O}_X$-module $\mathcal{F}$ is \textcolor{orange}{free} if it is isomorphic to a direct sum of copies of $\mathcal{O}_X$.
+	
+	An $\mathcal{O}_X$-module $\mathcal{F}$ is \textcolor{orange}{locally free} if $X$ can be covered by open sets $U$ for which $\mathcal{F}|_U$ is a free $\mathcal{O}_X|_U$-module.
+	
+	The \textcolor{orange}{rank} of $\mathcal{F}$ on an open set $U$ is the number $r_U$ such that $\mathcal{F}|_U\cong\mathcal{O}_U^{\oplus r_U}$.
+	
+	A locally free sheaf of rank 1 is called an \textcolor{orange}{invertible sheaf}.
+\end{definition}
+
+\begin{definition}
+	A \textcolor{orange}{sheaf of ideals} on $X$ is a sheaf of modules $\mathcal{I}$ which is a subsheaf of $\mathcal{O}_X$. In other words, for every open set $U$, $\mathcal{I}(U)$ is an ideal in $\mathcal{O}_X(U)$.
+\end{definition}
+
+\begin{definition}
+	Let $f:\left(X,\mathcal{O}_X\right)\rightarrow\left(Y,\mathcal{O}_Y\right)$ be a morphism of ringed spaces, $\mathcal{F}$ be an $\mathcal{O}_X$-module and $\mathcal{G}$ be an $\mathcal{O}_Y$-module.	The \textcolor{orange}{direct image} of $\mathcal{F}$ is the sheaf $f_*\mathcal{F}$. The \textcolor{orange}{inverse image} of $\mathcal{G}$ is the sheaf $f^{-1}\mathcal{G}\otimes_{f^{-1}\mathcal{O}_Y}\mathcal{O}_X$, denote by \textcolor{orange}{$f^*\mathcal{G}$}.
+\end{definition}
+
+\section*{COHERENT SHEAVES}
+
+\begin{definition}
+	Let $A$ be a ring and $M$ be an $A$-module. The \textcolor{orange}{associated sheaf} of $M$ on $\operatorname{Spec}A$ is a sheaf $\tilde{M}$ which maps each open set $U$ to the set of maps $s:U\rightarrow\coprod_{\mathfrak{p}\in U}M_\mathfrak{p}$, such that
+	\begin{enumerate}[label=\textup{(\arabic*)}]
+		\item for each $\mathfrak{p}\in U$, $s(\mathfrak{p})\in M_\mathfrak{p}$;
+		\item for each $\mathfrak{p}\in U$, there exists an open neighborhood $V\subseteq U$ of $\mathfrak{p}$, elements $m\in M$ and $f\in A$, such that $m/f=s(\mathfrak{q})$ for all $\mathfrak{q}\in V$ satisfying $f\notin\mathfrak{q}$.
+	\end{enumerate}
+\end{definition}
+
+\begin{definition}
+	Let $\left(X,\mathcal{O}_X\right)$ be a scheme. A sheaf of $\mathcal{O}_X$-modules $\mathcal{F}$ is \textcolor{orange}{quasi-coherent} if $X$ can be covered by open affine subsets $U_i=\operatorname{Spec}\!\left(A_i\right)$, such that for each $i$ there is an $A_i$-module $M_i$ with $\mathcal{F}|_{U_i}\cong\tilde{M_i}$. We said that $\mathcal{F}$ is \textcolor{orange}{coherent} if furthermore each $M_i$ can be taken to be a finitely generated $A_i$-module.
+\end{definition}
+
+\begin{definition}
+	Let $A$ be a ring and $M$ be an $A$-module. The \textcolor{orange}{associated sheaf} of $M$ on $\operatorname{Spec}A$ is a sheaf $\tilde{M}$ which maps each open set $U$ to the set of maps $s:U\rightarrow\coprod_{\mathfrak{p}\in U}M_\mathfrak{p}$, such that
+	\begin{enumerate}[label=\textup{(\arabic*)}]
+		\item for each $\mathfrak{p}\in U$, $s(\mathfrak{p})\in M_\mathfrak{p}$;
+		\item for each $\mathfrak{p}\in U$, there exists an open neighborhood $V\subseteq U$ of $\mathfrak{p}$, elements $m\in M$ and $f\in A$, such that $m/f=s(\mathfrak{q})$ for all $\mathfrak{q}\in V$ satisfying $f\notin\mathfrak{q}$.
+	\end{enumerate}
+\end{definition}
+
+
+\section*{TWISTED SHEAVES}
+
+\begin{definition}
+	Let $S$ be a graded ring and $M$ be a graded $S$-module. The \textcolor{orange}{associated sheaf} of $M$ on $\operatorname{Proj}S$ is a sheaf $\tilde{M}$ which maps each open set $U$ to the set of maps $s:U\rightarrow\coprod_{\mathfrak{p}\in U}M_{(\mathfrak{p})}$, such that
+	\begin{enumerate}[label=\textup{(\arabic*)}]
+		\item for each $\mathfrak{p}\in U$, $s(\mathfrak{p})\in M_\mathfrak{p}$;
+		\item for each $\mathfrak{p}\in U$, there exists an open neighborhood $V\subseteq U$ of $\mathfrak{p}$, elements $m\in M$ and $f\in A$, such that $m/f=s(\mathfrak{q})$ for all $\mathfrak{q}\in V$ satisfying $f\notin\mathfrak{q}$.
+	\end{enumerate}
+\end{definition}
+
+\begin{definition}
+	Let $S$ be a graded ring, and let $X=\operatorname{Proj}S$. For any $n\in\mathbb{Z}$, define $\mathcolor{orange}{\widetilde{S(n)}}=\mathcal{O}_X(n)$. $\mathcal{O}_X(1)$ is called the \textcolor{orange}{twisting sheaf} of Serre. For any sheaf of $\mathcal{O}_X$ moduels $\mathcal{F}$, the \textcolor{orange}{twisted sheaf} $\mathcal{F}\otimes_{\mathcal{O}_X}\mathcal{O}_X(n)$ is denoted by \textcolor{orange}{$\mathcal{F}(n)$}.
+\end{definition}
+

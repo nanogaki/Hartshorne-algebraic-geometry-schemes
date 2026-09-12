@@ -1,0 +1,138 @@
+\section{Noetherian Rings}
+
+\begin{exercise}[Cohen's theorem]\label{ex7.1}
+	Let $\mathfrak{a}$ be a maximal element in $\Sigma$. If $xy\in\mathfrak{a}$ but $x,y\notin\mathfrak{a}$, then $\mathfrak{a}+(x)$ is finitely generated. Let $\left\{x,a_1,\cdots,a_n\right\}$ be its generators and let $\mathfrak{a}_0=\left(a_1,\cdots,a_n\right)$. Proof that $\mathfrak{a}_0\nsubseteq\mathfrak{a}$ is impossible. Therefore, if $u\in\mathfrak{a}\subseteq\mathfrak{a}+(x)=\mathfrak{a}_0+(x)$, $u=a_0+bx$ with $b\in\mathfrak{a}$, so $\mathfrak{a}\subseteq\mathfrak{a}_0+x\cdot(\mathfrak{a}:x)$; we also have $x\cdot(\mathfrak{a}:x)\subseteq\mathfrak{a}$. Note that $y\in(\mathfrak{a}:x)$.
+\end{exercise}
+
+\begin{exercise}\label{ex7.2}
+	\begin{enumerate}
+		\item[$\Rightarrow$:] \Cref{ex1.5.2}.
+		\item[$\Leftarrow$:] $\left(a_0,a_1,\cdots\right)\subseteq\mathfrak{R}$ and use \Cref{7.15}.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex7.3}
+	\begin{enumerate}
+		\item[(i) $\Rightarrow$ (ii)] Use \Cref{4.8} and \Cref{4.4}.
+		\item[(ii) $\Rightarrow$ (iii)] Let $S=\left\{1,x,x^2,\cdots\right\}$. Proof that $\bigcup\left(\mathfrak{a}:x^n\right)=S(\mathfrak{a})$.
+		\item[(iii) $\Rightarrow$ (i)] Similar to the proof of \Cref{7.12}.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex7.4}
+	\begin{enumerate}[label=(\roman*),ref=\theexercise(\roman*)]\crefalias{enumi}{exercise}
+		\item $\mathfrak{p}=\left\{(z-c):|c|=1\right\}$ is prime, and the ring is $(\mathbb{C}[x])_\mathfrak{p}$. Use \Cref{7.3}.
+		\item Use \Cref{ex1.5.1}. If $f=z^ng$ with $g$ invertible, $(f)=\left(z^n\right)$, so the only ideals are $(0)$ and $\left(z^n\right)$.
+		\item $\cdots\subsetneq(\sin\pi nz)\subsetneq(\sin\pi(n+1)z)\subsetneq\cdots$ is an ascending chain.
+		\item The ring is $\mathbb{C}\left[z^{k+1}\right]$.
+		\item The ring is $\mathbb{C}\left[z,z^2,\cdots,wz,wz^2,\cdots,w^2z,w^2z^2,\cdots\right]$.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex7.5}
+	Use \Cref{ex5.12} and \Cref{7.8}.
+\end{exercise}
+
+\begin{exercise}\label{ex7.6}
+	\textcolor{magenta}{A ring is finitely generated if it is finitely generated as a $\mathbb{Z}$-algebra.} $\mathbb{Z}$ is a Jacobson ring. By \Cref{ex5.25}, $K$ is finite over $\mathbb{Z}$, so it is of the form $\mathbb{Z}^n\oplus\bigoplus_i\mathbb{Z}/p_i\mathbb{Z}$ due to the addition operation forms a finitely generated abelian group. If $\operatorname{char} K=0$, $\mathbb{Z}\subseteq\mathbb{Q}\subseteq\mathbb{Z}^n$, then use \Cref{7.8}.
+\end{exercise}
+
+\begin{exercise}\label{ex7.7}
+	Use ascending chain condition.
+\end{exercise}
+
+\begin{exercise}\label{ex7.8}
+	$A\cong A[x]/(x)$.
+\end{exercise}
+
+\begin{exercise}\label{ex7.9}
+	Let $\mathfrak{a}_0\subseteq\mathfrak{a}_1\subseteq\cdots$ be a chain in $A$. Since $\mathfrak{a}_0$ is contained in only finite many maximal ideals, there is a large enough $n$ such that $S_{\mathfrak{m}}^{-1}\mathfrak{a}_n=S_{\mathfrak{m}}^{-1}\mathfrak{a}_{n+1}=\cdots$ for all $\mathfrak{m}\supseteq\mathfrak{a}_0$. We also have $S_{\mathfrak{m}}^{-1}\mathfrak{a}_i=A_\mathfrak{m}$ for all $i$, when $\mathfrak{m}\nsupseteq\mathfrak{a}_0$. Then apply \Cref{3.8} on $S_\mathfrak{m}^{-1}\left(\mathfrak{a}_{n+i}\middle/\mathfrak{a}_n\right)$.
+\end{exercise}
+
+\begin{exercise}\label{ex7.10}
+	$M[x]=M\otimes A[x]$, so it is a homomorphic image of $M\times A[x]$. Use \Cref{7.1}.
+\end{exercise}
+
+\begin{exercise}\label{ex7.11}
+	Counter example is an infinite product $\prod\mathbb{Z}/2\mathbb{Z}$.
+\end{exercise}
+
+\begin{exercise}\label{ex7.12}
+	By \hyperref[ex3.16]{\Cref*{ex3.16}(i)}, $\mathfrak{a}\mapsto\mathfrak{a}^e$ is injective. Then use ascending chain condition.
+\end{exercise}
+
+\begin{exercise}\label{ex7.13}
+	Transfer the Noetherian property $B\rightarrow B_\mathfrak{p}\rightarrow B_\mathfrak{p}/\mathfrak{p}B_\mathfrak{p}$ and use \Cref{ex6.8}.
+\end{exercise}
+
+\begin{exercise}[\textcolor{red}{Hilbert's Nullstellensatz}]\label{ex7.14}
+	If $f\notin\sqrt{\mathfrak{a}}$, there is a $\mathfrak{p}\supseteq\mathfrak{a}$ such that $f\notin\mathfrak{p}$. $(A/\mathfrak{p})_{\overline{f}}$ is a finitely generated $k$-algebra, so by \hyperref[7.9]{Zariski's lemma}, $\left.\left((A/\mathfrak{p})_{\overline{f}}\right)\middle/\mathfrak{m}\right.=k$. Let $x_i$ be the images of $t_i$ in $\left.\left((A/\mathfrak{p})_{\overline{f}}\right)\middle/\mathfrak{m}\right.$, then $x=\left(x_1,\cdots,x_n\right)$ satisfies $x\in V$ but $f(x)\neq0$.
+	
+	\textcolor{red}{Rabinowitsch trick:} \textcolor{green!70!black}{Let $f_1,\cdots,f_m$ be generators of $\mathfrak{a}$. If $f\in I(V)$, then $f_1,\cdots,f_m,1-t_0f$ has no zeros in $k\left[t_0,t_1,\cdots,t_n\right]$. Apply \Cref{ex5.17}, $1=g_0\left(1-t_0f\right)+\sum_{i=1}^mg_if_i$. Now put $t_0=1/f$, we have $g_i\in k\left[t_1,\cdots,t_n,1/f\right]$. Therefore, $g_i=h_i/f^{N_i}$ with $h_i\in k\left[t_1,\cdots,t_n\right]$. Hence we have $f^N=\sum_{i=1}^mh_if^{N-N_i}f_i$ for all $N\geqslant\max_i\left\{N_i\right\}$.}
+\end{exercise}
+
+\begin{exercise}\label{ex7.15}
+	\begin{enumerate}
+		\item[(iv) $\Rightarrow$ (i)] Let $x_1,\cdots,x_n$ be elements of $M$ whose images in $M/\mathfrak{m}M$ form a basis of $k$-vector space. Let $N=\left(x_1,\cdots,x_n\right)$, so $N+\mathfrak{m}M=M$. Since $\mathfrak{J}=\mathfrak{m}$, apply \hyperref[2.6]{Nakayama's lemma} on $M/N$, we have $M=N$. Let $F$ be a free $A$-module with basis $e_1,\cdots,e_n$, and $\phi:F\rightarrow M$ be $\phi\left(e_i\right)=x_i$. Then 
+		\begin{equation*}
+			\operatorname{Tor}_1^A(k,M)\rightarrow k\otimes_A\ker\phi\rightarrow k\otimes_AF\xrightarrow{1\otimes\phi}k\otimes_AM\rightarrow0
+		\end{equation*}
+		exact. Since $k\otimes F$ and $k\otimes M=M/\mathfrak{m}M$ are vector spaces of a same dimension, $1\otimes\phi$ is an isomorphism, so $k\otimes\ker\phi=0$. By \Cref{ex2.3}, $\ker\phi=0$.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex7.16}
+	Use \Cref{3.10} and \Cref{ex7.15}.
+\end{exercise}
+
+\begin{exercise}\label{ex7.17}
+	
+\end{exercise}
+
+\begin{exercise}\label{ex7.18}
+	
+\end{exercise}
+
+\begin{exercise}\label{ex7.19}
+	
+\end{exercise}
+
+\begin{exercise}\label{ex7.20}
+	\begin{enumerate}[label=(\roman*),ref=\theexercise(\roman*)]\crefalias{enumi}{exercise}
+		\item $\Rightarrow$: We have a chain $\mathcal{F}_0\subseteq\mathcal{C}_1\subseteq\mathcal{F}_1\subseteq\mathcal{C}_2\subseteq\cdots\subseteq\mathcal{F}$, where $\mathcal{F}_0$ is the topology, $\mathcal{C}_i=\mathcal{F}_{i-1}\cup\left\{S^c:S\in\mathcal{F}_{i-1}\right\}$, and $\mathcal{F}_i$ is a collection of all finite intersections of sets in $\mathcal{C}_i$.
+		\item $\Rightarrow$: Use the open set definition.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex7.21}
+	\begin{enumerate}
+		\item[$\Rightarrow$:] Use \Cref{ex7.20}.
+		\item[$\Leftarrow$:] If $E\notin\mathcal{F}$, let $\mathcal{C}=\left\{X^\prime\subseteq X:X^\prime\text{ closed, }E\cap X^\prime\notin\mathcal{F}\right\}$. By Noetherian property, $\mathcal{C}$ has a minimal element $X_0$. Use the closed set definition to show $X_0$ is irreducible. If $\overline{E\cap X_0}\neq X_0$, $E\cap\overline{E\cap X_0}\in\mathcal{F}$ by minimality, but $E\cap\overline{E\cap X_0}=E\cap X_0$. If $U_0\subseteq E\cap X_0$, let $U_0=U\cap X_0$ where $U$ is open in $X$, then $E\cap X_0=U_0\cup\left(E\cap U^c\cap X_0\right)$.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex7.22}
+	\begin{enumerate}
+	\item[$\Leftarrow$:] If $E$ is not open, let $\mathcal{C}=\left\{X^\prime\subseteq X:X^\prime\text{ closed, }E\cap X^\prime\text{ is not open}\right\}$ and use the notations similar to \Cref{ex7.21}. If $U_0\subseteq E\cap X_0$, $U^c\cap X_0$ is closed, so by minimality $E\cap U^c\cap X_0$ is open.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex7.23}
+	Hint.
+\end{exercise}
+
+\begin{exercise}\label{ex7.24}
+	Hint.
+\end{exercise}
+
+\begin{exercise}\label{ex7.25}
+	Use \Cref{ex5.11} and \Cref{ex7.24}.
+\end{exercise}
+
+\begin{exercise}\label{ex7.26}
+	
+\end{exercise}
+
+\begin{exercise}\label{ex7.27}
+	
+\end{exercise}

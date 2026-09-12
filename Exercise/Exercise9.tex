@@ -1,0 +1,52 @@
+\section{Discrete Valuation Rings and Dedekind Domain}
+
+\begin{exercise}\label{ex9.1}
+	\Cref{3.11.4} asserts that $\dim S^{-1}A$ can only be 0 and 1. If $\dim S^{-1}A=0$, it is $\operatorname{Frac}A$; if $\dim S^{-1}A=1$, use \Cref{5.12}.
+	
+	By \Cref{3.15}, $S^{-1}\left(M^{-1}\right)=S^{-1}(A:M)=\left(S^{-1}A:S^{-1}M\right)=\left(S^{-1}M\right)^{-1}$. We also have $S^{-1}(MN)=\left(S^{-1}M\right)\left(S^{-1}N\right)$, so the map $M\mapsto S^{-1}M$ is a homomorphism. Use \Cref{3.11.1}. Note that $(u)\mapsto S^{-1}(u)=\left(S^{-1}A\right)u$ maps $P$ into $P^\prime$, so $H\rightarrow H^\prime$ is surjective.
+\end{exercise}
+
+\begin{exercise}\label{ex9.2}
+	Localize and use \Cref{3.8} to the final move, we can assume that $A$ is a DVR.
+	
+	\hyperref[9.2]{\Cref*{9.2}(iii)(v)} assert that $c(f)=\left(x^n\right)$ where $x$ is the generator of $\mathfrak{m}$, so $f=x^nf_0$ where $f_0$ is primitive. Apply \Cref{ex1.2.4} to $f_0$, $g_0$ and note that for any $a\in A$, $ac(f)=c(af)$.
+\end{exercise}
+
+\begin{exercise}\label{ex9.3}
+	\begin{enumerate}
+		\item[$\Rightarrow$:] $\left(x_1,x_2\right)=\left(x_1\right)$ if $x_1x_2^{-1}\in A$, so every ideal is principal. Then use \Cref{9.2.3}.
+		\item[$\Leftarrow$:] If $v(y)\geqslant v(x)$, $y=\left(yx^{-1}\right)x$, so every ideal in DVR is of the form $\mathfrak{m}_k=\left\{z\in A:v(z)\geqslant k\right\}$.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex9.4}
+	For any non-zero $x\in A$, $x\in\mathfrak{m}^n$ but $x\notin\mathfrak{m}^{n+1}$ for some $n$. Define a discrete valuation $v(x)=n$.
+\end{exercise}
+
+\begin{exercise}\label{ex9.5}
+	By \Cref{ex3.13} and \Cref{ex7.16}, and notice that torsion free module over a PID is flat.
+\end{exercise}
+
+\begin{exercise}\label{ex9.6}
+	From \Cref{9.3.3}, \Cref{9.2.5}, and the structure theorem for finitely generated modules over a PID, $M_\mathfrak{p}=\bigoplus_{i=1}^NA_\mathfrak{p}/\mathfrak{p}^{n_i}A_\mathfrak{p}=\bigoplus_{i=1}^N\left(A/\mathfrak{p}^{n_i}\right)_\mathfrak{p}$. Define a homomorphism $\phi:M\rightarrow\bigoplus_\mathfrak{p}M_\mathfrak{p}$ by $m\mapsto(m/1,\cdots)$, so each $\phi_\mathfrak{p}$ is an isomorphism. By \Cref{3.9}, $\phi$ is an isomorphism.
+	
+	By \Cref{ex3.19.5}, $\operatorname{Supp}(M)=V(\operatorname{Ann}(M))$. From \Cref{9.1} and \Cref{9.3.2}, $\operatorname{Ann}(M)=\mathfrak{p}_1^{n_1}\cdots\mathfrak{p}_k^{n_k}$. Use $\dim A=1$ to proof that $V(\operatorname{Ann}(M))$ is finite.
+\end{exercise}
+
+\begin{exercise}\label{ex9.7}
+	From \Cref{9.1} and \Cref{9.3.2}, $\mathfrak{a}=\mathfrak{p}_1^{n_1}\cdots\mathfrak{p}_k^{n_k}$. By \Cref{1.10}, $A\rightarrow\prod_{i=1}^{k}A/\mathfrak{p}_i^{n_i}$ is a surjective with kernel $\mathfrak{a}$. Note that each component $A/\mathfrak{p}_i^{n_i}$ is local so is PID.
+	
+	If $a\in\mathfrak{b}$, $\mathfrak{b}/(a)=(\overline{b})$ and therefore $\mathfrak{b}=(a,b)$.
+\end{exercise}
+
+\begin{exercise}\label{ex9.8}
+	Localize and note that all ideals in DVR are $\left\{z\in A:v(z)\geqslant k\right\}$. Use \Cref{3.8} to pull back.
+\end{exercise}
+
+\begin{exercise}\label{ex9.9}
+	This is equivalent to say that
+	\begin{equation*}
+		A\xrightarrow{\phi}\bigoplus_{i=1}^nA/\mathfrak{a}_i\xrightarrow{\psi}\bigoplus_{i<j}A/\left(\mathfrak{a}_i+\mathfrak{a}_j\right)
+	\end{equation*}
+	is exact, where $\phi(x)=\left(x+\mathfrak{a}_i\right)_{i=1}^n$, and $\psi\left(x_i+\mathfrak{a}_i\right)_{i=1}^n=\left(x_i-x_j+\mathfrak{a}_i+\mathfrak{a}_j\right)_{i<j}$. If $A$ is DVR, we have $\mathfrak{a}_i+\mathfrak{a}_j=\mathfrak{a}_{\min(i,j)}$. If $\left(x_i+\mathfrak{a}_i\right)_{i=1}^n\in\ker\psi$, $x_i+\mathfrak{a}_i=x_j+\mathfrak{a}_i$ for all $i<j$, so take $j=n$ for all $i$ and we have $\phi\left(x_n\right)\in\ker\psi$. Then use \Cref{9.3.3} and \Cref{3.8} for Dedekind domain.
+\end{exercise}

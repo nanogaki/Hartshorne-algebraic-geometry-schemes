@@ -1,0 +1,21 @@
+\contentsline {chapter}{\numberline {1}Sheaves}{2}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Schemes}{4}{chapter.2}%
+\contentsline {chapter}{\numberline {3}First Properties of Schemes}{6}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Separated and Proper Morphisms}{8}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Sheaves of Modules}{10}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Chain Conditions}{12}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Noetherian Rings}{13}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Artinian Rings}{14}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Discrete Valuation Rings and Dedekind Domain}{15}{chapter.9}%
+\contentsline {chapter}{EXERCISES}{17}{chapter*.2}%
+\contentsline {section}{\numberline {1}Sheaves}{17}{section.9.1}%
+\contentsline {section}{\numberline {2}Schemes}{19}{section.9.2}%
+\contentsline {section}{\numberline {3}Rings and Modules of Fractions}{20}{section.9.3}%
+\contentsline {section}{\numberline {4}Primary Decomposition}{22}{section.9.4}%
+\contentsline {section}{\numberline {5}Integral Dependence and Valuations}{23}{section.9.5}%
+\contentsline {section}{\numberline {6}Chain Conditions}{25}{section.9.6}%
+\contentsline {section}{\numberline {7}Noetherian Rings}{26}{section.9.7}%
+\contentsline {section}{\numberline {8}Artinian Rings}{27}{section.9.8}%
+\contentsline {section}{\numberline {9}Discrete Valuation Rings and Dedekind Domain}{28}{section.9.9}%
+\contentsline {chapter}{SUMMARY}{29}{section*.3}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

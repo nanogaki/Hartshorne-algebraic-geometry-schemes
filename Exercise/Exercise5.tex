@@ -1,0 +1,182 @@
+\section{Integral Dependence and Valuations}
+
+\begin{exercise}\label{ex5.1}
+	$f^*(V(I))=\left\{f^{-1}(\mathfrak{q}):\mathfrak{q}\supseteq I\right\}$. Use \Cref{5.10} to proof $f^*(V(I))\supseteq V\left(f^{-1}(I)\right)$.
+\end{exercise}
+
+\begin{exercise}\label{ex5.2}
+	$\mathfrak{p}=\ker f$ is prime. By \Cref{5.10}, there is a prime ideal $\mathfrak{q}\subseteq B$. $\operatorname{Frac}(B/\mathfrak{q})$ is an algebraic extension of $\operatorname{Frac}(A/\mathfrak{p})$, so $\operatorname{Frac}(A/\mathfrak{p})\rightarrow\Omega$ can be extended to $\operatorname{Frac}(B/\mathfrak{q})\rightarrow\Omega$.
+\end{exercise}
+
+\begin{exercise}\label{ex5.3}
+	Use the operator $-\otimes_A c^n$.
+\end{exercise}
+
+\begin{exercise}\label{ex5.4}
+	If $\left(\frac{1}{x+1}\right)^n+\sum\frac{f_i\left(x^2-1\right)}{g_i\left(x^2-1\right)(x+1)^i}=0$, multiply both side by $(x+1)^n$ and take $x=-1$ to get contradiction.
+\end{exercise}
+
+\begin{exercise}\label{ex5.5}
+	\begin{enumerate}
+		\item[(ii)] Use \Cref{5.10} to proof that the contraction of maximal ideals in $B$ are maximal in $A$.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex5.6}
+	Let $b_i\in B_i$, $f_i\in A\left[x_i\right]$ monic, $f_i(b_i)=0$. Let $f=\left(f_1,\cdots,f_n\right)$, then $f(b_1,\cdots,b_n)=0$.
+\end{exercise}
+
+\begin{exercise}\label{ex5.7}
+	Let $x\in B$ and $x$ integral over $A$. Let $x^n+a_{n-1}x^{n-1}+\cdots+a_0=0$ is the equation of the least degree. Analyze $x\left(x^{n-1}+a_{n-2}x^{n-2}+\cdots+a_1\right)=-a_0$.
+\end{exercise}
+
+\begin{exercise}\label{ex5.8}
+	Proof that there is a ring $D\supseteq B$ such that $f$ and $g$ factor into linear factors in $D$. Use Kronecker's construction.
+\end{exercise}
+
+\begin{exercise}\label{ex5.9}
+	Let $f^n+g_{n-1}f^{n-1}+\cdots+g_0=0$. Let $f_1=f-x^r$ with $r$ larger than all $\operatorname{deg}g_i$, then $f_1\left(f_1^{n-1}+h_{n-1}f_1^{n-2}+\cdots+h_1\right)=-h_0$ with $h_0$ monic. Then use \Cref{ex5.8}.
+\end{exercise}
+
+\begin{exercise}\label{ex5.10}
+	\begin{enumerate}
+		\item[(a) $\Rightarrow$ (b)] Let $f^*(V(\mathfrak{q}_1))=V(I)$, so $I\subseteq\mathfrak{p}_1\subseteq\mathfrak{p}_2$, and we have $\mathfrak{p}_2\in V(I)=f^*(V(\mathfrak{q}_1))$.
+		\item[(a') $\Rightarrow$ (c')] By \hyperref[ex3.23]{\Cref*{ex3.23}(v)} and \Cref{ex3.26}, $f^*\left(\operatorname{Spec}\left(B_\mathfrak{q}\right)\right)=f^*\left(\varinjlim\operatorname{Spec}\left(B_t\right)\right)=\bigcap_tf_t^*\left(\operatorname{Spec}\left(B_t\right)\right)$. Each $f_t^*\left(\operatorname{Spec}\left(B_t\right)\right)$ is an open neighborhood of $\mathfrak{p}$, so it contains $A_\mathfrak{p}$.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex5.11}
+	Use \Cref{ex3.18} and \Cref{ex5.10}.
+\end{exercise}
+
+\begin{exercise}\label{ex5.12}
+	Note that $G$ has identity element so $x$ is a root of the polynomial $\prod_{\sigma\in G}\left(t-\sigma(x)\right)$. The coefficients are symmetric polynomials of $\sigma_i$. \textcolor{magenta}{$G$ acting on $S^{-1}A$ is defined to be $\sigma(x/s)=\sigma(x)/\sigma(s)$}.
+\end{exercise}
+
+\begin{exercise}\label{ex5.13}
+	Let $\mathfrak{q}\in P$. Then $\sigma(\mathfrak{q})\cap A^G=\mathfrak{q}\cap A^G=\mathfrak{p}$, so $\sigma(\mathfrak{q})\in P$. Let $\mathfrak{q}_1$, $\mathfrak{q}_2\in P$ and $x\in\mathfrak{q}_1$. Then $\prod_{\sigma\in G}\sigma(x)\in\mathfrak{q}_1\cap A^G=\mathfrak{p}\subseteq\mathfrak{q}_2$, so $x\in\sigma^{-1}\left(\mathfrak{q}_2\right)$, and so $\mathfrak{q}_1\subseteq\bigcup_{\sigma\in G}\sigma\left(\mathfrak{q}_2\right)$. Use \Cref{1.11.1} and \Cref{5.9}.
+\end{exercise}
+
+\begin{exercise}\label{ex5.14}
+	Note that $\sigma\in G$ fixes $A$.
+\end{exercise}
+
+\begin{exercise}\label{ex5.15}
+	
+\end{exercise}
+
+\begin{exercise}\label{ex5.16}
+	We have a homomorphism $f:k\left[y_1,\cdots,y_r\right]\hookrightarrow k\left[x_1,\cdots,x_n\right]\twoheadrightarrow  A$. Let $a=\left(a_1,\cdots,a_r\right)\in L$ corresponds to a maximal ideal $\mathfrak{m}_a=\left(y_1-a_1,\cdots,y_r-a_r\right)$. By \Cref{5.10}, we can find a prime ideal $\mathfrak{p}_a\subset A$ such that $f^{-1}(\mathfrak{p}_a)=\mathfrak{m}_a$, which is contained in a maximal $\mathfrak{n}_a$. Notice that $\mathfrak{n}_a$ correspond a point in $X$.
+\end{exercise}
+
+\begin{exercise}\label{ex5.17}
+	Consider $k\left[t_1,\cdots,t_n\right]/I(X)$. Use \Cref{ex5.16}.
+\end{exercise}
+
+\begin{exercise}[\textcolor{red}{Zariski's lemma}]\label{ex5.18}
+	Let $n$ be the number of generators. If $n=1$, $x_1$ is invertible, so $x_1^{-1}=\sum_{i=1}^nc_ix_1^i$.
+	
+	If $n>1$, let $A=k\left[x_1\right]$ and $K_A=\operatorname{Frac}(A)$. Then $K_A[x_2,\cdots,x_n]$ is a finite algebraic extension of $K_A$, so there are monic polynomials $f_i\in K_A[y]$ such that $f_i\left(x_i\right)=0$ for $2\leqslant i\leqslant n$. Pick $a\in A$ such that $af_2\cdots f_n\in A[y]$, then $x_2,\cdots,x_n$ are integral over $A_a$. Therefore, $K_A\subseteq B$ are integral over $A_a$.
+	
+	If $x_1$ transcendental over $k$, $A$ is a UFD. Since every UFD is integrally closed, $A$ is integrally closed, so $A_a$ is integrally closed by \Cref{5.12}. $K_A$ integral over $A_a$, so $A_a=K_A$, but such $a$ must be a unit in $A$.
+\end{exercise}
+
+\begin{exercise}\label{ex5.19}
+	By \Cref{ex5.18}, $k\left[t_1,\cdots,t_n\right]/\mathfrak{m}$ is a finite algebraic extension of $k$, so $k\left[t_1,\cdots,t_n\right]/\mathfrak{m}\cong k$. Let $t_i\mapsto a_i$, then $t_i-a_i\in\mathfrak{m}$. Proof that $\left(t_1-a_1,\cdots,t_n-a_n\right)$ is maximal.
+\end{exercise}
+
+\begin{exercise}\label{ex5.20}
+	Let $S=A-\{0\}$. By \hyperref[noethernormalization]{Noether normalization lemma}, $S^{-1}B$ is integral over $S^{-1}A\left[y_1,\cdots,y_r\right]$ with $y_1,\cdots,y_r\in S^{-1}B$. The denominators of $y_1,\cdots,y_r$ can be absorbed to $S^{-1}A$, so we can assume $y_1,\cdots,y_r\in B$. Let $B=A\left[x_1,\cdots,x_n\right]$, then $x_i/1\in S^{-1}B$ is integral over $S^{-1}A\left[y_1,\cdots,y_r\right]$. Reduce the coefficients of all integral dependence equations to a common denominator $s$, we have $x_i/1$ is integral over $A_s\left[y_1,\cdots,y_r\right]$. Therefore, $B_s=A_s\left[x_1/1,\cdots,x_n/1\right]$ is integral over $A_s\left[y_1,\cdots,y_r\right]$.
+\end{exercise}
+
+\begin{exercise}\label{ex5.21}
+	We have
+	\begin{equation*}
+		\begin{tikzcd}
+			A\arrow[r,"\phi_A"]\arrow[drrr,"f"{description,pos=0.35}]&A_s\arrow[r]\arrow[drr,"f_s"{description,pos=0.35}]&A_s\left[y_1,\cdots,y_n\right]\arrow[r]\arrow[dr,"f_s^\prime"{description,pos=0.4}]
+			&B_s\arrow[d,"g"]&B\arrow[l,"\phi_B"']\\
+			&&&\Omega&
+		\end{tikzcd}
+	\end{equation*}
+	By \Cref{ex5.20}, $B_s$ integral over $A_s\left[y_1,\cdots,y_n\right]$, so $g$ is obtained from \Cref{ex5.2}. Then, $f_s$ by universal property of localization; $f_s^\prime$ by defining $y_i\mapsto0$. 
+\end{exercise}
+
+\begin{exercise}\label{ex5.22}
+	Let $v\neq0$ an element of $B$. Then $B_v$ is integral over $A$, so $f:A\rightarrow\Omega$ can be extended to $\overline{f}:B_v\rightarrow\Omega$ by \Cref{ex5.21}, with $s\neq0$ an element of $A$ such that $f(s)\neq0$. Find an $\mathfrak{m}$ such that $s\notin\mathfrak{m}$ and use \Cref{ex5.21} again, $g:A\rightarrow\overline{A/\mathfrak{m}}$ can be extended to $\overline{g}:B_v\rightarrow\overline{A/\mathfrak{m}}$. Since $\overline{g}(s)\neq0$, $\overline{g}$ is not trivial, so $\overline{g}(1/v)\overline{g}(v)=\overline{g}(1)=1$ means $\overline{g}(v)\neq0$.
+	
+	Since $\overline{A/\mathfrak{m}}$ integral over $A/\mathfrak{m}$, $\overline{g}\left(B_v\right)$ integral over $A/\mathfrak{m}$, so $\overline{g}\left(B_v\right)\cong B_v/\ker\left(\overline{g}\right)$ is a field and therefore $\ker\overline{g}$ is maximal. By \Cref{5.10}, $\ker\overline{g}\cap B$ is maximal in $B$ that doesn't contain $v$.
+\end{exercise}
+
+\begin{exercise}\label{ex5.23}
+	\begin{enumerate}
+		\item[(i) $\Rightarrow$ (ii)] Note that $f:A\rightarrow A/\ker f$. Use \Cref{1.1}.
+		\item[(ii) $\Rightarrow$ (iii)] Consider $A/\mathfrak{p}$.
+		\item[(iii) $\Rightarrow$ (i)] If $\mathfrak{p}$ is not an intersection of maximal ideals, the Jacobson radical $\mathfrak{J}$ of $A/\mathfrak{p}$ is not zero. Pick $f\in\mathfrak{J}$, then $(A/\mathfrak{p})_f\neq0$. The contraction of a maximal ideal of $(A/\mathfrak{p})_f$ is $\mathfrak{q}\in A$ which is not maximal and doesn't contain $f$, but all prime ideals strictly containing $\mathfrak{q}$ contains $f$.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex5.24}
+	\begin{enumerate}[label=(\roman*),ref=\theexercise(\roman*)]\crefalias{enumi}{exercise}
+		\item Use \hyperref[ex5.23]{\Cref*{ex5.23}(iii)} and \hyperref[5.11]{going-up theorem}.
+		\item Consider $B/\mathfrak{q}$ and $A/\mathfrak{q}^c$. Then use \Cref{ex5.22}, \hyperref[ex5.23]{\Cref*{ex5.23}(i)} and \Cref{1.1}.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex5.25}
+	\begin{enumerate}
+		\item[(i) $\Rightarrow$ (ii)] Similar to the proof of \Cref{ex5.22}, we can find $\overline{g}:B\rightarrow\overline{A/\mathfrak{m}}$. Let $B=A\left[x_1,\cdots,x_n\right]$, then $\overline{g}\left(x_i\right)$ integral over $A/\mathfrak{m}$, and therefore $\overline{g}(B)$ is finitely generated as an $A/\mathfrak{m}$-algebra. By \hyperref[ex5.18]{Zariski's lemma}, $\overline{g}(B)$ is finite over $A/\mathfrak{m}$. Note that $B$ is a field, so $\overline{g}$ injective.
+		\item[(ii) $\Rightarrow$ (i)] Take $B=A/\mathfrak{p}$. For any $f\neq0$ in $B$, $B_f$ is a finitely generated $A$-algebra. If $B_f$ is a field, it is finite over $A$, so integral over $A$. The integral dependence equation also asserts that $B_f$ is integral over $B$, so $B$ is a field by \Cref{5.7}. If $B_f$ is not a field, it has a non-zero prime ideal whose contraction in $B$ doesn't contain $f$. Therefore, the intersection of all prime ideals in $B$ is zero.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex5.26}
+	\begin{enumerate}
+		\item[(2) $\Rightarrow$ (3)] $U_1\cap X_0=U_2\cap X_0$ $\Rightarrow$ $U_1^c\cap X_0=U_2^c\cap X_0$, then take closure.
+		\item[(i) $\Rightarrow$ (ii) $\Rightarrow$ (iii)] Consider $V(\mathfrak{a})\cap X_f\cap\operatorname{Max}(A)$. If all maximal ideals in $V(\mathfrak{a})$ contains $f$, $V(\mathfrak{a})\cap X_f=\varnothing$ by \hyperref[ex5.23]{\Cref*{ex5.23}(iii)}.
+		\item[(iii) $\Rightarrow$ (i)] If not Jacobson, there is a prime ideal $\mathfrak{p}$ such that $\mathfrak{p}\subsetneq\bigcap_{\mathfrak{q}\supseteq\mathfrak{p}}\mathfrak{q}$. Let $f\in\left.\bigcap_{\mathfrak{q}\supseteq\mathfrak{p}}\mathfrak{q}\middle\backslash\mathfrak{p}\right.$, then $X_f\cap V(\mathfrak{p})=\{\mathfrak{p}\}$.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex5.27}
+	\begin{enumerate}
+		\item[$\Rightarrow$:] Use \Cref{5.21} to proof maximal elements are valuation rings.
+		\item[$\Leftarrow$:] If $(A,\mathfrak{m})\subsetneq(A^\prime,\mathfrak{m}^\prime)$, pick $x\in A^\prime\backslash A$. Then $x^{-1}\in\mathfrak{m}$ because it is not a unit in $A$.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex5.28}
+	\begin{enumerate}
+		\item[(1) $\Rightarrow$ (2)] Pick $a\in\mathfrak{a}\backslash\mathfrak{b}$, and any $b\in\mathfrak{b}$. Consider $a/b$ and $b/a$.
+		\item[(2) $\Rightarrow$ (1)] Consider $(a)\subseteq(b)$ or $(b)\subseteq(a)$, we have $a=xb$ or $b=ya$, so $y=x^{-1}$.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex5.29}
+	\textcolor{magenta}{$B$ is a local ring of $A$ means $B=A_\mathfrak{p}$ for some prime ideal $\mathfrak{p}$.} Let $\mathfrak{m}$ be the maximal ideal of $B$ and let $\mathfrak{p}=\mathfrak{m}\cap A$. If $s\in A$ but $s\notin\mathfrak{p}$, then $s\in B$ and $s\notin\mathfrak{m}$, so $s$ is a unit in $B$. Let $A_\mathfrak{p}\rightarrow B$ to be $x/s\mapsto s^{-1}x$, which is injective; $\mathfrak{p}A_\mathfrak{p}\subseteq B$, so $B$ dominates $A_\mathfrak{p}$. By \Cref{ex5.28}, $A_\mathfrak{p}$ is a valuation ring, then use \Cref{ex5.27}.
+\end{exercise}
+
+\begin{exercise}\label{ex5.30}
+	$xy^{-1}\in A$ or $x^{-1}y\in A$, so $\geqslant$ is a total order. Also $(xz)(yz)^{-1}=xy^{-1}$.
+	
+	\textcolor{magenta}{Treat $v$ as a representation map.} If $v(x)\geqslant v(y)$, $(x+y)y^{-1}=xy^{-1}+1\in A$.
+\end{exercise}
+
+\begin{exercise}\label{ex5.31}
+	Use the given conditions to verify the set is closed under addition and multiplication. Then verify it is a valuation ring by taking $x=y=1$ and $y=x^{-1}$ in the first condition.
+\end{exercise}
+
+\begin{exercise}\label{ex5.32}
+	
+\end{exercise}
+
+\begin{exercise}\label{ex5.33}
+	
+\end{exercise}
+
+\begin{exercise}\label{ex5.34}
+	
+\end{exercise}
+
+\begin{exercise}\label{ex5.35}
+	
+\end{exercise}

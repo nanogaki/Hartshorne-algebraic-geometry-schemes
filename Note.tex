@@ -1,0 +1,125 @@
+\documentclass[open=any]{scrbook}
+\usepackage{indentfirst}
+\usepackage{amsmath,bm}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{tikz-cd}
+\usepackage{geometry}
+\usepackage{tabto}
+\geometry{
+	a4paper,
+	inner=20mm,
+	outer=20mm,
+	top=20mm,
+	bottom=20mm,
+}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+}
+\usepackage[nameinlink]{cleveref}
+
+\DeclareFontFamily{U}{mathc}{}
+\DeclareFontShape{U}{mathc}{m}{it}{<-> mathc10}{}
+\DeclareMathAlphabet{\mathcal}{U}{mathc}{m}{it}
+
+% Create proposition/theorem style in main content
+\newcommand{\CreateManualEnv}[2]{%
+	% 1. Create the underlying amsthm environment
+	\newtheorem{#1temp}{#2}
+	% 2. Create custom wrapper environment dynamically
+	\NewDocumentEnvironment{#1}{m o}{
+		\expandafter\gdef\csname the#1temp\endcsname{##1}% % Sets \thetheoremtemp, etc.
+		\IfValueTF{##2}{
+			\begin{#1temp}[##2]
+			}{
+				\begin{#1temp}
+				}
+				\label{##1}
+			}{
+			\end{#1temp}
+		}
+	}
+\CreateManualEnv{theorem}{Theorem}
+\CreateManualEnv{proposition}{Proposition}
+\CreateManualEnv{corollary}{Corollary}
+\newtheorem*{proposition*}{Proposition}
+\renewcommand{\proofname}{Sketch proof}
+
+% Create definition style. Only for vertical separation.
+\newtheoremstyle{noperiod}% name of the style
+{\topsep}%             Space above
+{\topsep}%             Space below
+{\normalshape}%        Body font
+{}%                    Indent amount
+{}%                    Theorem head font (bold)
+{}%                    Punctuation after theorem head (LEAVE EMPTY to remove the period)
+{\parindent}%          Space after theorem head
+{}%                    Theorem head spec (can be left empty)
+\theoremstyle{noperiod}
+\newtheorem*{definition}{}
+
+% Create exercise style
+\theoremstyle{definition}
+\newtheorem{exercise}{}[section]
+
+\crefname{exercise}{exercise}{exercises}
+
+\begin{document}
+	{
+		\hypersetup{
+			colorlinks=true,
+			linkcolor=black,
+		}
+		\tableofcontents
+	}
+	\clearpage
+	\input{Chapter/Chapter1}
+	\newpage
+	\input{Chapter/Chapter2}
+	\newpage
+	\input{Chapter/Chapter3}
+	\newpage
+	\input{Chapter/Chapter4}
+	\newpage
+	\input{Chapter/Chapter5}
+	\newpage
+	\input{Chapter/Chapter6}
+	\newpage
+	\input{Chapter/Chapter7}
+	\newpage
+	\input{Chapter/Chapter8}
+	\newpage
+	\input{Chapter/Chapter9}
+	\newpage
+	% Exercises section
+	\chapter*{EXERCISES}
+	\addcontentsline{toc}{chapter}{EXERCISES}
+	\setlist[enumerate]{align=left,leftmargin=0pt,itemindent=!,itemsep=0pt,topsep=0pt,parsep=0pt}
+	\setlist[itemize]{itemsep=0pt,topsep=0pt,parsep=0pt}
+	\markboth{EXERCISES}{EXERCISES}
+	\renewcommand{\thesection}{\arabic{section}}
+	%\everymath{\color{red!50!black}}
+	%\AtBeginEnvironment{equation*}{\color{red!50!black}}
+	%\tikzset{every picture/.style={red!50!black}}
+	\input{Exercise/Exercise1}
+	\input{Exercise/Exercise2}
+	\input{Exercise/Exercise3}
+	\input{Exercise/Exercise4}
+	\input{Exercise/Exercise5}
+	\input{Exercise/Exercise6}
+	\input{Exercise/Exercise7}
+	\input{Exercise/Exercise8}
+	\input{Exercise/Exercise9}
+	\newpage
+	% Summaries section
+	\phantomsection
+	\section*{SUMMARY}
+	\addcontentsline{toc}{chapter}{SUMMARY}
+	\markboth{SUMMARY}{SUMMARY}
+	\RedeclareSectionCommand[beforeskip=10pt]{subsubsection}
+	\input{Summary/Summary}
+\end{document}

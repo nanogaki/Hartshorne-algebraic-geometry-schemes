@@ -1,0 +1,113 @@
+\section{Primary Decomposition}
+
+\begin{exercise}\label{ex4.1}
+	Use \hyperref[ex1.21]{\Cref*{ex1.21}(iv)}, so $\operatorname{Spec}(A/\mathfrak{a})=V(\mathfrak{a})$.
+\end{exercise}
+
+\begin{exercise}\label{ex4.2}
+	All primary components are prime.
+\end{exercise}
+
+\begin{exercise}\label{ex4.3}
+	For any element $x\in A$, $x(1-ax)=0\in\mathfrak{q}$.
+\end{exercise}
+
+\begin{exercise}\label{ex4.4}
+	$\mathfrak{m}=\sqrt{\mathfrak{q}}\supsetneq\mathfrak{q}\supsetneq\mathfrak{m}^2$.
+\end{exercise}
+
+\begin{exercise}\label{ex4.5}
+	$\mathfrak{m}^2$ is $\mathfrak{m}$-primary.
+\end{exercise}
+
+\begin{exercise}\label{ex4.6}
+	Use Urysohn's lemma to proof that if $f\left(x_1\right)=f\left(x_2\right)=0$ for all $f\in\mathfrak{q}$, $\mathfrak{q}$ cannot be primary, so there are infinite many minimal prime ideals. Now use \Cref{1.11.2} to proof that $(0)=\sqrt{(0)}=\bigcap\mathfrak{p}$ is the intersection of ALL minimal prime ideals.
+\end{exercise}
+
+\begin{exercise}\label{ex4.7}
+	\begin{enumerate}
+		\item[(ii),(iv),(v)] $(\mathfrak{a}[x])^c=\mathfrak{a}$.
+		\item[(iii)] Let $\overline{f},\overline{g}\in\left(A/\mathfrak{q}\right)[x]$. If $\overline{f}\overline{g}=0$ but $\overline{g}\neq0$, by \Cref{ex1.2.3}, $\overline{a}\overline{f}=0$, so $aa_i\in\mathfrak{q}$. Hence $a_i\in\mathfrak{p}$ and $a_i^{n_i}\in\mathfrak{q}$, so $\overline{a_i}^{n_i}=0$ and use \Cref{ex1.2.2}.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex4.8}
+	$k\left[x_1,\cdots,x_n\right]/\mathfrak{p_i}=k\left[x_{i+1},\cdots,x_n\right]$ integer domain, so $\mathfrak{p}_i$ prime. Note that $\mathfrak{p}_i^n$ is the set of all homogeneous polynomials in $k\left[x_1,\cdots,x_i\right]$ of degree $\geqslant n$.
+\end{exercise}
+
+\begin{exercise}\label{ex4.9}
+	\begin{enumerate}[label=(\roman*),ref=\theexercise(\roman*)]\crefalias{enumi}{exercise}
+		\item $\Leftarrow$: $x$ is contained in all prime ideals containing $(0:a)$, so $x\in\sqrt{(0:a)}$.
+		\item If $\mathfrak{a}\subseteq\mathfrak{p}$ but $\mathfrak{a}^e\subseteq S^{-1}\mathfrak{p}^\prime\subsetneq S^{-1}\mathfrak{p}$, then $\mathfrak{a}\subseteq\mathfrak{a}^{ec}\subseteq\mathfrak{p}^\prime\subsetneq\mathfrak{p}$. If $\mathfrak{b}\subseteq S^{-1}\mathfrak{p}$ but $\mathfrak{b}^c\subseteq\mathfrak{p}^\prime\subsetneq\mathfrak{p}$, use $\mathfrak{b}^{ce}=\mathfrak{b}$ derived from \Cref{3.11.1}. $S^{-1}\mathfrak{p}$ is a prime ideal if $S$ doesn't meet $\mathfrak{p}$.
+		\item $(0:a)=\bigcap\left(\mathfrak{q}_i:a\right)\subseteq\mathfrak{p}$. By \Cref{1.11.2}, $\left(\mathfrak{q}_i:a\right)\subseteq\mathfrak{p}$ for some $i$. Then use \Cref{4.4} and the minimality of $\mathfrak{p}$.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex4.10}
+	\begin{enumerate}
+		\item[(iv)] Let $x\neq0$, $(0:x)\subseteq\mathfrak{p}$ for some $\mathfrak{p}$. If $x\in S_\mathfrak{p}(0)$, then $sx=0$, so $s\in(0:x)$.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex4.11}
+	Note that $x\in S(\mathfrak{a})$ $\Leftrightarrow$ there exists an $s\in S$ such that $sx\in\mathfrak{a}$. Show that $S_\mathfrak{p}(0)$ is contained in all $\mathfrak{p}$-primary ideals.\par
+	If $0=\bigcap\mathfrak{q}_i$ is irredundant, $\sqrt{(0)}$ is the intersection of minimal prime ideals.
+\end{exercise}
+
+\begin{exercise}\label{ex4.12}
+	Use \Cref{3.11.2}. Use \Cref{4.9} to show there are at most $2^n$ different $S(\mathfrak{a})$.
+\end{exercise}
+
+\begin{exercise}\label{ex4.13}
+	\begin{enumerate}[label=(\roman*),ref=\theexercise(\roman*)]\crefalias{enumi}{exercise}
+		\item Use \Cref{ex4.12}.
+		\item Use \Cref{4.8} and \Cref{4.9}.
+		\item Proof that $S_\mathfrak{p}\left(\mathfrak{p}^{(m)}\mathfrak{p}^{(n)}\right)=\mathfrak{p}^{(m+n)}$.
+		\item$\Leftarrow$: Show that $\mathfrak{p}^{(n)}$ is the smallest $\mathfrak{p}$-primary ideal containing $\mathfrak{p}^n$.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex4.14}
+	Let $x\notin\mathfrak{q}$. If $ab\in(\mathfrak{q}:x)$ but $a\notin(\mathfrak{q}:x)$, we have $xab\in\mathfrak{q}$ but $xa\notin\mathfrak{q}$. Thus, $b\in(\mathfrak{q}:xa)=(\mathfrak{q}:x)$ by maximality, and therefore $(\mathfrak{q}:x)$ is prime.
+\end{exercise}
+
+\begin{exercise}\label{ex4.15}
+	Use \Cref{4.9}.
+\end{exercise}
+
+\begin{exercise}\label{ex4.16}
+	Use \Cref{3.11.4} and \Cref{4.9}.
+\end{exercise}
+
+\begin{exercise}\label{ex4.17}
+	
+\end{exercise}
+
+\begin{exercise}\label{ex4.18}
+	\begin{enumerate}
+		\item[(i) $\Rightarrow$ (L1)] By \Cref{4.9}, $S_\mathfrak{p}(\mathfrak{a})=\bigcap\mathfrak{q}_i$. Pick $x\in S_\mathfrak{p}$, then $\mathfrak{q}_i=\left(\mathfrak{q}_i:x\right)$ by \Cref{4.4}.
+		\item[(i) $\Rightarrow$ (L2)] Use \Cref{ex4.12}.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex4.19}
+	Similar to the proof of \Cref{ex4.11}.
+	
+	The goal is to proof that there exists $\mathfrak{a}=\bigcap_{i=1}^n\mathfrak{q}_i$ irredundant, so we need to proof $\mathfrak{q}_i\nsupseteq\bigcap_{j\neq i}\mathfrak{q}_j$. Using the fact that $\mathfrak{uv}\subseteq\mathfrak{q}$ but $\mathfrak{u}\nsubseteq\mathfrak{q}$ $\Rightarrow$ $\mathfrak{v}\subseteq\mathfrak{p}$, we can assume $\mathfrak{b}=\bigcap_{i=1}^{n-1}\mathfrak{q}_i$ irredundant and $\mathfrak{p}_n$ maximal among $\left\{\mathfrak{p}_i\right\}$, so we only need to find $\mathfrak{q}_n\nsupseteq\mathfrak{b}$. If such $\mathfrak{q}_n$ doesn't exist, $\mathfrak{b}\subseteq S_{\mathfrak{p}_n}(0)$. Pick a minimal prime ideal $\mathfrak{p}\subseteq\mathfrak{p}_n$ and use \Cref{ex4.10} and \Cref{1.11.2}.
+\end{exercise}
+
+\begin{exercise}\label{ex4.20}
+	
+\end{exercise}
+
+\begin{exercise}\label{ex4.21}
+	
+\end{exercise}
+
+\begin{exercise}\label{ex4.22}
+	
+\end{exercise}
+
+\begin{exercise}\label{ex4.23}
+	
+\end{exercise}

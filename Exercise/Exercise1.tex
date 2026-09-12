@@ -1,0 +1,156 @@
+\section{Sheaves}
+
+\begin{exercise}\label{ex1.1}
+	Apply the definition on $\mathcal{F}(U)$ and $\mathcal{F}\!\left(\iota_{VU}\right)$.
+\end{exercise}
+
+\begin{exercise}\label{ex1.2}
+	\begin{enumerate}[label=(\alph*),ref=\theexercise(\alph*)]\crefalias{enumi}{exercise}
+		\item\label{ex1.2.1} $\operatorname{im}\!\left(\varphi_x\right)=\operatorname{im}\!\left(\mathcal{F}_x\rightarrow\mathcal{G}_x\right)$, and $(\operatorname{im}\varphi)_x=\displaystyle\varinjlim_{x\ni U}\operatorname{im}\!\left(\mathcal{F}(U)\rightarrow\mathcal{G}(U)\right)$. The diagram
+		\begin{equation*}
+			\begin{tikzcd}
+				\mathcal{F}(U)\arrow[r]\arrow[d,"\varphi_U"]&\mathcal{F}_x\arrow[d,"\varphi_x"]\\
+				\mathcal{G}(U)\arrow[r]&\mathcal{G}_x
+			\end{tikzcd}
+			\qquad\text{can be refined to}\qquad
+			\begin{tikzcd}
+				\mathcal{F}(U)\arrow[r]\arrow[d,"\varphi_U"]&\mathcal{F}_x\arrow[d]\\
+				\operatorname{im}\!\left(\varphi_U\right)\arrow[r]\arrow[d,hook]&\displaystyle\varinjlim_{x\ni U}\operatorname{im}\!\left(\varphi_U\right)\arrow[d]\\
+				\mathcal{G}(U)\arrow[r]&\mathcal{G}_x
+			\end{tikzcd}.
+		\end{equation*}
+		Use \textcolor{cyan}{Atiyah-Macdonald Exercise 2.15(i)} to prove $\displaystyle\varinjlim_{x\ni U}\operatorname{im}\!\left(\varphi_U\right)\subseteq\operatorname{im}\!\left(\varphi_x\right)$ and $\displaystyle\varinjlim_{x\ni U}\operatorname{im}\!\left(\varphi_U\right)\supseteq\operatorname{im}\!\left(\varphi_x\right)$. Use the \textcolor{cyan}{exactness of direct limits} to prove the $\ker$ case. \textcolor{red}{This is also correct for presheaves.}
+		\item\label{ex1.2.2} $\hookrightarrow$: Use \hyperref[ex1.2.1]{(a)} to reduce to $(\ker\varphi)_x=0$ $\Rightarrow$ $\ker\varphi=0$. Let $s\in\mathcal{F}(U)$. For each $x\in U$, $s_x=0$, where $s_x\in\mathcal{F}_x$. By \textcolor{cyan}{Atiyah-Macdonald Exercise 2.15(ii)}, there exists $V_x\ni x$ such that $s|_{V_x}=0$. When $x$ runs over all points of $U$ we have an open cover $\left\{V_x\right\}$. Then use the locality axiom.
+		
+		$\twoheadrightarrow$: Use \hyperref[ex1.2.1]{(a)} to reduce to $(\operatorname{im}\varphi)_x=\mathcal{G}_x$ $\Rightarrow$ $\operatorname{im}\varphi=\mathcal{G}$. Let $t\in\mathcal{G}(U)$. For each $x\in U$, $t_x\in\mathcal{G}_x=(\operatorname{im}\varphi)_x$. By \textcolor{cyan}{Atiyah-Macdonald Exercise 2.15(i)}, there exist $V_x\ni x$ and $s_x\in(\operatorname{im}\varphi)\!\left(V_x\right)$ such that $\left(s_x\right)_x=t_x$. Since $\left(t|_{V_x}\right)_x=t_x$, \textcolor{cyan}{Atiyah-Macdonald Exercise 2.15(i)} again gives $W_x\subseteq V_x$, $x\in W_x$ such that $s_x|_{W_x}=t|_{W_x}$. Thus, we have a family of sections $\left\{s_x|_{W_x}\in(\operatorname{im}\varphi)\!\left(W_x\right)\right\}$ which satisfies $s_x|_{W_x\cap W_y}=t|_{W_x\cap W_y}=s_y|_{W_x\cap W_y}$. Then use the gluing axiom.
+		
+		\textcolor{magenta}{Note that the equation $s_x|_{W_x\cap W_y}=s_y|_{W_x\cap W_y}$ uses the injectiveness of $\operatorname{im}\varphi\hookrightarrow\mathcal{G}$ implicitly.}
+		
+		\textcolor{green!70!black}{Another approach is to use \Cref{1.1} on $(\ker\varphi)_x=0$ and $(\operatorname{im}\varphi)_x=\mathcal{G}_x$.}
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex1.3}
+	\begin{enumerate}[label=(\alph*),ref=\theexercise(\alph*)]\crefalias{enumi}{exercise}
+		\item\label{ex1.3.1} $\Rightarrow$: Use gluing axiom. $\Leftarrow$: Use \Cref{ex1.2.1}.
+		\item\label{ex1.3.2} Let $\varphi:\mathcal{O}_\mathbb{C}\rightarrow\mathcal{O}_{\mathbb{C}^\times}$, $f\mapsto\mathrm{e}^f$ be the sheaf morphism of holomorphic functions. Take $U=\mathbb{C}^\times$, then $\varphi_U:\mathcal{O}_\mathbb{C}(U)\rightarrow\mathcal{O}_{\mathbb{C}^\times}(U)$ cannot be surjective.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex1.4}
+	\begin{enumerate}[label=(\alph*),ref=\theexercise(\alph*)]\crefalias{enumi}{exercise}
+		\item\label{ex1.4.1} If $\varphi^+\!\left(s_1\right)=\varphi^+\!\left(s_2\right)$, $\varphi_x^+\!\left(s_{1,x}\right)=\varphi_x^+\!\left(s_{2,x}\right)$. We also have $\mathcal{F}_x\cong\mathcal{F}_x^+$ by the definition of sheafification. Then use \Cref{ex1.2.2}.
+		\item \textcolor{magenta}{$\operatorname{im}\varphi$ is a presheaf but may not be a sheaf.} By \hyperref[ex1.4.1]{(a)}, $(\operatorname{im}\varphi)^+\rightarrow\mathcal{G}^+=\mathcal{G}$ is injective, so $(\operatorname{im}\varphi)^+$ can be identified as a subsheaf of $\mathcal{G}$.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex1.5}
+	\Cref{1.1} and \Cref{ex1.2.2}.
+\end{exercise}
+
+\begin{exercise}\label{ex1.6}
+	Work on stalks. Use \Cref{ex1.2.1} to find the kernel. \textcolor{green!70!black}{Or use \Cref{1.2}.}
+\end{exercise}
+
+\begin{exercise}\label{ex1.7}
+	Use \Cref{ex1.2.1} to identify the maps on stalks, then use \Cref{1.1}. \textcolor{green!70!black}{Or use \Cref{1.2}.}
+\end{exercise}
+
+\begin{exercise}\label{ex1.8}
+	Denote $0\rightarrow\mathcal{F}^\prime\xrightarrow{\varphi}\mathcal{F}\xrightarrow{\psi}\mathcal{F}^{\prime\prime}$. Use \hyperref[ex1.2.2]{\Cref*{ex1.2.2}$\hookrightarrow$} for injectiveness of $\varphi_U$.
+	
+	Let $s\in\mathcal{F}(U)$ such that $\psi_U(s)=0$. By \hyperref[ex1.2]{\Cref{ex1.2}(c)}, there is $s^\prime\in\mathcal{F}^\prime(U)$ such that $\varphi_x(s^\prime_x)=s_x$. By \textcolor{cyan}{Atiyah-Macdonald Exercise 2.15} and similar to \hyperref[ex1.2.2]{\Cref*{ex1.2.2}$\twoheadrightarrow$}, there is $t_x\in\mathcal{F}\!\left(V_x\right)$ such that $\varphi_{V_x}\!\left(t_x\right)=s|_{V_x}$. Therefore, $\varphi_{V_x\cap V_y}\!\left(t_x|_{V_x\cap V_y}\right)=s|_{V_x\cap V_y}=\varphi_{V_x\cap V_y}\!\left(t_y|_{V_x\cap V_y}\right)$. Due to $\varphi_{V_x\cap V_y}$ is injective, using the gluing axiom of $\mathcal{F}^\prime$, we have $\varphi_{V_x}\left(t|_{V_x}\right)=s|_{V_x}$ for some $t\in U$. Since $\varphi$ is compatible with restriction maps, $\varphi_{V_x}\!\left(t|_{V_x}\right)=\left(\varphi_U(t)\right)\!|_{V_x}$. By the locality axiom of $\mathcal{F}$, $\varphi_U(t)=s$.
+\end{exercise}
+
+\begin{exercise}\label{ex1.9}
+	Define the canonical projection and the canonical injection.
+\end{exercise}
+
+\begin{exercise}\label{ex1.10}
+	$\varphi_U:\varinjlim\mathcal{F}_i(U)\rightarrow\mathcal{G}(U)$ is unique for each $U$. Follow \textcolor{red}{red} $\rightarrow$ \textcolor{orange}{orange} $\rightarrow$ \textcolor{green}{green} $\rightarrow$ \textcolor{cyan}{cyan} $\rightarrow$ \textcolor{blue}{blue} in the left diagram to prove $\varphi$ is compatible with the restriction maps, so $\varphi$ is a morphism of presheaves.
+	\begin{equation*}
+		\begin{tikzcd}
+			\mathcal{F}_i(U)\arrow[rrr,shift right=.2ex,orange]\arrow[rrr,shift left=.2ex,green]\arrow[dr,shift right=.2ex,blue]\arrow[dr,shift left=.2ex,red]\arrow[ddr,cyan]&&&\mathcal{F}_i(V)\arrow[dl,orange]\arrow[ddl,green]\\
+			&\varinjlim\mathcal{F}_i(U)\arrow[r,red]\arrow[d,"\varphi_U",blue]&\varinjlim\mathcal{F}_i(V)\arrow[d,"\varphi_V"',shift right=.2ex,red]\arrow[d,shift left=.2ex,orange]&\\
+			&\mathcal{G}(U)\arrow[r,shift left=.2ex,blue]\arrow[r,shift right=.2ex,cyan]&\mathcal{G}(V)&
+		\end{tikzcd}
+		\hspace{20pt}
+		\begin{tikzcd}
+			\mathcal{F}_i\arrow[d,shift right=.2ex,red]\arrow[d,shift left=.2ex,blue]&\\
+			\varinjlim\mathcal{F}_i\arrow[r,blue]\arrow[d,"\varphi",red]&\left(\varinjlim\mathcal{F}_i\right)^+\arrow[ld,"\overline{\varphi}",blue]&\\
+			\mathcal{G}&
+		\end{tikzcd}
+	\end{equation*}
+	To check it is a sheaf, use \Cref{1.2} to obtain the right diagram.
+\end{exercise}
+
+\begin{exercise}\label{ex1.11}
+	Note that \textcolor{cyan}{Noetherian spaces are quasi-compact}. For the locality part, Let $s,t\in\varinjlim\mathcal{F}_i(U)$ and $s|_{V_k}=t|_{V_k}$. By \textcolor{cyan}{Atiyah-Macdonald Exercise 2.15(i)}, we have $s_{i_k}|_{V_k}\in\mathcal{F}_{i_k}\!\left(V_k\right)$ and $t_{j_k}|_{V_k}\in\mathcal{F}_{j_k}\!\left(V_k\right)$. Find an index $l\geqslant i_k,j_k$ for all $k$ due to there are finitely many $V_k$, so $\mu_l\!\left(s_l|_{V_k}\right)=\mu_l\!\left(t_l|_{V_k}\right)$. By \textcolor{cyan}{Atiyah-Macdonald Exercise 2.15(ii)}, we can find $l^\prime\geqslant l$ such that $s_{l^\prime}|_{V_k}=t_{l^\prime}|_{V_k}$. Then use the locality of $\mathcal{F}_l(U)$. The gluing part is similar.
+\end{exercise}
+
+\begin{exercise}\label{ex1.12}
+	Similar to \Cref{ex1.10}.
+\end{exercise}
+
+\begin{exercise}\label{ex1.13}
+	\begin{enumerate}
+		\item[$\Rightarrow$:] Let $V_t\subseteq E(\mathcal{F})$ be a basic open set, and let $x\in s^{-1}\!\left(V_t\right)$, then $s(x)\in V_t$. By hypothesis, there exist a neighborhood $W\subseteq U$ of $x$ and $r\in\mathcal{F}(W)$ such that $s(y)=r_y$ for all $y\in W$. Take $W^\prime=W\cap V$. For each $y\in W^\prime$, $r_y=t_y\in V_t$, so $W^\prime$ is an open subset of $s^{-1}\!\left(V_t\right)$.
+		\item[$\Leftarrow$:] Since $s(x)\in\mathcal{F}_x$, by \textcolor{cyan}{Atiyah-Macdonald Exercise 2.15(i)}, $s(x)=t_x$ for some $t\in\mathcal{F}(V)$, so $V_t$ is an open neighborhood of $s(x)$, and therefore $s^{-1}\!\left(V_t\right)$ is an open neighborhood of $x$. For every $y\in s^{-1}\!\left(V_t\right)$, by definition we have $s(y)\in V_t$ and $s(y)\in\mathcal{F}_y$, so $s(y)=t_y$.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex1.14}
+	$\mu_U(s)=s_x$. By \textcolor{cyan}{Atiyah-Macdonald Exercise 2.15(ii)}, $\mu_{UV}(s)=\mathcal{F}\!\left(\iota_{VU}\right)(s)=0$ for some $V$.
+\end{exercise}
+
+\begin{exercise}\label{ex1.15}
+	Let $\left\{U_i\right\}$ be an open cover of $U$, and let $\varphi_i:\mathcal{F}|_{U_i}\rightarrow\mathcal{G}|_{U_i}$ such that $\varphi_i|_{U_i\cap U_j}=\varphi_j|_{U_i\cap U_j}$. For each $V\subseteq U$, we have $\mathcal{F}|_U(V)=\mathcal{F}(V)$. Let $s\in\mathcal{F}(V)$ and denote $V_i=V\cap U_i$, then $\varphi_i\!\left(s|_{V_i}\right)\in\mathcal{G}|_{U_i}(V_i)$ satisfy $\left.\varphi_i\!\left(s|_{V_i}\right)\middle|_{V_i\cap V_j}\right.=\left.\varphi_i\middle|_{V_i\cap V_j}\!\left(s|_{V_i\cap V_j}\right)\right.=\left.\varphi_j\!\left(s|_{V_j}\right)\middle|_{V_i\cap V_j}\right.$. Using the gluing property of $\mathcal{G}$ we have a morphism $\varphi_V:\mathcal{F}|_U(V)\rightarrow\mathcal{G}|_U(V)$. Thus there is $\varphi:\mathcal{F}|_U\rightarrow\mathcal{G}|_U$. The locality is similar.
+\end{exercise}
+
+\begin{exercise}\label{ex1.16}
+	\begin{enumerate}[label=(\alph*),ref=\theexercise(\alph*)]\crefalias{enumi}{exercise}
+		\addtocounter{enumi}{1}
+		\item\label{ex1.16.2} Denote $0\rightarrow\mathcal{F}^\prime\xrightarrow{\varphi}\mathcal{F}\xrightarrow{\psi}\mathcal{F}^{\prime\prime}\rightarrow0$. Similar to \Cref{ex1.8}, we have $\psi_{V_x\cap V_y}\!\left(t_x|_{V_x\cap V_y}\right)=\psi_{V_x\cap V_y}\!\left(t_y|_{V_x\cap V_y}\right)$. Since $\operatorname{im}\!\left(\varphi_{V_x\cap V_y}\right)=\ker\!\left(\psi_{V_x\cap V_y}\right)$, there is $r_{xy}\in\mathcal{F}^\prime\!\left(V_x\cap V_y\right)$ such that $\varphi_{V_x\cap V_y}\!\left(r_{xy}\right)=t_x|_{V_x\cap V_y}-t_y|_{V_x\cap V_y}$. By the flasqueness of $\mathcal{F}^\prime$, $\varphi_{V_x}\!\left(r_x\right)|_{V_x\cap V_y}=\varphi_{V_x\cap V_y}\!\left(r_{xy}\right)$ for some $r_x\in\mathcal{F}^\prime\!\left(V_x\right)$. Take $t_x^\prime=t_x-\varphi_{V_x}\!\left(r_x\right)$, then $t_x^\prime$ and $t_y$ are compatible on $V_x\cap V_y$.
+		\item\label{ex1.16.3} Use \hyperref[ex1.16.2]{(b)} and \textcolor{cyan}{five lemma}.
+		\addtocounter{enumi}{1}
+		\item\label{ex1.16.5} If $t\in\mathcal{G}(V)$, let $s|_V=t$ and $s=0$ at $U\backslash V$. Define $\mathcal{F}(U)\rightarrow\mathcal{G}(U)$ to be $s\mapsto\left(x\mapsto s_x\right)$.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex1.17}
+	Prove that if $y\in\overline{\{x\}}$, then $y\in U$ implies $x\in U$. It is a sheaf due to $x$ has to simultaneously be in or not be in all the open sets who make up an open cover.
+\end{exercise}
+
+\begin{exercise}\label{ex1.18}
+	Apply the universal properties of direct limit and of sheafification on the restriction map $\mathcal{F}\!\left(f^{-1}(V)\right)\rightarrow\mathcal{F}(U)$ for $V\supseteq f(U)$. We also have $\displaystyle G(V)\xrightarrow{\mu_V}\varinjlim_{V^\prime\supseteq U^\prime}G\!\left(V^\prime\right)\rightarrow\left(\varinjlim_{V^\prime\supseteq U^\prime}G\!\left(V^\prime\right)\right)^+$ for $V\supseteq U^\prime$, where $U^\prime=f\!\left(f^{-1}(U)\right)$.
+\end{exercise}
+
+\begin{exercise}\label{ex1.19}
+	\begin{enumerate}[label=(\alph*),ref=\theexercise(\alph*)]\crefalias{enumi}{exercise}
+		\item\label{ex1.19.1} $i^{-1}(V)=V\cap Z$, and $V\cap Z$ is open in the subspace $Z$.
+		\item\label{ex1.19.2} Use \Cref{1.1} to prove uniqueness.
+		\item\label{ex1.19.3} Work on stalks.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex1.20}
+	\begin{enumerate}[label=(\alph*),ref=\theexercise(\alph*)]\crefalias{enumi}{exercise}
+		\item\label{ex1.20.1} $\Gamma_{Z\cap U}(U,\mathcal{F}|_U)=\left\{s\in\mathcal{F}(U)\middle|s_x\neq0\text{ for all }x\in Z\cap U\right\}$. Be aware that we only get $s\in \mathcal{F}(U)$ from the gluing axiom, then use support to derive $s\in\Gamma_{Z\cap U}(U,\mathcal{F}|_U)$.
+		\item\label{ex1.20.2} $\displaystyle j_*\!\left(\mathcal{F}|_U\right)(V)=\left(\varinjlim_{W\supseteq U\cap V}\mathcal{F}(W)\right)^+$. Use the following diagram to prove $j_*\!\left(\mathcal{F}|_U\right)(V)=\mathcal{F}(U\cap V)$.
+		\begin{equation*}
+			\begin{tikzcd}
+				\mathcal{F}\!\left(W_x\right)\arrow[d]&\mathcal{F}(V_U)\arrow[rr,"\mu_{V_U}"{description}]\arrow[d]\arrow[l]&&\displaystyle\varinjlim_{U^\prime\supseteq U}\mathcal{F}\!\left(U^\prime\right)\arrow[dll,"\varphi_U"{description}]\\
+				\mathcal{F}_x&\mathcal{F}(U)\arrow[l]&&
+			\end{tikzcd}
+		\end{equation*}
+		Since $\mathcal{F}$ is flasque, $\varphi_U$ is surjective. Let $s_U\in\displaystyle\varinjlim_{U^\prime\supseteq U}\mathcal{F}\!\left(U^\prime\right)$ such that $\varphi_U\!\left(s_U\right)=0$. By \textcolor{cyan}{Atiyah-Macdonald Exercise 2.15(i)}, there is an $s\in\mathcal{F}\!\left(V_U\right)$ such that $\mu_{V_U}(s)=s_U$. Since $s_x=0$ for $x\in U$, by \textcolor{cyan}{Atiyah-Macdonald Exercise 2.15(ii)}, there is a $W_x\subseteq V_U$ such that $s|_{W_x}=0$. Let $W=\bigcup_{x\in U}W_x$. By locality axiom, $s|_W=0$, so $s_U=0$ and therefore $\varphi_U$ is injective.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex1.21}
+	
+\end{exercise}
+
+\begin{exercise}\label{ex1.22}
+	$\mathcal{F}(U)=\left\{\left(s_i\right)\in\prod_{i\in I}\mathcal{F}_i\!\left(U\cap U_i\right)\middle|\varphi_{ij}\!\left(s_i|_{U\cap U_i\cap U_j}\right)=s_j|_{U\cap U_i\cap U_j}\right\}$, $\psi_i:\left(s_j\right)_{j\in I}\mapsto s_i$.
+\end{exercise}

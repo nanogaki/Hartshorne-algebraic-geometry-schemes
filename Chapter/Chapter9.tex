@@ -1,0 +1,59 @@
+\chapter{Discrete Valuation Rings and Dedekind Domain}
+
+\begin{proposition}{9.1}
+	Let $A$ be a Noetherian domain of dimension 1. Then every non-zero ideal $\mathfrak{a}$ in $A$ can be uniquely expressed as a product of primary ideals whose radicals are all distinct.
+\end{proposition}
+
+\section*{DISCRETE VALUATION RINGS}
+
+Let $K$ be a field. A \textcolor{orange}{discrete valuation} on $K$ is a mapping $v$ of $K^*$ onto $\mathbb{Z}$ such that
+\begin{enumerate}[label=\textup{(\arabic*)}]
+	\item $v{xy}=v(x)+v(y)$;
+	\item $v(x+y)\geqslant\min\left(v(x),v(y)\right)$.
+\end{enumerate}
+The set consisting of all $x\in K^*$ such that $v(x)\geqslant0$ called the \textcolor{orange}{valuation ring} of $v$.
+
+An integral domain $A$ is a \textcolor{orange}{discrete valuation ring} if there is a discrete valuation $v$ of its field of fractions $K$ such that $A$ is the valuation ring of $v$.
+
+\begin{proposition}{9.2}
+	Let $A$ be a Noetherian local domain of dimension 1, $\mathfrak{m}$ its maximal ideal. Then the following are equivalent:
+	\begin{enumerate}[label=\textup{(\roman*)},ref=\thepropositiontemp(\roman*)]\crefalias{enumi}{proposition}
+		\item\label{9.2.1} $A$ is a discrete valuation ring;
+		\item\label{9.2.2} $A$ is integrally closed;
+		\item\label{9.2.3} $\mathfrak{m}$ is a principal ideal;
+		\item\label{9.2.4} $\dim_k\left(\mathfrak{m}/\mathfrak{m}^2\right)=1$;
+		\item\label{9.2.5} Every non-zero ideal is a power of $\mathfrak{m}$;
+		\item\label{9.2.6} There exists $x\in A$ such that every non-zero ideal is of the form $\left(x^k\right)$ for $k\geqslant0$.
+	\end{enumerate}
+\end{proposition}
+
+\section*{DEDEKIND DOMAINS}
+
+\begin{theorem}{9.3}
+	Let $A$ be a Noetherian local domain of dimension 1. Then the following are equivalent:
+	\begin{enumerate}[label=\textup{(\roman*)},ref=\thetheoremtemp(\roman*)]\crefalias{enumi}{theorem}
+		\item\label{9.3.1} $A$ is integrally closed;
+		\item\label{9.3.2} Every primary ideal in $A$ is a prime power;
+		\item\label{9.3.3} Every local ring $A_\mathfrak{p}$ with $\mathfrak{p}\neq0$ is a discrete valuation ring.
+	\end{enumerate}
+	A ring satisfying the conditions is called a \textcolor{orange}{Dedekind domain}.
+\end{theorem}
+
+\section*{FRACTIONAL IDEALS}
+
+Let $A$ be an integral domain, $K$ its field of fractions. An $A$-submodule $M$ of $K$ is a \textcolor{orange}{fractional ideal} of $A$ if $xM\subseteq A$ for some $x\neq0$.
+
+An $A$-submodule $M$ of $K$ is an \textcolor{orange}{invertible ideal} if there exists a submodule $N$ of $K$ such that $MN=A$. Then $N=(A:M)$, and $M$ is finitely generated fractional ideal.
+
+\begin{proposition}{9.6}
+	For a fractional ideal $M$, the following are equivalent:
+	\begin{enumerate}[label=\textup{(\roman*)}]
+		\item $M$ is invertible;
+		\item $M$ is finitely generated and , for each prime ideal $\mathfrak{p}$, $M_\mathfrak{p}$ is invertible;
+		\item $M$ is finitely generated and , for each maximal ideal $\mathfrak{m}$, $M_\mathfrak{m}$ is invertible;
+	\end{enumerate}
+\end{proposition}
+
+\begin{theorem}{9.8}
+	Let $A$ be an integral domain. Then $A$ is a Dedekind domain $\Leftrightarrow$ every non-zero fractional ideal of $A$ is invertible.
+\end{theorem}

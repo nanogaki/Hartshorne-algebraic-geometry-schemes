@@ -1,0 +1,89 @@
+\chapter{Separated and Proper Morphisms}
+
+\section*{SEPARATED MORPHISMS}
+
+\begin{definition}
+	Let $f:X\rightarrow Y$ be the morphism of schemes. The \textcolor{orange}{diagonal morphism} is the unique morphism $\Delta:X\rightarrow X\times_YX$ satisfying $\pi_k\circ\Delta=\mathrm{id}_X$ for $k=1,2$, where $\pi_k:X\times_YX\rightarrow X$ is the canonical projection to the $k$-th component.
+\end{definition}
+
+\begin{definition}
+	A morphism $f:X\rightarrow Y$ is \textcolor{orange}{separated} if the diagonal morphism $\Delta$ is a closed immersion.
+	
+	A morphism $f:X\rightarrow Y$ is \textcolor{orange}{quasi-separated} if the diagonal morphism $\Delta$ is quasi-compact. 
+\end{definition}
+	
+\begin{definition}
+	A scheme $X$ is \textcolor{orange}{separated over $Y$} if there exists a separated morphism $f:X\rightarrow Y$. A scheme $X$ is said to be \textcolor{orange}{separated} if it is separated over $\operatorname{Spec}\mathbb{Z}$.
+\end{definition}
+
+\begin{proposition}{4.1}
+	Any morphism between affine schemes is separated.
+\end{proposition}
+
+\begin{corollary}{4.2}
+	A morphism $f:X\rightarrow Y$ is separated iff the image of the diagonal morphism is a closed subset of $X\times_YX$.
+\end{corollary}
+
+\begin{theorem}{4.3}[\textcolor{red}{Valuative criterion of separatedness}]
+	Let $f:X\rightarrow Y$ be a morphism of schemes. Then the following are equivalent:
+	\begin{enumerate}[label=\textup{(\roman*)}]
+		\item $f$ is separated;
+		\item $f$ is quasi-separated, and for every valuation ring $R$ with fraction field $K$, every morphism $\operatorname{Spec}R\rightarrow Y$, and every morphism $\operatorname{Spec}K\rightarrow X$, there exists at most one morphism $h:\operatorname{Spec}R\rightarrow X$ such that the diagram
+		\begin{equation*}
+			\begin{tikzcd}
+				\operatorname{Spec}K\arrow[r]\arrow[d,"i"]&X\arrow[d,"f"]\\
+				\operatorname{Spec}R\arrow[ur,"h"]\arrow[r]&Y
+			\end{tikzcd}
+		\end{equation*}
+		commutes.
+	\end{enumerate}
+\end{theorem}
+
+\section*{PROPER MORPHISMS}
+
+\begin{definition}
+	A morphism $f:X\rightarrow Y$ \textcolor{orange}{universally closed} if for every scheme $Z$ with a morphism $Z\rightarrow Y$, the projection from the fiber product $X\times_YZ\rightarrow Z$ is a closed map of the underlying topological spaces.
+\end{definition}
+
+\begin{definition}
+	A morphism $f:X\rightarrow Y$ is \textcolor{orange}{proper} if it is separated, of finite type, and universally closed.
+\end{definition}
+
+\begin{theorem}{4.7}[\textcolor{red}{Valuative criterion of properness}]
+	Let $f:X\rightarrow Y$ be a morphism of schemes. Then the following are equivalent:
+	\begin{enumerate}[label=\textup{(\roman*)}]
+		\item $f$ is proper;
+		\item $f$ is quasi separated and of finite type, and for every valuation ring $R$ with fraction field $K$, every morphism $\operatorname{Spec}R\rightarrow Y$, and every morphism $\operatorname{Spec}K\rightarrow X$, there exists a unique morphism $h:\operatorname{Spec}R\rightarrow X$ such that the diagram
+		\begin{equation*}
+			\begin{tikzcd}
+				\operatorname{Spec}K\arrow[r]\arrow[d,"i"]&X\arrow[d,"f"]\\
+				\operatorname{Spec}R\arrow[ur,"h"]\arrow[r]&Y
+			\end{tikzcd}
+		\end{equation*}
+		commutes.
+	\end{enumerate}
+\end{theorem}
+
+\begin{definition}
+	Let $Y$ be a scheme. The \textcolor{orange}{projective $n$-space over $Y$} is $\mathbb{P}_\mathbb{Z}^n\times_{\operatorname{Spec}\mathbb{Z}}Y$, denoted by \textcolor{orange}{$\mathbb{P}_Y^n$}.
+	
+	A morphism $f:X\rightarrow Y$ of schemes is \textcolor{orange}{projective} if it factors into $X\xrightarrow{i}\mathbb{P}_Y^n\xrightarrow{\pi}Y$, where $i$ is a closed immersion and $\pi$ is the canonical projection.
+	
+	A morphism $f:X\rightarrow Y$ of schemes is \textcolor{orange}{quasi-projective} if it factors into $X\xrightarrow{j}X^\prime\xrightarrow{g}Y$, where $j$ is an open immersion and $g$ is a projective morphism.
+\end{definition}
+
+\begin{theorem}{4.9}
+	A projective morphism of Noetherian schemes is proper. A quasi-projective morphism of Noetherian schemes is of finite type and separated.
+\end{theorem}
+
+\begin{proposition}{4.10}
+	Let $k$ be an algebraically closed field. The image of the functor $t:\mathbf{Var}(k)\rightarrow\mathbf{Sch}(k)$ is the set of quasi-projective integral schemes over $k$. The image of the set of projective varieties is the set of projective integral schemes.
+\end{proposition}
+
+\begin{definition}
+	An \textcolor{orange}{abstract variety} is an integral separated scheme of finite type over an algebraically closed field $k$.
+	
+	A \textcolor{orange}{complete variety} is an abstract variety which is proper over the field $k$.
+\end{definition}
+
+\section*{DEFINITIONS AND PROPOSITIONS FROM EXERCISES}

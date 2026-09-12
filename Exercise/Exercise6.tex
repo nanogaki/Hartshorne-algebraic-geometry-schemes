@@ -1,0 +1,55 @@
+\section{Chain Conditions}
+
+\begin{exercise}\label{ex6.1}
+	\begin{enumerate}[label=(\roman*),ref=\theexercise(\roman*)]\crefalias{enumi}{exercise}
+		\item Let $x\in\ker(u)$. Since $u^n$ surjective, there is a $y\in M$ such that $u^n(y)=x$. But $u^{n+1}(y)=u(x)=0$, means that $y\in\ker\left(u^{n+1}\right)=\ker\left(u^n\right)$.
+		\item Let $x\in M$. Then $u^n(x)\in\operatorname{im}\left(u^n\right)=\operatorname{im}\left(u^{n+1}\right)$, so there is a $y\in M$ such that $u^{n+1}(y)=u^n(x)$. But $u^n$ injective, means that $u(y)=x$.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex6.2}
+	If $M$ is not Noetherian, there is a submodule $N$ which is not finitely generated. Construct a chain of finitely generated submodules by the generators of $N$.
+\end{exercise}
+
+\begin{exercise}\label{ex6.3}
+	Consider $0\rightarrow N_2/\left(N_1\cap N_2\right)\rightarrow M/\left(N_1\cap N_2\right)\rightarrow M/N_2\rightarrow0$. Use \Cref{2.1}.
+\end{exercise}
+
+\begin{exercise}\label{ex6.4}
+	Let $m_1,\cdots,m_n$ be generators of $M$, then $\mathfrak{a}=\bigcap\operatorname{Ann}\left(m_i\right)$. $A/\operatorname{Ann}\left(m_i\right)\cong Am_i\subseteq M$, then use \Cref{ex6.3}.
+\end{exercise}
+
+\begin{exercise}\label{ex6.5}
+	Use the open set definition.
+\end{exercise}
+
+\begin{exercise}\label{ex6.6}
+	\begin{enumerate}
+		\item[(i) $\Rightarrow$ (iii)] Use \Cref{ex6.5}.
+		\item[(ii) $\Rightarrow$ (i)] Consider a chain of ascending open sets in $X$.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}\label{ex6.7}
+	Let $\Sigma$ be the collection of closed subsets of $X$ which are not finite union of irreducible closed subspaces. Then $\Sigma$ has minimal element $X_0$. Proof that $X_0$ cannot be either irreducible or reducible.
+\end{exercise}
+
+\begin{exercise}\label{ex6.8}
+	The converse isn't true. The counter example is $k[x_1,\cdots]/\left(x_1^2,\cdots\right)$.
+\end{exercise}
+
+\begin{exercise}\label{ex6.9}
+	The irreducible components of $\operatorname{Spec}(A)$ is $V(\mathfrak{p})$ where $\mathfrak{p}$ minimal (\Cref{ex1.20.4}).
+\end{exercise}
+
+\begin{exercise}\label{ex6.10}
+	Use \Cref{ex3.19.5}.
+\end{exercise}
+
+\begin{exercise}\label{ex6.11}
+	By \Cref{ex6.7}, $V(\mathfrak{b})$ is a finite union of $V(\mathfrak{q}_i)$, where $\mathfrak{q}_i$ minimal and containing $\mathfrak{b}$. Then use \hyperref[ex5.10]{\Cref*{ex5.10}(c)}.
+\end{exercise}
+
+\begin{exercise}\label{ex6.12}
+	The converse isn't true. A counter example is an infinite product $\prod\mathbb{Z}/2\mathbb{Z}$.
+\end{exercise}

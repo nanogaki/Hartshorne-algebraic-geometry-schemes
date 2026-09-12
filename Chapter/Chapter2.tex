@@ -1,0 +1,66 @@
+\chapter{Schemes}
+
+\section*{RINGED SPACES}
+
+\begin{definition}
+	A \textcolor{orange}{ringed space} is a pair $\left(X,\mathcal{O}_X\right)$ consisting of a topological space $X$ and a sheaf of rings $\mathcal{O}_X:\mathbf{Open}(X)^\text{op}\rightarrow\mathbf{Ring}$. The sheaf $\mathcal{O}_X$ is called the \textcolor{orange}{structure sheaf} of $\left(X,\mathcal{O}_X\right)$.
+	
+	A ringed space $\left(X,\mathcal{O}_X\right)$ is called a \textcolor{orange}{locally ringed space} if the stalk $\mathcal{O}_{X,x}$ is a local ring for every point $x\in X$.
+\end{definition}
+
+\begin{definition}
+	A \textcolor{orange}{morphism of ringed spaces} from $\left(X,\mathcal{O}_X\right)$ to $\left(Y,\mathcal{O}_Y\right)$ is a pair $\left(f,f^\#\right)$ consisting of a continuous map $f:X\rightarrow Y$ and a map $f^\#:\mathcal{O}_Y\rightarrow f_*\mathcal{O}_X$ of sheaves of rings on $Y$.
+	
+	A homomorphism of local rings $\varphi:A\rightarrow B$ is called a \textcolor{orange}{local homomorphism} if $\varphi^{-1}\!\left(\mathfrak{m}_B\right)=\mathfrak{m}_A$.
+	
+	A \textcolor{orange}{morphism of locally ringed spaces} is a morphism $\left(f,f^\#\right)$ of ringed spaces such that each induced homomorphism $f^\#_x:\mathcal{O}_{Y,f(x)}\rightarrow\mathcal{O}_{X,x}$ of local rings is a local homomorphism.
+	
+	An isomorphism is defined to be a morphism having a two-sided inverse.
+\end{definition}
+
+For any ring $R$, $\operatorname{Spec}(R)$ is a ringed space (\textcolor{blue}{Atiyah-Macdonald Exercise 3.24}). Consider the inclusion map $\mathbb{Z}_{(p)}\hookrightarrow\mathbb{Q}$ which induces a morphism of ringed spaces $f:\operatorname{Spec}(\mathbb{Q})\rightarrow\operatorname{Spec}\!\left(\mathbb{Z}_{(p)}\right)$. However, there is another morphism $g:\operatorname{Spec}(\mathbb{Q})\rightarrow\operatorname{Spec}\!\left(\mathbb{Z}_{(p)}\right)$ defined by $(0)\mapsto(p)$. To exclude such examples, we must restrict our attention to morphisms of locally ringed spaces.
+
+\section*{SCHEMES}
+
+\begin{definition}
+	An \textcolor{orange}{affine scheme} is a locally ringed space $\left(X,\mathcal{O}_X\right)$ that is isomorphic (as a locally ringed space) to $\left(\operatorname{Spec}(R),\mathcal{O}_{\operatorname{Spec}(R)}\right)$ for some ring $R$.
+	
+	A \textcolor{orange}{scheme} is a locally ringed space $\left(X,\mathcal{O}_X\right)$ admitting an open cover $\left\{U_i\right\}$ of $X$ such that each open subscheme $\left(U_i,\mathcal{O}_X|_{U_i}\right)$ is an affine scheme.
+	
+	A \textcolor{orange}{morphism of schemes} is a morphism as locally ringed spaces.
+
+	Denote \textcolor{orange}{$\operatorname{sp}(X)$} to be the underlying topological space of a scheme $\left(X,\mathcal{O}_X\right)$.
+\end{definition}
+
+Let $S=\bigoplus_{n\geqslant0}S_n$ be a graded ring. Define \textcolor{orange}{$\operatorname{Proj}(S)$} to be the set of all homogeneous prime ideals of $S$ that do not contain the irrelevant ideal $S_+=\bigoplus_{n>0}S_n$. Define a topology on $\operatorname{Proj}(S)$ by taking the closed subsets to be of the form $V(\mathfrak{a})$ for any homogeneous ideal $\mathfrak{a}$.
+
+\begin{proposition}{2.5}
+	For any homogeneous element $f\in S_+$, let $D_+(f)=\left\{\mathfrak{p}\in\operatorname{Proj}(S)\mid f\notin\mathfrak{p}\right\}$ be the basic open set, and let $\mathcal{O}_{\operatorname{Proj}(S)}\!\left(D_+(f)\right)=S_{(f)}$ where $S_{(f)}$ is the degree 0 part of the localization $S_f$ ($x/f^k\in S_{(f)}$ means $\deg x=k\deg f$). Then $\left(\operatorname{Proj}(S),\mathcal{O}_{\operatorname{Proj}(S)}\right)$ is a scheme.
+\end{proposition}
+
+\begin{definition}
+	Let $S$ be a fixed scheme. A \textcolor{orange}{scheme over $S$} is a scheme $X$, together with a morphism $X\rightarrow S$.
+	
+	If $X$ and $Y$ are schemes over $S$, an \textcolor{orange}{$S$-morphism} of $X$ to $Y$ is a morphism $f:X\rightarrow Y$ such that the diagram
+	\begin{equation*}
+		\begin{tikzcd}
+			X\arrow[r,"f"]\arrow[d]&Y\arrow[ld]\\
+			S
+		\end{tikzcd}
+	\end{equation*}
+	commutes.
+	
+	Denote \textcolor{orange}{$\mathbf{Sch}$} to be the category of schemes, and \textcolor{orange}{$\mathbf{Sch}(S)$} to be the category of schemes over $S$.
+	
+	If $R$ is a ring, denote \textcolor{orange}{$\mathbf{Sch}(R)$} to be the category of schemes over $\operatorname{Spec}(R)$.
+\end{definition}
+
+\begin{proposition}{2.6}
+	Let $k$ be an algebraically closed field. There is a natural fully faithful functor $t:\mathbf{Var}(k)\rightarrow\mathbf{Sch}(k)$ from the category of varieties over $k$ to schemes over $k$. For any variety $V$, its topological space is homeomorphic to the set of closed points of $\operatorname{sp}(t(V))$, and its sheaf of regular functions is obtained by restricting the structure sheaf of $t(V)$ via this homeomorphism.
+\end{proposition}
+
+\section*{DEFINITIONS AND PROPOSITIONS FROM EXERCISES}
+
+\begin{definition}
+	Let $X$ be scheme. The \textcolor{orange}{residue field} of $x$ on $X$ is the field $k(x)=\mathcal{O}_{X,x}/\mathfrak{m}_x$.
+\end{definition}

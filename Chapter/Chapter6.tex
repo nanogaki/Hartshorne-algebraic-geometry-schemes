@@ -1,0 +1,49 @@
+\chapter{Chain Conditions}
+
+Let $\Sigma$ be a partially ordered set. $\Sigma$ said to be satisfying the \textcolor{orange}{ascending chain condition} (\textcolor{orange}{a.c.c}) if, for every increasing sequence $x_1\leqslant x_2\leqslant\cdots$ in $\Sigma$ there exists $n$ such that $x_n=x_{n+1}=\cdots$.
+
+Similarly, $\Sigma$ said to be satisfying the \textcolor{orange}{descending chain condition} (\textcolor{orange}{d.c.c}) if, for every decreasing sequence $x_1\geqslant x_2\geqslant\cdots$ in $\Sigma$ there exists $n$ such that $x_n=x_{n+1}=\cdots$.
+
+A module satisfying the ascending chain condition is said to be \textcolor{orange}{Noetherian}. A module satisfying the descending chain condition is said to be \textcolor{orange}{Artinian}.
+
+\begin{proposition}{6.2}
+	$M$ is a Noetherian $A$-module $\Leftrightarrow$ every submodule of $M$ is finitely generated.
+\end{proposition}
+
+\begin{proposition}{6.3}
+	Let $0\rightarrow M^\prime\rightarrow M\rightarrow M^{\prime\prime}\rightarrow0$ be an exact sequence of $A$-modules. Then
+	\begin{enumerate}[label=\textup{(\roman*)}]
+		\item $M$ is Noetherian $\Leftrightarrow$ $M^\prime$ and $M^{\prime\prime}$ are Noetherian.
+		\item $M$ is Artinian $\Leftrightarrow$ $M^\prime$ and $M^{\prime\prime}$ are Artinian.
+	\end{enumerate}
+\end{proposition}
+
+\begin{proposition}{6.5}
+	Let $A$ be a Noetherian (resp. Artinian) ring, $M$ a finitely generated $A$-module. Then $M$ is Noetherian (resp. Artinian).
+\end{proposition}
+
+\begin{definition}
+	A \textcolor{orange}{chain} of submodules of a module $M$ is a sequence $\left(M_i\right)$ of submodules of $M$ such that
+	\begin{equation*}
+		M=M_0\supsetneq M_1\supsetneq\cdots\supsetneq M_n=0.
+	\end{equation*}
+	The \textcolor{orange}{length} of the chain is $n$. A \textcolor{orange}{composition series} of $M$ is a maximal chain, that is one which no extra submodules can be inserted, or equivalently $M_{i-1}/M_i$ is simple.
+\end{definition}
+
+\begin{proposition}{6.7}
+	Suppose that $M$ has a composition series of length $n$. Then every composition series of $M$ has length $n$, and every chain can be extended to a composition series.
+\end{proposition}
+
+The length of a composition series of $M$ is called the \textcolor{orange}{length} of $M$, denoted as $l(M)$.
+
+\begin{proposition}{6.10}
+	For a vector space, 
+	\begin{center}
+		finite dimension $\Longleftrightarrow$ finite length $\Longleftrightarrow$ a.c.c. $\Longleftrightarrow$ d.c.c..
+	\end{center}
+	If the conditions are satisfied, length equals dimension.
+\end{proposition}
+
+\section*{DEFINITIONS AND PROPOSITIONS FROM EXERCISES}
+
+A topological space $X$ is said to be \textcolor{orange}{Noetherian} if the open subsets of $X$ satisfy the ascending chain condition. Or equivalently, the closed subsets satisfy descending chain condition.

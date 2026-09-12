@@ -1,0 +1,93 @@
+\chapter{First Properties of Schemes}
+
+\section*{SCHEMES}
+
+\begin{definition}
+	A scheme is \textcolor{orange}{connected} if its topological space is connected.
+	
+	In particular, an affine scheme $\operatorname{Spec}R$ is connected iff $R$ has no idepotent elements.
+\end{definition}
+
+\begin{definition}
+	A scheme $X$ is \textcolor{orange}{reduced} if for every open set $U$, the ring $\mathcal{O}_X(U)$ has no nilpotent elements.
+	
+	A scheme is \textcolor{orange}{irreducible} if its topological space is irreducible.
+	
+	A scheme $X$ is \textcolor{orange}{integral} if for every open set $U\subseteq X$, the ring $\mathcal{O}_X(U)$ is an integral domain.
+\end{definition}
+
+\begin{proposition}{3.1}
+	A scheme is integral iff it is both reduced and irreducible.
+\end{proposition}
+
+\begin{definition}
+	A scheme is \textcolor{orange}{locally Noetherian} if it can be covered by open affine subset $\operatorname{Spec}\!\left(A_i\right)$, where each $A_i$ is Noetherian.
+	
+	A scheme is \textcolor{orange}{Noetherian} if it is locally Noetherian and quasi-compact.
+\end{definition}
+
+\begin{proposition}{3.2}
+	A scheme is locally Noetherian iff for every open affine subset $U=\operatorname{Spec}A$, $A$ is a Noetherian ring.
+\end{proposition}
+
+\section*{MORPHISMS}
+
+\begin{definition}
+	A morphism $f:X\rightarrow Y$ is \textcolor{orange}{locally of finite type}, if there exists a covering of $Y$ by open affine subsets $V_i=\operatorname{Spec}\!\left(B_i\right)$, such that for each $i$, $f^{-1}\!\left(V_i\right)$ can be covered by open affine subsets $U_{ij}=\operatorname{Spec}\!\left(A_{ij}\right)$, where each $A_{ij}$ is a finitely generated $B_i$-algebra.
+	
+	The morphism $f$ is of \textcolor{orange}{finite type} if in addition for each $i$, the cover $\left\{U_{ij}\right\}$ has a finite subcover.
+
+\end{definition}
+
+\begin{definition}
+	A morphism $f:X\rightarrow Y$ is \textcolor{orange}{finite}, if there exists a covering of $Y$ by open affine subsets $V_i=\operatorname{Spec\!}\left(B_i\right)$, such that for each $i$, $f^{-1}\!\left(V_i\right)$ can be convered by open affine subsets $U_{ij}=\operatorname{Spec}\!\left(A_{ij}\right)$, where each $A_{ij}$ is a finitely generated $B_i$-module.
+	
+	{
+	\setlist[enumerate]{itemsep=0pt,topsep=0pt,parsep=0pt}
+	A morphism $f:X\rightarrow Y$ is \textcolor{orange}{quasi-finite}, if \tabto{9cm}\textcolor{magenta}{Inequivalent definitions}
+	\begin{enumerate}[label=\textup{(\roman*)},ref=(\roman*)]
+		\item\label{quasifinite1} for every point $y\in Y$, $f^{-1}(y)$ is a finite set. \tabto{8cm}\textcolor{magenta}{Hartshorne}
+		\item\label{quasifinite2} \labelcref{quasifinite1} plus $f^{-1}(y)$ is a discrete set. \tabto{8cm}\textcolor{magenta}{Grothendieck SGA}
+		\item\label{quasifinite3} \labelcref{quasifinite2} plus $f$ is of finite type. \tabto{8cm}\textcolor{magenta}{Grothendieck EGA}
+	\end{enumerate}
+	}
+\end{definition}
+
+\begin{definition}
+	An \textcolor{orange}{open subscheme} of a scheme $X$ is an open subset $U$ with structure sheaf $\mathcal{O}_X|_U$.
+	
+	An \textcolor{orange}{open immersion} is a morphism $f:X\rightarrow Y$ which induces an isomorphism of $X$ with an open subscheme of $Y$.
+\end{definition}
+
+\begin{definition}
+	A \textcolor{orange}{closed immersion} is a morphism $f:Y\rightarrow X$ such that $f$ induces a homeomorphism from $\operatorname{sp}(Y)$ to a closed subset of $\operatorname{sp}(X)$, and the induced map $f^\#:\mathcal{O}_X\rightarrow f_*\mathcal{O}_Y$ is surjective.
+	
+	A \textcolor{orange}{closed subscheme} of a scheme $X$ is an equivalence class of closed immersions, where $f:Y\rightarrow X$ and $f^\prime:Y^\prime\rightarrow X$ are equivalent if there is an isomorphism $i:Y^\prime\rightarrow Y$ such that $f^\prime=f\circ i$.
+\end{definition}
+
+\section*{DIMENSION AND PRODUCTS}
+
+\begin{definition}
+	The \textcolor{orange}{dimension} of a scheme $X$ is its dimension as a topological space.
+	
+	If $Z$ is an irreducible closed subset of $X$, the \textcolor{orange}{codimension} $\operatorname{codim}(Z,X)$ is the supremum of integers $n$ such that there exists a chain
+	\begin{equation*}
+		Z=Z_0<Z_1<\cdots<Z_n
+	\end{equation*}
+	of distinct closed irreducible subsets of $X$. If $Y$ is any closed subset of $X$, define
+	\begin{equation*}
+		\operatorname{codim}(Y,X)=\inf_{Z\subseteq Y}\operatorname{codim}(Z,X),
+	\end{equation*}
+	where the infimum is taken over all closed irreducible subsets of $Y$.
+\end{definition}
+
+\begin{definition}
+	Let $S$ be a scheme, and let $X$, $Y$ be schemes over $S$. The \textcolor{orange}{fiber product} of $X$ and $Y$ over $S$ is the categorical product of $X$ and $Y$ in $\mathbf{Sch}(S)$, equivalently, the pullback of the morphism $X\rightarrow S$ and $Y\rightarrow S$ in $\mathbf{Sch}$. We denote the fiber product by \textcolor{orange}{$X\times_SY$}.
+\end{definition}
+
+
+\section*{DEFINITIONS AND PROPOSITIONS FROM EXERCISES}
+
+\begin{definition}
+	A morphism $f:X\rightarrow Y$ is \textcolor{orange}{quasi-compact} if the inverse image of open quasi-compact subset of $Y$ is quasi-compact on $X$.
+\end{definition}

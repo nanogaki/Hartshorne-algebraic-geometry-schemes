@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.29)  12 SEP 2026 00:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.29)  18 SEP 2026 06:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -915,14 +915,8 @@ chapter 9.
 
 ]) [16] (Exercise/Exercise1.tex [17
 
-] [18]) (Exercise/Exercise2.tex
-
-LaTeX Warning: Reference `2.15' on page 1 undefined on input line 33.
-
-
-LaTeX Warning: Reference `2.4' on page 1 undefined on input line 48.
-
-[19]) (Exercise/Exercise3.tex
+] [18]) (Exercise/Exercise2.tex [19])
+(Exercise/Exercise3.tex
 
 LaTeX Warning: Reference `1.9' on page 1 undefined on input line 8.
 
@@ -947,10 +941,10 @@ LaTeX Warning: Reference `3.8' on page 1 undefined on input line 76.
 
 LaTeX Warning: Reference `3.8' on page 1 undefined on input line 80.
 
+[20]
 
 LaTeX Warning: Reference `1.17' on page 1 undefined on input line 92.
 
-[20]
 
 LaTeX Warning: Reference `2.15' on page 1 undefined on input line 107.
 
@@ -969,13 +963,14 @@ LaTeX Warning: Reference `2.15' on page 1 undefined on input line 132.
 
 LaTeX Warning: Reference `ex1.17.5' on page 1 undefined on input line 149.
 
+[21]
 
 LaTeX Warning: Reference `ex2.20' on page 1 undefined on input line 166.
 
 
 LaTeX Warning: Reference `ex2.21' on page 1 undefined on input line 166.
 
-[21]) (Exercise/Exercise4.tex
+) (Exercise/Exercise4.tex
 
 LaTeX Warning: Reference `1.11.2' on page 1 undefined on input line 24.
 
@@ -1003,10 +998,11 @@ LaTeX Warning: Reference `3.11.4' on page 1 undefined on input line 79.
 
 LaTeX Warning: Reference `4.4' on page 1 undefined on input line 88.
 
+[22]
 
 LaTeX Warning: Reference `1.11.2' on page 1 undefined on input line 96.
 
-[22]) (Exercise/Exercise5.tex
+) (Exercise/Exercise5.tex
 
 LaTeX Warning: Reference `5.10' on page 1 undefined on input line 4.
 
@@ -1057,21 +1053,21 @@ t $\OML/cmm/m/it/10.95 B \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 A []$\OT1/cmr
 
 LaTeX Warning: Reference `5.7' on page 1 undefined on input line 128.
 
+[24]
 
 LaTeX Warning: Reference `5.21' on page 1 undefined on input line 142.
 
-[24]) (Exercise/Exercise6.tex
+) (Exercise/Exercise6.tex
 
 LaTeX Warning: Reference `2.1' on page 1 undefined on input line 15.
 
 
 LaTeX Warning: Reference `ex1.20.4' on page 1 undefined on input line 42.
 
-) (Exercise/Exercise7.tex
+[25]) (Exercise/Exercise7.tex
 
 LaTeX Warning: Reference `ex1.5.2' on page 1 undefined on input line 9.
 
-[25]
 
 LaTeX Warning: Reference `4.8' on page 1 undefined on input line 16.
 
@@ -1084,21 +1080,22 @@ LaTeX Warning: Reference `ex1.5.1' on page 1 undefined on input line 25.
 
 LaTeX Warning: Reference `3.8' on page 1 undefined on input line 49.
 
+[26]
 
 LaTeX Warning: Reference `3.10' on page 1 undefined on input line 85.
 
-[26]) (Exercise/Exercise8.tex
+) (Exercise/Exercise8.tex
 
 LaTeX Warning: Reference `5.7' on page 1 undefined on input line 31.
 
+[27]
 
-LaTeX Warning: Hyper reference `noethernormalization' on page 27 undefined on i
+LaTeX Warning: Hyper reference `noethernormalization' on page 28 undefined on i
 nput line 37.
 
 
 LaTeX Warning: Reference `1.10' on page 1 undefined on input line 39.
 
-[27]
 
 LaTeX Warning: Reference `3.11.1' on page 1 undefined on input line 47.
 
@@ -1143,36 +1140,21 @@ LaTeX Warning: Reference `3.8' on page 1 undefined on input line 51.
 
 ) [28] (Summary/Summary.tex
 
-LaTeX Warning: Hyper reference `sanotion' on page 29 undefined on input line 17
+LaTeX Warning: Hyper reference `sanotion' on page 29 undefined on input line 13
 .
 
 
-LaTeX Warning: Reference `4.4' on page 1 undefined on input line 23.
+LaTeX Warning: Reference `4.4' on page 1 undefined on input line 19.
 
 
-LaTeX Warning: Reference `4.8' on page 1 undefined on input line 23.
+LaTeX Warning: Reference `4.8' on page 1 undefined on input line 19.
 
 
-LaTeX Warning: Hyper reference `5.10' on page 29 undefined on input line 31.
+LaTeX Warning: Hyper reference `5.10' on page 29 undefined on input line 27.
 
 
 LaTeX Warning: Hyper reference `noethernormalization' on page 29 undefined on i
-nput line 31.
-
-
-LaTeX Warning: Reference `10.13' on page 1 undefined on input line 53.
-
-
-LaTeX Warning: Reference `10.15' on page 1 undefined on input line 53.
-
-
-LaTeX Warning: Hyper reference `10.17' on page 29 undefined on input line 53.
-
-
-LaTeX Warning: Hyper reference `ex10.9' on page 29 undefined on input line 57.
-
-
-LaTeX Warning: Hyper reference `11.14' on page 29 undefined on input line 61.
+nput line 27.
 
 ) [29] (Note.aux)
  ***********
@@ -1185,10 +1167,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 29451 strings out of 467870
- 581031 string characters out of 5428425
- 1130150 words of memory out of 5000000
- 57493 multiletter control sequences out of 15000+600000
+ 29423 strings out of 467870
+ 579945 string characters out of 5428425
+ 1126727 words of memory out of 5000000
+ 57450 multiletter control sequences out of 15000+600000
  640644 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  124i,28n,121p,11233b,1278s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1212,9 +1194,9 @@ am Files/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><D:/Program Files/
 MiKTeX/fonts/type1/public/amsfonts/euler/eufm7.pfb><D:/Program Files/MiKTeX/fon
 ts/type1/public/amsfonts/symbols/msam10.pfb><D:/Program Files/MiKTeX/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Note.pdf (29 pages, 457858 bytes).
+Output written on Note.pdf (29 pages, 466918 bytes).
 PDF statistics:
- 885 PDF objects out of 1000 (max. 8388607)
- 361 named destinations out of 1000 (max. 500000)
+ 902 PDF objects out of 1000 (max. 8388607)
+ 376 named destinations out of 1000 (max. 500000)
  173 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -5,81 +5,89 @@
 \end{exercise}
 
 \begin{exercise}\label{ex2.2}
-	Let $X=\bigcup_iV_i$ and each $\left(V_i,\mathcal{O}_X|_{V_i}\right)$ is an affine scheme $\operatorname{Spec}\!\left(A_i\right)$. Since $U=\bigcup_jU_{f_j}$ is the union of some basic open sets, use \Cref{ex2.1} so $\left(V_i\cap U_{f_j},\mathcal{O}_X|_{V_i\cap U_{f_j}}\right)$ is $\operatorname{Spec}\!\left(\left(A_i\right)_{f_j}\right)$.
+	Let $X=\bigcup_iV_i$ and each $\left(V_i,\mathcal{O}_X|_{V_i}\right)$ is an affine scheme $\operatorname{Spec}\!\left(A_i\right)$. Since $U=\bigcup_jU_{f_j}$ is the union of some basic open sets, use \Cref{ex2.1} so $\left(V_i\cap U_{f_j},\mathcal{O}_X|_{V_i\cap U_{f_j}}\right)\cong\operatorname{Spec}\!\left(\left(A_i\right)_{f_j}\right)$.
 \end{exercise}
 
 \begin{exercise}\label{ex2.3}
-	
+	\begin{enumerate}
+		\item[(b)] $\operatorname{Spec}(A/\mathfrak{R})\rightarrow\operatorname{Spec}(A)$ is homeomorphic.
+		\item[(c)] The nilradical of $\mathcal{O}_Y(U)$ maps to zero in $\mathcal{O}_X(U)$. Use \textcolor{cyan}{universal property of the quotient}.
+	\end{enumerate}
 \end{exercise}
 
 \begin{exercise}\label{ex2.4}
-	
+	If $X=\operatorname{Spec}B$ is affine, check the induced map $f^\#$ is two-sided inverse of the induced map from $A\rightarrow B$ to $\operatorname{Spec}B\rightarrow\operatorname{Spec}A$, so $\alpha$ is bijective. If $X=\left\{U_i\right\}$ is an affine cover, $A\rightarrow\Gamma\!\left(X,\mathcal{O}_X\right)\rightarrow\Gamma\!\left(U_i,\mathcal{O}_{U_i}\right)$ induces a map $f_i:U_i\rightarrow\operatorname{Spec}A$. Verify $f_i|_{U_i\cap U_j}=f_j|_{U_i\cap U_j}$ and glue them together.
 \end{exercise}
 
 \begin{exercise}\label{ex2.5}
-	
+	$\operatorname{Spec}\mathbb{Z}\supseteq(p)\supseteq(0)$. For any ring $R$, there is a unique map $\mathbb{Z}\rightarrow R$ defined by $1_\mathbb{Z}\mapsto1_R$. Since $\mathcal{O}_{\operatorname{Spec}\mathbb{Z},x}=\mathbb{Z}_{\mathfrak{p}_x}$, $f^\#_x:\mathcal{O}_{\operatorname{Spec}\mathbb{Z},f(x)}\rightarrow\mathcal{O}_{X,x}$ is unique by the universal property of localization. $\mathcal{O}_{X,x}$ is a field iff its maximal ideal has a zero preimage, so $f^\#_x$ is local.
 \end{exercise}
 
 \begin{exercise}\label{ex2.6}
-	
+	For any ring $R$, the map $R\rightarrow(0)$ is unique. Note that $\operatorname{Spec}(0)=\varnothing$, so $\mathcal{O}_{(0)}(U)=(0)$, and therefore $f^\#:\mathcal{O}_Y\rightarrow f_*\mathcal{O}_{(0)}$ is unique.
 \end{exercise}
 
 \begin{exercise}\label{ex2.7}
-	
+	$f_x^\#:\mathcal{O}_x\rightarrow K$ is a local homomorphism with $\ker\!\left(f_x^\#\right)=\mathfrak{m}_x$.
 \end{exercise}
 
 \begin{exercise}\label{ex2.8}
-	\begin{enumerate}
-		\item[(ii)] Use \Cref{2.15}.
-	\end{enumerate}
+	$\left.k[\varepsilon]\middle/\!\left(\varepsilon^2\right)\right.$ has a unique prime ideal $(\varepsilon)$. Let $f_x^\#:\mathcal{O}_{X,x}\rightarrow\left.k[\varepsilon]\middle/\!\left(\varepsilon^2\right)\right.$ be a local homomorphism. The induced map $\overline{f_x^\#}:k(x)\rightarrow k$ is a $k$-homomorphism, so $k(x)\cong k$. For each $m\in\mathfrak{m}_x$, $f_x^\#(m)=a\varepsilon$ for some $a\in k$, so $f_x^\#$ defines a map $g:\mathfrak{m}_x\rightarrow k$ by $m\mapsto a$. However, $g\!\left(\mathfrak{m}_x^2\right)=0$, so $g$ induces a map $\overline{g}:\left.\mathfrak{m}_x\middle/\mathfrak{m}_x^2\right.\rightarrow k$.
 \end{exercise}
 
 \begin{exercise}\label{ex2.9}
-	
+	$Z\cap U_i$ is irreducible in the subspace $U_i$. By \textcolor{cyan}{Atiyah-Macdonald Exercise 1.20(iv)}, $Z\cap U_i$ has a unique generic point $\zeta_i$. Use the fact that a generic point is contained in every nonempty open subset, and note that $Z\cap U_i\cap U_j$ is open in the subspace $Z\cap U_i$, so $\zeta_i\in Z\cap U_i\cap U_j$. Similarly, $\zeta_j\in Z\cap U_i\cap U_j$, so $\zeta_i=\zeta_j$.
 \end{exercise}
 
 \begin{exercise}\label{ex2.10}
-	
+	$\operatorname{Spec}\mathbb{R}$ also contains irreducible $ax^2+bx+c$.
 \end{exercise}
 
 \begin{exercise}\label{ex2.11}
-	\begin{enumerate}
-		\item[(i),(ii)] Consider a residue field and pass to vector spaces. Use the right exactness of tensor product.
-		\item[(iii)] If $m>n$, let $\psi:A^m\xrightarrow{\phi}A^n\hookrightarrow A^m$. By \Cref{2.4}, $\psi$ satisfies $\psi^n+a_{n-1}\psi^{n-1}+\cdots+a_0=0$. Pick such equation to have the minimum degree, then $\psi$ injective implies $a_0\neq0$. Apply the equation to element $(0,\cdots,0,1)$ to obtain contradiction.
-	\end{enumerate}
+	
 \end{exercise}
 
 \begin{exercise}\label{ex2.12}
-	
+	$X=\left\{\coprod X_i\middle|\left(i,x_i\right)\sim\left(j,\varphi_{ij}(x_i)\right)\text{ for }x_i\in U_{ij}\right\}$, $\psi_i:x_i\mapsto\left[\left(i,x_i\right)\right]$. Use \Cref{ex1.22} to obtain the structure sheaf $\mathcal{O}_X(U)=\left\{\left(s_i\right)\in\prod\mathcal{O}_{X_i}\!\left(\psi_i^{-1}(U)\right)\middle|\varphi_{ij}^\#\!\left(s_i|_{\psi_i^{-1}(U)\cap U_{ij}}\right)=s_j|_{\varphi_{ij}\left(\psi_i^{-1}(U)\cap U_{ij}\right)}\right\}$, where $\varphi_{ij}^\#:\mathcal{O}_{X_j}|_{U_{ji}}\rightarrow\mathcal{O}_{X_i}|_{U_{ij}}$ is the induced isomorphism from $\varphi_{ij}$.
 \end{exercise}
 
 \begin{exercise}\label{ex2.13}
-	
+	\textcolor{cyan}{Atiyah-Macdonald Exercise 6.6, Exercise 1.17(v), Exercise 6.8}.
 \end{exercise}
 
 \begin{exercise}\label{ex2.14}
-	
-\end{exercise}
-
-\begin{exercise}\label{ex2.15}
-	\begin{enumerate}[label=(\roman*),ref=\theexercise(\roman*)]\crefalias{enumi}{exercise}
-		\item\label{ex2.15.1} Use \Cref{ex2.14} to increase indices.
-		\item\label{ex2.15.2} \textcolor{magenta}{$x_i=\sum_k\left(y_k-\mu_{kl}\left(y_k\right)\right)$ is an equation in $\bigoplus M_i$, so $\mu_{ij}$ cannot be applied directly.} Use canonical projection $\pi_i:\bigoplus M_i\rightarrow M_i$ on the equation first.
+	\begin{enumerate}[label=(\alph*),ref=\theexercise(\alph*)]\crefalias{enumi}{exercise}
+		\item $\operatorname{Proj}S=\varnothing$ $\Leftrightarrow$ $S_0=0$.
+		\item $\varphi\!\left(S_+\right)$ is a homogeneous ideal.
+		\item Suppose $\mathfrak{p}\in\operatorname{Proj}T$ but $\mathfrak{p}\supseteq\varphi\!\left(S_+\right)$. Let $t\in T_d$ for any $d>0$. Then we have a sufficient large $n$ such that $nd\geqslant d_0$, so $t^n\in T_{nd}=\varphi\!\left(S_{nd}\right)\subseteq\mathcal{p}$, and so $t\in\mathfrak{p}$, which means $T_+\subseteq\mathfrak{p}$. Prove that $S_{(f)}\rightarrow T_{(\varphi(f))}$ is an isomorphism, then use \Cref{2.5.2}.
+		\item 
 	\end{enumerate}
 \end{exercise}
 
-\begin{exercise}[Universal property of direct limit]\label{ex2.16}
+\begin{exercise}\label{ex2.15}
 	
+\end{exercise}
+
+\begin{exercise}\label{ex2.16}
+	\begin{enumerate}[label=(\alph*),ref=\theexercise(\alph*)]\crefalias{enumi}{exercise}
+		\item\label{ex2.16.1} Let $\left\{U_i\right\}$ be an open affine cover. Then for any $x\in X_f$, there is a $U_i\ni x$ such that $U_i\cap X_f=D\!\left(\overline{f}\right)$ is open and contains $x$.
+		\item\label{ex2.16.2} $a|_{U_i\cap X_f}=0$. Also $\Gamma\!\left(U_i\cap X_f,\mathcal{O}_X|_{U_i\cap X_f}\right)=B_{f|_{U_i}}$, so $\left(f^{n_i}a\right)|_{U_i}=0$. $X$ is quasi-compact, take $\max\!\left(n_i\right)$, and use the locality axiom.
+		\item\label{ex2.16.3} By \hyperref[ex2.16.1]{(a)}, $b|_{U_i\cap X_f}=\left.a_i\middle/\left(f|_{U_i}\right)^{n_i}\right.$ for some $a_i\in\Gamma\!\left(U_i\cap X_f,\mathcal{O}_{U_i\cap X_f}\right)$, so $\left(f|_{U_i}\right)^{n_i}b|_{U_i\cap X_f}=a_i$. Take $n=\max\!\left(n_i\right)$, $\left(f|_{U_i}\right)^nb|_{U_i\cap X_f}=a_i^\prime$. Therefore, $a_i^\prime|_{U_i\cap U_j\cap X_f}=a_j^\prime|_{U_i\cap U_j\cap X_f}$. Since $U_i\cap U_j$ is quasi-compact, by \hyperref[ex2.16.2]{(b)}, $\left(f|_{U_i\cap U_j}\right)^{N_{ij}}\left(a_i^\prime|_{U_i\cap U_j}-a_j^\prime|_{U_i\cap U_j}\right)=0$. Take $N=\max\!\left(N_{ij}\right)$, and let $c_i=f^Na_i^\prime\in\Gamma\!\left(U_i,\mathcal{O}_X\right)$, then $c_i$ and $c_j$ are compatible on intersection. Use the gluing axiom there is a $c\in A$ such that $c|_{X_f}=f^{n+N}b$.
+		\item\label{ex2.16.4} Let $\Phi:A_f\rightarrow\Gamma\!\left(X_f,\mathcal{O}_{X_f}\right)$, defined by $\frac{a}{f^n}\mapsto \frac{a|_{X_f}}{f^n}$. $\Phi$ is injective by \hyperref[ex2.16.2]{(b)}, and it is surjective by \hyperref[ex2.16.3]{(c)}.
+	\end{enumerate}
 \end{exercise}
 
 \begin{exercise}\label{ex2.17}
-	
+	\begin{enumerate}[label=(\alph*),ref=\theexercise(\alph*)]\crefalias{enumi}{exercise}
+		\item\label{ex2.17.1} Directly from locality and gluing axioms.
+		\item\label{ex2.17.2} By \Cref{ex2.4}, there is a morphism $\varphi:X\rightarrow\operatorname{Spec}A$. By \Cref{ex2.16.4}, $X_{f_i}\rightarrow\operatorname{Spec}\!\left(A_{f_i}\right)$ are isomorphisms. By \hyperref[ex2.17.1]{(a)}, $\varphi$ is an isomorphism.
+	\end{enumerate}
 \end{exercise}
 
 \begin{exercise}\label{ex2.18}
-	
+	\textcolor{cyan}{Atiyah-Macdonald Exercise 1.17(ii), Exercise 1.21}.
 \end{exercise}
 
 \begin{exercise}\label{ex2.19}
-	
+	\textcolor{cyan}{Atiyah-Macdonald Exercise 1.22}.
 \end{exercise}

@@ -18,7 +18,7 @@
 	An isomorphism is defined to be a morphism having a two-sided inverse.
 \end{definition}
 
-For any ring $R$, $\operatorname{Spec}(R)$ is a ringed space (\textcolor{blue}{Atiyah-Macdonald Exercise 3.24}). Consider the inclusion map $\mathbb{Z}_{(p)}\hookrightarrow\mathbb{Q}$ which induces a morphism of ringed spaces $f:\operatorname{Spec}(\mathbb{Q})\rightarrow\operatorname{Spec}\!\left(\mathbb{Z}_{(p)}\right)$. However, there is another morphism $g:\operatorname{Spec}(\mathbb{Q})\rightarrow\operatorname{Spec}\!\left(\mathbb{Z}_{(p)}\right)$ defined by $(0)\mapsto(p)$. To exclude such examples, we must restrict our attention to morphisms of locally ringed spaces.
+For any ring $R$, $\operatorname{Spec}(R)$ is a ringed space (\textcolor{cyan}{Atiyah-Macdonald Exercise 3.24}). Consider the inclusion map $\mathbb{Z}_{(p)}\hookrightarrow\mathbb{Q}$ which induces a morphism of ringed spaces $f:\operatorname{Spec}(\mathbb{Q})\rightarrow\operatorname{Spec}\!\left(\mathbb{Z}_{(p)}\right)$. However, there is another morphism $g:\operatorname{Spec}(\mathbb{Q})\rightarrow\operatorname{Spec}\!\left(\mathbb{Z}_{(p)}\right)$ defined by $(0)\mapsto(p)$. To exclude such examples, we must restrict our attention to morphisms of locally ringed spaces.
 
 \section*{SCHEMES}
 
@@ -32,11 +32,46 @@ For any ring $R$, $\operatorname{Spec}(R)$ is a ringed space (\textcolor{blue}{A
 	Denote \textcolor{orange}{$\operatorname{sp}(X)$} to be the underlying topological space of a scheme $\left(X,\mathcal{O}_X\right)$.
 \end{definition}
 
-Let $S=\bigoplus_{n\geqslant0}S_n$ be a graded ring. Define \textcolor{orange}{$\operatorname{Proj}(S)$} to be the set of all homogeneous prime ideals of $S$ that do not contain the irrelevant ideal $S_+=\bigoplus_{n>0}S_n$. Define a topology on $\operatorname{Proj}(S)$ by taking the closed subsets to be of the form $V(\mathfrak{a})$ for any homogeneous ideal $\mathfrak{a}$.
+\begin{definition}
+	Let $A$ be a ring. A sheaf of rings \textcolor{orange}{$\mathcal{O}_{\operatorname{Spec}(A)}$} is defined as follows. For an open set $U\subseteq\operatorname{Spec}(A)$, Let $\mathcal{O}_{\operatorname{Spec}(A)}(U)$ be the set of functions $s:U\rightarrow\coprod_{\mathfrak{p}\in U}A_\mathfrak{p}$, such that
+	\begin{enumerate}[label=\textup{(\arabic*)}]
+		\item for each $\mathfrak{p}\in U$, $s(\mathfrak{p})\in A_\mathfrak{p}$;
+		\item for each $\mathfrak{p}\in U$, there exists an open neighborhood $V\subseteq U$ of $\mathfrak{p}$ and an element $a\in A$, such that $s(\mathfrak{q})=a/f$ for all $\mathfrak{q}\in V$ and some $f\notin\mathfrak{q}$.
+	\end{enumerate}
+\end{definition}
+
+\section*{PROJECTIVE SCHEMES}
+
+\begin{definition}
+	Let $S=\bigoplus_{n\geqslant0}S_n$ be a graded ring.  A \textcolor{orange}{homogeneous multiplicatively closed subset} of $S$ is a multiplicatively closed subset $T$ formed by some homogeneous elements.
+	
+	A \textcolor{orange}{homogeneous localization} by a homogeneous multiplicatively closed subset $T$ is the degree zero part of the local ring $T^{-1}S$, denote by $\left(T^{-1}S\right)_0$.
+	
+	Let $\mathfrak{p}$ be a homogeneous prime ideal. Denote \textcolor{orange}{$S_{(\mathfrak{p})}$} to be the homogeneous localization by a homogeneous multiplicatively closed subset whose elements are not in $\mathfrak{p}$.
+	
+	Let $f\in\mathcolor{orange}{S_+}=\bigoplus_{n>0}S_n$ be a homogeneous element.  Denote \textcolor{orange}{$S_{(f)}$} to be the set of all elements of the form $s/f^k$, where $\deg s=k\deg f$.
+\end{definition}
+
+\begin{definition}
+	Let $S$ be a graded ring. Define \textcolor{orange}{$\operatorname{Proj}(S)$} to be the set of all homogeneous prime ideals of $S$ that do not contain the irrelevant ideal $S_+$. Define a topology on $\operatorname{Proj}(S)$ by taking the closed subsets to be of the form $V(\mathfrak{a})$ for any homogeneous ideal $\mathfrak{a}$.
+	
+	A sheaf of rings \textcolor{orange}{$\mathcal{O}_{\operatorname{Proj}(S)}$} is defined as follows. For an open set $U\subseteq\operatorname{Proj}(S)$, Let $\mathcal{O}_{\operatorname{Proj}(S)}(U)$ be the set of functions $s:U\rightarrow\coprod_{\mathfrak{p}\in U}S_{(\mathfrak{p})}$, such that
+	\begin{enumerate}[label=\textup{(\arabic*)}]
+		\item for each $\mathfrak{p}\in U$, $s(\mathfrak{p})\in S_{(\mathfrak{p})}$;
+		\item for each $\mathfrak{p}\in U$, there exists an open neighborhood $V\subseteq U$ of $\mathfrak{p}$ and a homogeneous element $a\in S$, such that $s(\mathfrak{q})=a/f$ for all $\mathfrak{q}\in V$ and some homogeneous $f\notin\mathfrak{q}$.
+	\end{enumerate}
+\end{definition}
 
 \begin{proposition}{2.5}
-	For any homogeneous element $f\in S_+$, let $D_+(f)=\left\{\mathfrak{p}\in\operatorname{Proj}(S)\mid f\notin\mathfrak{p}\right\}$ be the basic open set, and let $\mathcal{O}_{\operatorname{Proj}(S)}\!\left(D_+(f)\right)=S_{(f)}$ where $S_{(f)}$ is the degree 0 part of the localization $S_f$ ($x/f^k\in S_{(f)}$ means $\deg x=k\deg f$). Then $\left(\operatorname{Proj}(S),\mathcal{O}_{\operatorname{Proj}(S)}\right)$ is a scheme.
+	Let $S$ be a graded ring.
+	\begin{enumerate}[label=\textup{(\alph*)},ref=\thepropositiontemp(\alph*)]\crefalias{enumi}{proposition}
+		\item\label{2.5.1} For any $\mathfrak{p}\in\operatorname{Proj}(S)$, $\mathcal{O}_{\operatorname{Proj}(S),\mathfrak{p}}\cong S_{(\mathfrak{p})}$.
+		\item\label{2.5.2} For any homogeneous element $f\in S_+$, let $D_+(f)=\left\{\mathfrak{p}\in\operatorname{Proj}(S)\mid f\notin\mathfrak{p}\right\}$. Then $D_+(f)$ is open in $\operatorname{Proj}(S)$. Furthermore, these open sets cover $\operatorname{Proj}(S)$, and $\left(D_+(f),\mathcal{O}_{\operatorname{Proj}(S)}|_{D_+(f)}\right)\cong\operatorname{Spec}\!\left(S_{(f)}\right)$.
+		\item\label{2.5.3} $\left(\operatorname{Proj}(S),\mathcal{O}_{\operatorname{Proj}(S)}\right)$ is a scheme.
+	\end{enumerate}
 \end{proposition}
+
+\section*{MORPHISMS BETWEEN SCHEMES}
 
 \begin{definition}
 	Let $S$ be a fixed scheme. A \textcolor{orange}{scheme over $S$} is a scheme $X$, together with a morphism $X\rightarrow S$.
@@ -62,5 +97,9 @@ Let $S=\bigoplus_{n\geqslant0}S_n$ be a graded ring. Define \textcolor{orange}{$
 \section*{DEFINITIONS AND PROPOSITIONS FROM EXERCISES}
 
 \begin{definition}
-	Let $X$ be scheme. The \textcolor{orange}{residue field} of $x$ on $X$ is the field $k(x)=\mathcal{O}_{X,x}/\mathfrak{m}_x$.
+	The \textcolor{orange}{residue field} of $x$ on a scheme $X$ is the field $k(x)=\mathcal{O}_{X,x}/\mathfrak{m}_x$.
+\end{definition}
+
+\begin{definition}
+	The \textcolor{orange}{Zariski tangent space} $T_x$ of $x$ on a scheme $X$ is the dual of the $k(x)$-vector space $\mathfrak{m}_x/\mathfrak{m}_x^2$.
 \end{definition}

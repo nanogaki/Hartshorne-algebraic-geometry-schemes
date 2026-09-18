@@ -57,7 +57,7 @@
 \end{exercise}
 
 \begin{exercise}\label{ex1.8}
-	Denote $0\rightarrow\mathcal{F}^\prime\xrightarrow{\varphi}\mathcal{F}\xrightarrow{\psi}\mathcal{F}^{\prime\prime}$. Use \hyperref[ex1.2.2]{\Cref*{ex1.2.2}$\hookrightarrow$} for injectiveness of $\varphi_U$.
+	Denote $0\rightarrow\mathcal{F}^\prime\xrightarrow{\varphi}\mathcal{F}\xrightarrow{\psi}\mathcal{F}^{\prime\prime}$. Use \hyperref[ex1.2.2]{\Cref*{ex1.2.2}$\hookrightarrow$} for injectivity of $\varphi_U$.
 	
 	Let $s\in\mathcal{F}(U)$ such that $\psi_U(s)=0$. By \hyperref[ex1.2]{\Cref{ex1.2}(c)}, there is $s^\prime\in\mathcal{F}^\prime(U)$ such that $\varphi_x(s^\prime_x)=s_x$. By \textcolor{cyan}{Atiyah-Macdonald Exercise 2.15} and similar to \hyperref[ex1.2.2]{\Cref*{ex1.2.2}$\twoheadrightarrow$}, there is $t_x\in\mathcal{F}\!\left(V_x\right)$ such that $\varphi_{V_x}\!\left(t_x\right)=s|_{V_x}$. Therefore, $\varphi_{V_x\cap V_y}\!\left(t_x|_{V_x\cap V_y}\right)=s|_{V_x\cap V_y}=\varphi_{V_x\cap V_y}\!\left(t_y|_{V_x\cap V_y}\right)$. Due to $\varphi_{V_x\cap V_y}$ is injective, using the gluing axiom of $\mathcal{F}^\prime$, we have $\varphi_{V_x}\left(t|_{V_x}\right)=s|_{V_x}$ for some $t\in U$. Since $\varphi$ is compatible with restriction maps, $\varphi_{V_x}\!\left(t|_{V_x}\right)=\left(\varphi_U(t)\right)\!|_{V_x}$. By the locality axiom of $\mathcal{F}$, $\varphi_U(t)=s$.
 \end{exercise}
@@ -118,7 +118,7 @@
 \end{exercise}
 
 \begin{exercise}\label{ex1.17}
-	Prove that if $y\in\overline{\{x\}}$, then $y\in U$ implies $x\in U$. It is a sheaf due to $x$ has to simultaneously be in or not be in all the open sets who make up an open cover.
+	Prove that if $y\in\overline{\{x\}}$, then $y\in U$ implies $x\in U$. It is a sheaf due to $x$ has to simultaneously be in or not be in all the open sets which make up an open cover.
 \end{exercise}
 
 \begin{exercise}\label{ex1.18}
@@ -136,14 +136,7 @@
 \begin{exercise}\label{ex1.20}
 	\begin{enumerate}[label=(\alph*),ref=\theexercise(\alph*)]\crefalias{enumi}{exercise}
 		\item\label{ex1.20.1} $\Gamma_{Z\cap U}(U,\mathcal{F}|_U)=\left\{s\in\mathcal{F}(U)\middle|s_x\neq0\text{ for all }x\in Z\cap U\right\}$. Be aware that we only get $s\in \mathcal{F}(U)$ from the gluing axiom, then use support to derive $s\in\Gamma_{Z\cap U}(U,\mathcal{F}|_U)$.
-		\item\label{ex1.20.2} $\displaystyle j_*\!\left(\mathcal{F}|_U\right)(V)=\left(\varinjlim_{W\supseteq U\cap V}\mathcal{F}(W)\right)^+$. Use the following diagram to prove $j_*\!\left(\mathcal{F}|_U\right)(V)=\mathcal{F}(U\cap V)$.
-		\begin{equation*}
-			\begin{tikzcd}
-				\mathcal{F}\!\left(W_x\right)\arrow[d]&\mathcal{F}(V_U)\arrow[rr,"\mu_{V_U}"{description}]\arrow[d]\arrow[l]&&\displaystyle\varinjlim_{U^\prime\supseteq U}\mathcal{F}\!\left(U^\prime\right)\arrow[dll,"\varphi_U"{description}]\\
-				\mathcal{F}_x&\mathcal{F}(U)\arrow[l]&&
-			\end{tikzcd}
-		\end{equation*}
-		Since $\mathcal{F}$ is flasque, $\varphi_U$ is surjective. Let $s_U\in\displaystyle\varinjlim_{U^\prime\supseteq U}\mathcal{F}\!\left(U^\prime\right)$ such that $\varphi_U\!\left(s_U\right)=0$. By \textcolor{cyan}{Atiyah-Macdonald Exercise 2.15(i)}, there is an $s\in\mathcal{F}\!\left(V_U\right)$ such that $\mu_{V_U}(s)=s_U$. Since $s_x=0$ for $x\in U$, by \textcolor{cyan}{Atiyah-Macdonald Exercise 2.15(ii)}, there is a $W_x\subseteq V_U$ such that $s|_{W_x}=0$. Let $W=\bigcup_{x\in U}W_x$. By locality axiom, $s|_W=0$, so $s_U=0$ and therefore $\varphi_U$ is injective.
+		\item\label{ex1.20.2} $\displaystyle j_*\!\left(\mathcal{F}|_U\right)(V)=\left(\varinjlim_{W\supseteq U\cap V}\mathcal{F}(W)\right)^+=\mathcal{F}(U\cap V)$.
 	\end{enumerate}
 \end{exercise}
 

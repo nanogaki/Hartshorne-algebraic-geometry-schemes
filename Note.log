@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.29)  18 SEP 2026 06:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.29)  2 OCT 2026 21:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -917,60 +917,14 @@ chapter 9.
 
 ] [18]) (Exercise/Exercise2.tex [19])
 (Exercise/Exercise3.tex
+Overfull \hbox (28.40056pt too wide) in paragraph at lines 19--21
+\OT1/cmr/m/n/10.95 However, if $[] \OMS/cmsy/m/n/10.95 2 [][] [][]$ \OT1/cmr/m/
+n/10.95 is an im-age from $\OML/cmm/m/it/10.95 A[]$\OT1/cmr/m/n/10.95 , the she
+af prop-erty on $\OML/cmm/m/it/10.95 D[]  []$ \OT1/cmr/m/n/10.95 im-plies $\OML
+/cmm/m/it/10.95 ^^L[]\OMS/cmsy/m/n/10.95 j[] \OT1/cmr/m/n/10.95 =
+ []
 
-LaTeX Warning: Reference `1.9' on page 1 undefined on input line 8.
-
-
-LaTeX Warning: Reference `ex2.27' on page 1 undefined on input line 55.
-
-
-LaTeX Warning: Reference `ex2.28' on page 1 undefined on input line 56.
-
-
-LaTeX Warning: Reference `3.10' on page 1 undefined on input line 56.
-
-
-LaTeX Warning: Reference `ex2.27' on page 1 undefined on input line 62.
-
-
-LaTeX Warning: Reference `3.5' on page 1 undefined on input line 71.
-
-
-LaTeX Warning: Reference `3.8' on page 1 undefined on input line 76.
-
-
-LaTeX Warning: Reference `3.8' on page 1 undefined on input line 80.
-
-[20]
-
-LaTeX Warning: Reference `1.17' on page 1 undefined on input line 92.
-
-
-LaTeX Warning: Reference `2.15' on page 1 undefined on input line 107.
-
-
-LaTeX Warning: Reference `3.3' on page 1 undefined on input line 111.
-
-
-LaTeX Warning: Reference `3.5' on page 1 undefined on input line 111.
-
-
-LaTeX Warning: Reference `3.11.4' on page 1 undefined on input line 130.
-
-
-LaTeX Warning: Reference `2.15' on page 1 undefined on input line 132.
-
-
-LaTeX Warning: Reference `ex1.17.5' on page 1 undefined on input line 149.
-
-[21]
-
-LaTeX Warning: Reference `ex2.20' on page 1 undefined on input line 166.
-
-
-LaTeX Warning: Reference `ex2.21' on page 1 undefined on input line 166.
-
-) (Exercise/Exercise4.tex
+[20] [21]) (Exercise/Exercise4.tex [22]
 
 LaTeX Warning: Reference `1.11.2' on page 1 undefined on input line 24.
 
@@ -998,7 +952,6 @@ LaTeX Warning: Reference `3.11.4' on page 1 undefined on input line 79.
 
 LaTeX Warning: Reference `4.4' on page 1 undefined on input line 88.
 
-[22]
 
 LaTeX Warning: Reference `1.11.2' on page 1 undefined on input line 96.
 
@@ -1006,6 +959,7 @@ LaTeX Warning: Reference `1.11.2' on page 1 undefined on input line 96.
 
 LaTeX Warning: Reference `5.10' on page 1 undefined on input line 4.
 
+[23]
 
 LaTeX Warning: Reference `5.10' on page 1 undefined on input line 8.
 
@@ -1013,11 +967,7 @@ LaTeX Warning: Reference `5.10' on page 1 undefined on input line 8.
 LaTeX Warning: Reference `5.10' on page 1 undefined on input line 21.
 
 
-Overfull \hbox (19.05533pt too wide) in paragraph at lines 44--45
-[]\OT1/cmr/m/n/10.95 By [][]Ex-er-cise 3.23(v)[][] and [][]Ex-er-cise 3.26[][],
- $\OML/cmm/m/it/10.95 f[] [] \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 f[] [] \O
-T1/cmr/m/n/10.95 = [][] \OML/cmm/m/it/10.95 f[] []$\OT1/cmr/m/n/10.95 .
- []
+LaTeX Warning: Reference `ex3.26' on page 1 undefined on input line 44.
 
 
 LaTeX Warning: Reference `1.11.1' on page 1 undefined on input line 57.
@@ -1028,7 +978,6 @@ LaTeX Warning: Reference `5.9' on page 1 undefined on input line 57.
 
 LaTeX Warning: Reference `5.10' on page 1 undefined on input line 69.
 
-[23]
 
 LaTeX Warning: Reference `5.12' on page 1 undefined on input line 81.
 
@@ -1036,11 +985,12 @@ LaTeX Warning: Reference `5.12' on page 1 undefined on input line 81.
 LaTeX Warning: Hyper reference `noethernormalization' on page 24 undefined on i
 nput line 89.
 
+[24]
 
 LaTeX Warning: Reference `5.10' on page 1 undefined on input line 107.
 
 
-LaTeX Warning: Hyper reference `5.11' on page 24 undefined on input line 120.
+LaTeX Warning: Hyper reference `5.11' on page 25 undefined on input line 120.
 
 
 Overfull \hbox (3.9314pt too wide) in paragraph at lines 127--128
@@ -1053,18 +1003,20 @@ t $\OML/cmm/m/it/10.95 B \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 A []$\OT1/cmr
 
 LaTeX Warning: Reference `5.7' on page 1 undefined on input line 128.
 
-[24]
 
 LaTeX Warning: Reference `5.21' on page 1 undefined on input line 142.
 
-) (Exercise/Exercise6.tex
+) (Exercise/Exercise6.tex [25]
 
 LaTeX Warning: Reference `2.1' on page 1 undefined on input line 15.
 
 
 LaTeX Warning: Reference `ex1.20.4' on page 1 undefined on input line 42.
 
-[25]) (Exercise/Exercise7.tex
+
+LaTeX Warning: Reference `ex3.19.5' on page 1 undefined on input line 46.
+
+) (Exercise/Exercise7.tex
 
 LaTeX Warning: Reference `ex1.5.2' on page 1 undefined on input line 9.
 
@@ -1084,11 +1036,10 @@ LaTeX Warning: Reference `3.8' on page 1 undefined on input line 49.
 
 LaTeX Warning: Reference `3.10' on page 1 undefined on input line 85.
 
-) (Exercise/Exercise8.tex
+) (Exercise/Exercise8.tex [27]
 
 LaTeX Warning: Reference `5.7' on page 1 undefined on input line 31.
 
-[27]
 
 LaTeX Warning: Hyper reference `noethernormalization' on page 28 undefined on i
 nput line 37.
@@ -1121,13 +1072,9 @@ LaTeX Warning: Reference `ex1.2.4' on page 1 undefined on input line 12.
 
 LaTeX Warning: Reference `3.9' on page 1 undefined on input line 31.
 
+[28]
 
-Overfull \hbox (2.85371pt too wide) in paragraph at lines 33--34
-[]\OT1/cmr/m/n/10.95 By [][]Ex-er-cise 3.19(v)[][], $[](\OML/cmm/m/it/10.95 M\O
-T1/cmr/m/n/10.95 ) = \OML/cmm/m/it/10.95 V\OT1/cmr/m/n/10.95 ([](\OML/cmm/m/it/
-10.95 M\OT1/cmr/m/n/10.95 ))$. From [][]Propo-si-tion 9.1[][] and [][]The-o-rem
- 9.3(ii)[][], $[](\OML/cmm/m/it/10.95 M\OT1/cmr/m/n/10.95 ) =
- []
+LaTeX Warning: Reference `ex3.19.5' on page 1 undefined on input line 33.
 
 
 LaTeX Warning: Reference `1.10' on page 1 undefined on input line 37.
@@ -1138,9 +1085,9 @@ LaTeX Warning: Reference `3.8' on page 1 undefined on input line 43.
 
 LaTeX Warning: Reference `3.8' on page 1 undefined on input line 51.
 
-) [28] (Summary/Summary.tex
+) [29] (Summary/Summary.tex
 
-LaTeX Warning: Hyper reference `sanotion' on page 29 undefined on input line 13
+LaTeX Warning: Hyper reference `sanotion' on page 30 undefined on input line 13
 .
 
 
@@ -1150,13 +1097,13 @@ LaTeX Warning: Reference `4.4' on page 1 undefined on input line 19.
 LaTeX Warning: Reference `4.8' on page 1 undefined on input line 19.
 
 
-LaTeX Warning: Hyper reference `5.10' on page 29 undefined on input line 27.
+LaTeX Warning: Hyper reference `5.10' on page 30 undefined on input line 27.
 
 
-LaTeX Warning: Hyper reference `noethernormalization' on page 29 undefined on i
+LaTeX Warning: Hyper reference `noethernormalization' on page 30 undefined on i
 nput line 27.
 
-) [29] (Note.aux)
+) [30] (Note.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -1167,10 +1114,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 29423 strings out of 467870
- 579945 string characters out of 5428425
- 1126727 words of memory out of 5000000
- 57450 multiletter control sequences out of 15000+600000
+ 29454 strings out of 467870
+ 580199 string characters out of 5428425
+ 1125727 words of memory out of 5000000
+ 57452 multiletter control sequences out of 15000+600000
  640644 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  124i,28n,121p,11233b,1278s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1180,23 +1127,23 @@ Here is how much of TeX's memory you used:
 bx/dpi657\mathc10.pk><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cm
 bx10.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><D:/
 Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Program File
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Program Files/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmmi6.pfb><D:/Program Files/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmmi8.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmr10.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><D
-:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Program File
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><D:/Program Files/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmssbx10.pfb><D:/Program Files/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmsy10.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmsy6.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.p
-fb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><D:/Progr
-am Files/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><D:/Program Files/
-MiKTeX/fonts/type1/public/amsfonts/euler/eufm7.pfb><D:/Program Files/MiKTeX/fon
-ts/type1/public/amsfonts/symbols/msam10.pfb><D:/Program Files/MiKTeX/fonts/type
-1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Note.pdf (29 pages, 466918 bytes).
+s/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><D:/Program Files/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Program Files/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmmi6.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmmi8.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.
+pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/Progra
+m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Program Files/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmsl10.pfb><D:/Program Files/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmssbx10.pfb><D:/Program Files/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+sy6.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/P
+rogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><D:/Program Files
+/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><D:/Program Files/MiKTeX/f
+onts/type1/public/amsfonts/symbols/msam10.pfb><D:/Program Files/MiKTeX/fonts/ty
+pe1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Note.pdf (30 pages, 482081 bytes).
 PDF statistics:
- 902 PDF objects out of 1000 (max. 8388607)
- 376 named destinations out of 1000 (max. 500000)
+ 937 PDF objects out of 1000 (max. 8388607)
+ 405 named destinations out of 1000 (max. 500000)
  173 words of extra memory for PDF output out of 10000 (max. 10000000)
 

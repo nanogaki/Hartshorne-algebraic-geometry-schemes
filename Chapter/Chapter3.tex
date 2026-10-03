@@ -1,6 +1,6 @@
 \chapter{First Properties of Schemes}
 
-\section*{SCHEMES}
+\section*{PROPERTIES OF SCHEMES}
 
 \begin{definition}
 	A scheme is \textcolor{orange}{connected} if its topological space is connected.
@@ -30,7 +30,7 @@
 	A scheme is locally Noetherian iff for every open affine subset $U=\operatorname{Spec}A$, $A$ is a Noetherian ring.
 \end{proposition}
 
-\section*{MORPHISMS}
+\section*{PROPERTIES OF MORPHISMS}
 
 \begin{definition}
 	A morphism $f:X\rightarrow Y$ is \textcolor{orange}{locally of finite type}, if there exists a covering of $Y$ by open affine subsets $V_i=\operatorname{Spec}\!\left(B_i\right)$, such that for each $i$, $f^{-1}\!\left(V_i\right)$ can be covered by open affine subsets $U_{ij}=\operatorname{Spec}\!\left(A_{ij}\right)$, where each $A_{ij}$ is a finitely generated $B_i$-algebra.
@@ -40,17 +40,7 @@
 \end{definition}
 
 \begin{definition}
-	A morphism $f:X\rightarrow Y$ is \textcolor{orange}{finite}, if there exists a covering of $Y$ by open affine subsets $V_i=\operatorname{Spec\!}\left(B_i\right)$, such that for each $i$, $f^{-1}\!\left(V_i\right)$ can be convered by open affine subsets $U_{ij}=\operatorname{Spec}\!\left(A_{ij}\right)$, where each $A_{ij}$ is a finitely generated $B_i$-module.
-	
-	{
-	\setlist[enumerate]{itemsep=0pt,topsep=0pt,parsep=0pt}
-	A morphism $f:X\rightarrow Y$ is \textcolor{orange}{quasi-finite}, if \tabto{9cm}\textcolor{magenta}{Inequivalent definitions}
-	\begin{enumerate}[label=\textup{(\roman*)},ref=(\roman*)]
-		\item\label{quasifinite1} for every point $y\in Y$, $f^{-1}(y)$ is a finite set. \tabto{8cm}\textcolor{magenta}{Hartshorne}
-		\item\label{quasifinite2} \labelcref{quasifinite1} plus $f^{-1}(y)$ is a discrete set. \tabto{8cm}\textcolor{magenta}{Grothendieck SGA}
-		\item\label{quasifinite3} \labelcref{quasifinite2} plus $f$ is of finite type. \tabto{8cm}\textcolor{magenta}{Grothendieck EGA}
-	\end{enumerate}
-	}
+	A morphism $f:X\rightarrow Y$ is \textcolor{orange}{finite}, if there exists a covering of $Y$ by open affine subsets $V_i=\operatorname{Spec\!}\left(B_i\right)$, such that for each $i$, $f^{-1}\!\left(V_i\right)=\operatorname{Spec}\!\left(A_i\right)$, where each $A_i$ is a finitely generated $B_i$-module.
 \end{definition}
 
 \begin{definition}
@@ -85,9 +75,42 @@
 	Let $S$ be a scheme, and let $X$, $Y$ be schemes over $S$. The \textcolor{orange}{fiber product} of $X$ and $Y$ over $S$ is the categorical product of $X$ and $Y$ in $\mathbf{Sch}(S)$, equivalently, the pullback of the morphism $X\rightarrow S$ and $Y\rightarrow S$ in $\mathbf{Sch}$. We denote the fiber product by \textcolor{orange}{$X\times_SY$}.
 \end{definition}
 
+\begin{theorem}{3.3}
+	For any schemes $X$ and $Y$ over a scheme $S$, the fiber product $X\times_SY$ exists, and is unique up to unique isomorphism.
+\end{theorem}
+
+\begin{definition}
+	Let $f:X\rightarrow Y$ be a morphism of schemes, and let $y\in Y$ be a point. Let $k(y)$ be the residue field of $y$, The \textcolor{orange}{fiber} of the morphism $f$ over the point $y$ is the scheme $X_y=X\times_Y\operatorname{Spec}k(y)$.
+\end{definition}
 
 \section*{DEFINITIONS AND PROPOSITIONS FROM EXERCISES}
 
 \begin{definition}
 	A morphism $f:X\rightarrow Y$ is \textcolor{orange}{quasi-compact} if the inverse image of open quasi-compact subset of $Y$ is quasi-compact on $X$.
+	
+{
+	\setlist[enumerate]{itemsep=0pt,topsep=0pt,parsep=0pt}
+	A morphism $f:X\rightarrow Y$ is \textcolor{orange}{quasi-finite}, if \tabto{9cm}\textcolor{magenta}{Inequivalent definitions}
+	\begin{enumerate}[label=\textup{(\roman*)},ref=(\roman*)]
+		\item\label{quasifinite1} for every point $y\in Y$, $f^{-1}(y)$ is a finite set. \tabto{8cm}\textcolor{magenta}{Hartshorne}
+		\item\label{quasifinite2} \labelcref{quasifinite1} plus $f^{-1}(y)$ is a discrete set. \tabto{8cm}\textcolor{magenta}{Grothendieck SGA}
+		\item\label{quasifinite3} \labelcref{quasifinite2} plus $f$ is of finite type. \tabto{8cm}\textcolor{magenta}{Grothendieck EGA}
+	\end{enumerate}
+}
+\end{definition}
+
+\begin{definition}
+	Let $X$ be an integral scheme. The local ring $\mathcal{O}_{X,\xi}$ of the generic point $\xi$ is the \textcolor{orange}{function field} of $X$.
+\end{definition}
+
+\begin{definition}
+	A scheme is \textcolor{orange}{normal} if all of its local rings are integrally closed domains.
+\end{definition}
+
+\begin{definition}
+	A topological space $X$ is a \textcolor{orange}{Zariski space} if it is Noetherian and every non-empty closed irreducible subset has a unique generic point.
+\end{definition}
+
+\begin{definition}
+	Let $x_0, x_1\in X$ are points. If $x_0\in\overline{\{x_1\}}$, we say that $x_0$ is a \textcolor{orange}{specialization} of $x_1$, or that $x_1$ is a \textcolor{orange}{generization} of $x_0$.
 \end{definition}

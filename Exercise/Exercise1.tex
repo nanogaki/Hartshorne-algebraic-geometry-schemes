@@ -6,7 +6,7 @@
 
 \begin{exercise}\label{ex1.2}
 	\begin{enumerate}[label=(\alph*),ref=\theexercise(\alph*)]\crefalias{enumi}{exercise}
-		\item\label{ex1.2.1} $\operatorname{im}\!\left(\varphi_x\right)=\operatorname{im}\!\left(\mathcal{F}_x\rightarrow\mathcal{G}_x\right)$, and $(\operatorname{im}\varphi)_x=\displaystyle\varinjlim_{x\ni U}\operatorname{im}\!\left(\mathcal{F}(U)\rightarrow\mathcal{G}(U)\right)$. The diagram
+		\item\label{ex1.2.1} $\operatorname{im}\!\left(\varphi_x\right)=\operatorname{im}\!\left(\mathcal{F}_x\rightarrow\mathcal{G}_x\right)$, and $(\operatorname{im}\varphi)_x=\displaystyle\varinjlim_{U\ni x}\operatorname{im}\!\left(\mathcal{F}(U)\rightarrow\mathcal{G}(U)\right)$. The diagram
 		\begin{equation*}
 			\begin{tikzcd}
 				\mathcal{F}(U)\arrow[r]\arrow[d,"\varphi_U"]&\mathcal{F}_x\arrow[d,"\varphi_x"]\\
@@ -15,11 +15,11 @@
 			\qquad\text{can be refined to}\qquad
 			\begin{tikzcd}
 				\mathcal{F}(U)\arrow[r]\arrow[d,"\varphi_U"]&\mathcal{F}_x\arrow[d]\\
-				\operatorname{im}\!\left(\varphi_U\right)\arrow[r]\arrow[d,hook]&\displaystyle\varinjlim_{x\ni U}\operatorname{im}\!\left(\varphi_U\right)\arrow[d]\\
+				\operatorname{im}\!\left(\varphi_U\right)\arrow[r]\arrow[d,hook]&\displaystyle\varinjlim_{U\ni x}\operatorname{im}\!\left(\varphi_U\right)\arrow[d]\\
 				\mathcal{G}(U)\arrow[r]&\mathcal{G}_x
 			\end{tikzcd}.
 		\end{equation*}
-		Use \textcolor{cyan}{Atiyah-Macdonald Exercise 2.15(i)} to prove $\displaystyle\varinjlim_{x\ni U}\operatorname{im}\!\left(\varphi_U\right)\subseteq\operatorname{im}\!\left(\varphi_x\right)$ and $\displaystyle\varinjlim_{x\ni U}\operatorname{im}\!\left(\varphi_U\right)\supseteq\operatorname{im}\!\left(\varphi_x\right)$. Use the \textcolor{cyan}{exactness of direct limits} to prove the $\ker$ case. \textcolor{red}{This is also correct for presheaves.}
+		Use \textcolor{cyan}{Atiyah-Macdonald Exercise 2.15(i)} to prove $\displaystyle\varinjlim_{U\ni x}\operatorname{im}\!\left(\varphi_U\right)\subseteq\operatorname{im}\!\left(\varphi_x\right)$ and $\displaystyle\varinjlim_{U\ni x}\operatorname{im}\!\left(\varphi_U\right)\supseteq\operatorname{im}\!\left(\varphi_x\right)$. Use the \textcolor{cyan}{exactness of direct limits} to prove the $\ker$ case. \textcolor{red}{This is also correct for presheaves.}
 		\item\label{ex1.2.2} $\hookrightarrow$: Use \hyperref[ex1.2.1]{(a)} to reduce to $(\ker\varphi)_x=0$ $\Rightarrow$ $\ker\varphi=0$. Let $s\in\mathcal{F}(U)$. For each $x\in U$, $s_x=0$, where $s_x\in\mathcal{F}_x$. By \textcolor{cyan}{Atiyah-Macdonald Exercise 2.15(ii)}, there exists $V_x\ni x$ such that $s|_{V_x}=0$. When $x$ runs over all points of $U$ we have an open cover $\left\{V_x\right\}$. Then use the locality axiom.
 		
 		$\twoheadrightarrow$: Use \hyperref[ex1.2.1]{(a)} to reduce to $(\operatorname{im}\varphi)_x=\mathcal{G}_x$ $\Rightarrow$ $\operatorname{im}\varphi=\mathcal{G}$. Let $t\in\mathcal{G}(U)$. For each $x\in U$, $t_x\in\mathcal{G}_x=(\operatorname{im}\varphi)_x$. By \textcolor{cyan}{Atiyah-Macdonald Exercise 2.15(i)}, there exist $V_x\ni x$ and $s_x\in(\operatorname{im}\varphi)\!\left(V_x\right)$ such that $\left(s_x\right)_x=t_x$. Since $\left(t|_{V_x}\right)_x=t_x$, \textcolor{cyan}{Atiyah-Macdonald Exercise 2.15(i)} again gives $W_x\subseteq V_x$, $x\in W_x$ such that $s_x|_{W_x}=t|_{W_x}$. Thus, we have a family of sections $\left\{s_x|_{W_x}\in(\operatorname{im}\varphi)\!\left(W_x\right)\right\}$ which satisfies $s_x|_{W_x\cap W_y}=t|_{W_x\cap W_y}=s_y|_{W_x\cap W_y}$. Then use the gluing axiom.

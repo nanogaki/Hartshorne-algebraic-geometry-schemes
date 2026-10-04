@@ -50,7 +50,7 @@
 \begin{exercise}\label{ex3.8}
 	Let $V=\operatorname{Spec}B$ and let $x\in U\cap V$. Then there are $f\in A$ and $g\in B$ such that $D_V(g)\subseteq D_U(f)\subseteq U\cap V$ with $x\notin D_U(f)$ and $x\notin D_V(g)$. The restriction $D_U(f)\subseteq V$ induces a homomorphism $B\rightarrow A_f$ in which $g\mapsto a/f^n$. By \Cref{ex2.16.1}, $D_U(f)\cap D_V(g)=D_{\operatorname{Spec}\left(A_f\right)}\!\left(a/f^n\right)=D_U(af)$, so $D_V(g)=D_U(af)$. Therefore, $U\cap V$ can be covered by $\left\{W_i\right\}$ such that $W_i=D_U\!\left(f_i\right)=D_V\!\left(g_i\right)$. Since \textcolor{cyan}{localization commutes with integral closure}, the isomorphisms $\varphi_i:D_{\tilde{U}}\!\left(f_i\right)\rightarrow D_{\tilde{V}}\!\left(g_i\right)$ are compatible on overlap. Then use \Cref{ex2.12}.
 	
-	Break to affine case, we need to prove that the integral closure of a finitely generated $k$-algebra $A$ is a finitely generated $A$-module. By \textcolor{cyan}{Noether's normalization lemma}, $A$ is finite over $k\!\left[y_1,\dots,y_r\right]$. Let $K=\operatorname{Frac}\!\left(k\!\left[y_1,\dots,y_r\right]\right)$ and $L=\operatorname{Frac}A$. Then $L/K$ is a finite field extension. Let $B$ be the integral closure of $k\!\left[y_1,\dots,y_r\right]$ in $L$. \textcolor{red}{Generalization of} \textcolor{cyan}{Atiyah-Macdonald Exercise 5.15}.
+	The affine case of $\tilde{X}\rightarrow X$ being finite is \textcolor{cyan}{Eisenbud Corollary 13.13}.
 \end{exercise}
 
 \begin{exercise}\label{ex3.9}
@@ -89,13 +89,13 @@
 
 \begin{exercise}\label{ex3.13}
 	\begin{enumerate}[label=(\alph*),ref=\theexercise(\alph*)]\crefalias{enumi}{exercise}
-		\item 
-		\item 
-		\item 
-		\item 
-		\item 
-		\item 
-		\item 
+		\item Let $f:Y\rightarrow X$ be a closed immersion. For each affine open $U\subseteq X$, $f^{-1}(U)\rightarrow U$ is a closed immersion. Using \Cref{ex3.11.2} to prove that $f^{-1}(U)$ is of finite type over $U$.
+		\item Let $U=\operatorname{Spec}A$. Since $f^{-1}(U)\rightarrow U$ is an open immersion, $f^{-1}(U)$ can be covered by $D_U(a)$ for all $a\in A$, so $f$ is locally of finite type. Then use \hyperref[ex3.3]{Exercise 3.3(a)}.
+		\addtocounter{enumi}{1}
+		\item Affine case is similar to \textcolor{cyan}{Atiyah-Macdonald Proposition 2.17}. If $X$ and $Y$ are affine, let $U_i^\prime$ be affine cover of $X^\prime$. Then $Y\times_XU_i^\prime$ is affine. Similarly, reduce to only $X$ is affine. For arbitrary schemes $X$, take an affine cover $U_i$, then $f^{-1}\!\left(U_i\right)\times_{U_i}g^{-1}\!\left(U_i\right)$ is of finite type over $g^{-1}\!\left(U_i\right)$. Similar to the proof of \Cref{ex3.11.1}, $f^{-1}\!\left(U_i\right)\times_Xg^{-1}\!\left(U_i\right)=f^{-1}\!\left(U_i\right)\times_{U_i}g^{-1}\!\left(U_i\right)$.
+		\item Factor the morphism to $X\times_SY\rightarrow Y\rightarrow S$.
+		\item Let $V\subseteq Y$ be affine open, $W\subseteq Z$ affine over $g(V)$. By \Cref{ex3.3.3}, each open affine subset $U\subseteq f^{-1}(V)\subseteq(g\circ f)^{-1}(W)$ is of finite type over $W$. The morphisms $U\rightarrow V\rightarrow W$ induce ring homomorphisms $C\rightarrow B\rightarrow A$. Let $a_1,\dots,a_n$ be the generators of $A$ over $C$, so $C\!\left[a_1,\dots,a_n\right]\rightarrow B\!\left[a_1,\dots,a_n\right]\rightarrow A$ is surjective, so is $B\!\left[a_1,\dots,a_n\right]\rightarrow A$. Thus $A$ is a finitely generated $B$-module.
+		\item \textcolor{cyan}{Hilbert basis theorem}.
 	\end{enumerate}
 \end{exercise}
 
@@ -127,34 +127,31 @@
 
 \begin{exercise}\label{ex3.18}
 	\begin{enumerate}[label=(\alph*),ref=\theexercise(\alph*)]\crefalias{enumi}{exercise}
-		\item 
-		\item 
-		\item 
-		\item 
+		\item[(a),(b)] \textcolor{cyan}{Atiyah-Macdonald Exercise 7.20}.
+		\addtocounter{enumi}{2}
+		\item \textcolor{cyan}{Atiyah-Macdonald Exercise 7.22}.
+		\item Use $f^{-1}\!\left(\bigcup_iS_i\right)=\bigcup_if^{-1}\!\left(S_i\right)$ and $f^{-1}\!\left(\bigcap_iS_i\right)=\bigcap_if^{-1}\!\left(S_i\right)$.
 	\end{enumerate}
 \end{exercise}
 
 \begin{exercise}\label{ex3.19}
-	\begin{enumerate}[label=(\alph*),ref=\theexercise(\alph*)]\crefalias{enumi}{exercise}
-		\item 
-		\item 
-		\item 
-	\end{enumerate}
+	\textcolor{cyan}{Atiyah-Macdonald Exercise 7.23}.
 \end{exercise}
 
 \begin{exercise}\label{ex3.20}
-	\begin{enumerate}[label=(\alph*),ref=\theexercise(\alph*)]\crefalias{enumi}{exercise}
-		\item 
-		\item 
-		\item 
-		\item 
-		\item 
-		\item 
+	\textcolor{red}{The logic of this exercise is kind of messy because we need to prove \hyperref[ex3.20.5]{(e)} first.}
+	\begin{enumerate}
+		\item[(e)]\label{ex3.20.5} Let $Y_0\subsetneq\cdots\subsetneq Y_n$ be a chain of irreducible subspaces in $X$. Since $U$ dense in $X$, $U\cap Y_i$ is not empty. Prove that $U\cap Y_i$ is irreducible in $U$, and $Y_i\subsetneq Y_j$ $\Rightarrow$ $U\cap Y_i\subsetneq U\cap Y_j$. Then $\dim U\geqslant\dim X$. If $Z_0\subsetneq\cdots\subsetneq Z_n$ is a chain in $U$, prove that $Z_i\subsetneq Z_j$ $\Rightarrow$ $\overline{Z_i}^X\subsetneq\overline{Z_j}^X$, so $\dim U\leqslant\dim X$.
+		\item[(a)]\label{ex3.20.1} By \hyperref[ex3.20.5]{(e)}, each open subset has a same dimension, which is equal to $\dim X$. Let $U=\operatorname{Spec}A$ be an affine open such that $x\in U$. Then $A=k\!\left[x_1,\dots,x_n\right]/\mathfrak{p}$, and $\mathcal{O}_{X,x}=A_{\mathfrak{m}_x}$.
+		\item[(b)]\label{ex3.20.2} Change $\dim X$ to $\dim U$ of an affine open by \hyperref[ex3.20.5]{(e)} and use \textcolor{cyan}{Theorem I.1.8A(a)}.
+		\item[(d)]\label{ex3.20.4} Let $Z\subseteq Y$ be maximal irreducible. Then $\dim Y=\dim Z$, $\operatorname{codim}(Y,X)=\operatorname{codim}(Z,X)$.
+		\item[(c)]\label{ex3.20.3} Let $U_i$ be an affine cover of $X$. Then $U_i\cap Y$ is closed in $U_i$. By \Cref{ex3.11.2}, $U_i\cap Y=\operatorname{Spec}\!\left(R_i/\mathfrak{a}_i\right)$. Use a similar method to \hyperref[ex3.20.4]{(d)} and \hyperref[ex3.20.5]{(e)}, $\operatorname{codim}\!\left(U_i\cap Y,U_i\right)=\operatorname{codim}\!\left(Y,X\right)$. Therefore, $\operatorname{codim}(Y,X)=\inf_i\!\left(\operatorname{codim}\!\left(\operatorname{Spec}\!\left(R_i/\mathfrak{a}_i\right),\operatorname{Spec}\!\left(R_i\right)\right)\right)$. On the other hand, 		$\operatorname{codim}\!\left(\operatorname{Spec}(A/I),\operatorname{Spec}A\right)=\inf_{\mathfrak{p}\supseteq I}\!\left(\operatorname{Spec}(A/I),\operatorname{Spec}A\right)=\inf_{\mathfrak{p}\supseteq I}\operatorname{ht}\mathfrak{p}=\inf_{x\in\operatorname{Spec}(A/I)}\dim\mathcal{O}_{X,x}$.
+		\item[(f)]\label{ex3.20.6} Take $U\subseteq X$ be affine open and use \hyperref[ex3.20.5]{(e)}.
 	\end{enumerate}
 \end{exercise}
 
 \begin{exercise}\label{ex3.21}
-	
+	$\operatorname{Spec}R[t]$ contains maximal ideals with different heights. For example, $(0)\subseteq(t-\alpha)$ with $\alpha$ a unit, and $(0)\subseteq\mathfrak{m}\subseteq\mathfrak{m}[t]$.
 \end{exercise}
 
 \begin{exercise}\label{ex3.22}

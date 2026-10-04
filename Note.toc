@@ -14,8 +14,8 @@
 \contentsline {section}{\numberline {4}Primary Decomposition}{23}{section.9.4}%
 \contentsline {section}{\numberline {5}Integral Dependence and Valuations}{24}{section.9.5}%
 \contentsline {section}{\numberline {6}Chain Conditions}{26}{section.9.6}%
-\contentsline {section}{\numberline {7}Noetherian Rings}{26}{section.9.7}%
+\contentsline {section}{\numberline {7}Noetherian Rings}{27}{section.9.7}%
 \contentsline {section}{\numberline {8}Artinian Rings}{28}{section.9.8}%
-\contentsline {section}{\numberline {9}Discrete Valuation Rings and Dedekind Domain}{28}{section.9.9}%
+\contentsline {section}{\numberline {9}Discrete Valuation Rings and Dedekind Domain}{29}{section.9.9}%
 \contentsline {chapter}{SUMMARY}{30}{section*.3}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

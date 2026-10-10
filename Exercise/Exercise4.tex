@@ -1,11 +1,11 @@
-\section{Primary Decomposition}
+\section{Separated and Proper Morphisms}
 
 \begin{exercise}\label{ex4.1}
-	Use \hyperref[ex1.21]{\Cref*{ex1.21}(iv)}, so $\operatorname{Spec}(A/\mathfrak{a})=V(\mathfrak{a})$.
+	Use \textcolor{cyan}{Atiyah-Macdonald Corollary 2.17 and Exercise 5.1} and \hyperref[affinebaseext]{Affine base extension criterion} for universally closed. The global section of $\left(\Delta|_{U_i}\right)^\#$ is defined to be $a\otimes a^\prime\mapsto aa^\prime$, which is surjective. By \textcolor{cyan}{Atiyah-Macdonald Exercise 1.21(iv)}, $\Delta|_{U_i}$ is a closed immersion, so is $\Delta$.
 \end{exercise}
 
 \begin{exercise}\label{ex4.2}
-	All primary components are prime.
+	
 \end{exercise}
 
 \begin{exercise}\label{ex4.3}
@@ -56,58 +56,4 @@
 
 \begin{exercise}\label{ex4.12}
 	Use \Cref{3.11.2}. Use \Cref{4.9} to show there are at most $2^n$ different $S(\mathfrak{a})$.
-\end{exercise}
-
-\begin{exercise}\label{ex4.13}
-	\begin{enumerate}[label=(\roman*),ref=\theexercise(\roman*)]\crefalias{enumi}{exercise}
-		\item Use \Cref{ex4.12}.
-		\item Use \Cref{4.8} and \Cref{4.9}.
-		\item Proof that $S_\mathfrak{p}\left(\mathfrak{p}^{(m)}\mathfrak{p}^{(n)}\right)=\mathfrak{p}^{(m+n)}$.
-		\item$\Leftarrow$: Show that $\mathfrak{p}^{(n)}$ is the smallest $\mathfrak{p}$-primary ideal containing $\mathfrak{p}^n$.
-	\end{enumerate}
-\end{exercise}
-
-\begin{exercise}\label{ex4.14}
-	Let $x\notin\mathfrak{q}$. If $ab\in(\mathfrak{q}:x)$ but $a\notin(\mathfrak{q}:x)$, we have $xab\in\mathfrak{q}$ but $xa\notin\mathfrak{q}$. Thus, $b\in(\mathfrak{q}:xa)=(\mathfrak{q}:x)$ by maximality, and therefore $(\mathfrak{q}:x)$ is prime.
-\end{exercise}
-
-\begin{exercise}\label{ex4.15}
-	Use \Cref{4.9}.
-\end{exercise}
-
-\begin{exercise}\label{ex4.16}
-	Use \Cref{3.11.4} and \Cref{4.9}.
-\end{exercise}
-
-\begin{exercise}\label{ex4.17}
-	
-\end{exercise}
-
-\begin{exercise}\label{ex4.18}
-	\begin{enumerate}
-		\item[(i) $\Rightarrow$ (L1)] By \Cref{4.9}, $S_\mathfrak{p}(\mathfrak{a})=\bigcap\mathfrak{q}_i$. Pick $x\in S_\mathfrak{p}$, then $\mathfrak{q}_i=\left(\mathfrak{q}_i:x\right)$ by \Cref{4.4}.
-		\item[(i) $\Rightarrow$ (L2)] Use \Cref{ex4.12}.
-	\end{enumerate}
-\end{exercise}
-
-\begin{exercise}\label{ex4.19}
-	Similar to the proof of \Cref{ex4.11}.
-	
-	The goal is to proof that there exists $\mathfrak{a}=\bigcap_{i=1}^n\mathfrak{q}_i$ irredundant, so we need to proof $\mathfrak{q}_i\nsupseteq\bigcap_{j\neq i}\mathfrak{q}_j$. Using the fact that $\mathfrak{uv}\subseteq\mathfrak{q}$ but $\mathfrak{u}\nsubseteq\mathfrak{q}$ $\Rightarrow$ $\mathfrak{v}\subseteq\mathfrak{p}$, we can assume $\mathfrak{b}=\bigcap_{i=1}^{n-1}\mathfrak{q}_i$ irredundant and $\mathfrak{p}_n$ maximal among $\left\{\mathfrak{p}_i\right\}$, so we only need to find $\mathfrak{q}_n\nsupseteq\mathfrak{b}$. If such $\mathfrak{q}_n$ doesn't exist, $\mathfrak{b}\subseteq S_{\mathfrak{p}_n}(0)$. Pick a minimal prime ideal $\mathfrak{p}\subseteq\mathfrak{p}_n$ and use \Cref{ex4.10} and \Cref{1.11.2}.
-\end{exercise}
-
-\begin{exercise}\label{ex4.20}
-	
-\end{exercise}
-
-\begin{exercise}\label{ex4.21}
-	
-\end{exercise}
-
-\begin{exercise}\label{ex4.22}
-	
-\end{exercise}
-
-\begin{exercise}\label{ex4.23}
-	
 \end{exercise}

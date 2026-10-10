@@ -114,3 +114,21 @@
 \begin{definition}
 	Let $x_0, x_1\in X$ are points. If $x_0\in\overline{\{x_1\}}$, we say that $x_0$ is a \textcolor{orange}{specialization} of $x_1$, or that $x_1$ is a \textcolor{orange}{generization} of $x_0$.
 \end{definition}
+
+\begin{proposition*}[Affine base extension criterion]\label{affinebaseext}
+	Suppose $\mathcal{P}$ is a property of morphisms satisfying:
+	\setlist[enumerate]{itemsep=0pt,topsep=0pt,parsep=0pt}
+	\begin{enumerate}[label=\textup{(\arabic*)}]
+		\item \textcolor{red}{$\mathcal{P}$ is local on the target:} Let $f:X\rightarrow Y$ be a morphism and $V\subseteq Y$ is an affine subset of $Y$. Then each $f^{-1}(V)\rightarrow V$ has $\mathcal{P}$ if and only if $f$ has $\mathcal{P}$.
+		\item \textcolor{red}{$\mathcal{P}$ is stable under affine base extension:} Let $X$ be arbitrary but $V$ and $W$ be affine. If $X\rightarrow W$ has $\mathcal{P}$, then $X\times_VW\rightarrow W$ has $\mathcal{P}$.
+	\end{enumerate}
+	Then $\mathcal{P}$ is stable under base extension.
+	\begin{proof}
+		Let $f:X\rightarrow Y$ has $\mathcal{P}$, $g:Z\rightarrow Y$ be any morphism, and let $p:X\times_YZ\rightarrow Z$. Let $V_i$ be an affine open cover of $Y$, and $W_{ij}$ be an affine open cover of $g^{-1}\!\left(V_i\right)$, so $p^{-1}\!\left(W_{ij}\right)=f^{-1}\!\left(V_i\right)\times_{V_i}W_{ij}$.
+		
+		Since $\mathcal{P}$ is local on the target, $f^{-1}\!\left(V_i\right)\rightarrow V_i$ has $\mathcal{P}$, and since $\mathcal{P}$ is stable under affine base extension, $p^{-1}\!\left(W_{ij}\right)\rightarrow W_{ij}$ has $\mathcal{P}$. Note that $W_{ij}$ is an open cover of $Z$, so $X\times_YZ\rightarrow Z$ has $\mathcal{P}$.
+	\end{proof}
+\end{proposition*}
+
+
+

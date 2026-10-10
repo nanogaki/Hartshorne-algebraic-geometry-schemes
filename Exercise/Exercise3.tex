@@ -73,8 +73,12 @@
 
 \begin{exercise}\label{ex3.11}
 	\begin{enumerate}[label=(\alph*),ref=\theexercise(\alph*)]\crefalias{enumi}{exercise}
-		\item\label{ex3.11.1} Use \textcolor{cyan}{Atiyah-Macdonald Exercise 2.2} for the affine case. When only $X$ is affine, use a method similar to \Cref{ex3.10.1} to glue morphisms. Let $g:X^\prime\rightarrow X$, $X_i$ an affine cover of $X$, $Y_i=f^{-1}\!\left(X_i\right)$, and $X^\prime_i=g^{-1}\!\left(X_i\right)$. From the commutative diagram of $Y\times_XX^\prime_i$, the image of $Y\times_XX^\prime_i\rightarrow Y$ is inside $Y_i$. By the uniqueness from \Cref{3.3}, we have $Y\times_XX^\prime_i\cong Y_i\times_XX^\prime_i\cong Y_i\times_{X_i}X^\prime_i$. Then glue $X^\prime_i$.
+		\textcolor{red}{\hyperref[ex3.11.2]{(b)} is required for \hyperref[ex3.11.2]{(a)} for the gluing part.}
+		\addtocounter{enumi}{1}
 		\item\label{ex3.11.2} Let $D(f)$ be a basic open set of $X$ and let $y\in Y\cap D(f)$, then $f\notin\mathfrak{p}_{i(y)}$. The map $i_y^\#:\mathcal{O}_{X,i(y)}\rightarrow\mathcal{O}_{Y,y}$ is a surjective local homomorphism, which implies $\left(i^\#(f)\right)_y=i_y^\#\!\left(f_{i(y)}\right)\notin\mathfrak{m}_{Y,y}$. By \Cref{ex2.16.1}, $U\cap Y\cap D(f)$ is a basic open set of $Y$ for each open affine $U\subseteq Y$. Since a closed subset of a quasi-compact space is quasi-compact, the cover of $Y$ can use only finitely many $f_i$. The set $\left\{f_i\right\}$ can be expanded so it generates the unit ideal of $A$. Restrict each $f_i$ on $Y$ and use \Cref{ex2.17.2}.
+		\addtocounter{enumi}{-2}
+		\item\label{ex3.11.1} Use \textcolor{cyan}{Atiyah-Macdonald Exercise 2.2}, \hyperref[ex3.11.2]{(b)} and \hyperref[affinebaseext]{Affine base extension criterion}.
+		\addtocounter{enumi}{1}
 		\item\label{ex3.11.3} Let $U_i=\operatorname{Spec}\!\left(A_i\right)$ be an affine cover of $X$. By \hyperref[ex3.11.2]{(b)}, $Y^\prime\cap U_i=V\!\left(\mathfrak{a}_i\right)$; by hypothesis, $Y\cap U_i=V\!\left(\!\sqrt{\mathfrak{a}_i}\right)$. There is a natural homomorphism $A/\mathfrak{a}_i\rightarrow\left.A\middle/\!\sqrt{\mathfrak{a}_i}\right.$, which induces a morphism $\varphi_i:Y\cap U_i\rightarrow Y^\prime\cap U_i$. Therefore, we have a morphism of sheaves $\mathcal{O}_{U_i}|_{Y^\prime\cap U_i}\rightarrow\mathcal{O}_{U_i}|_{Y\cap U_i}$, which is exactly $\mathcal{O}_X|_{Y^\prime\cap U_i}\rightarrow\mathcal{O}_X|_{Y\cap U_i}$. Restrict on $U_i\cap U_j$, so $\varphi_i$ and $\varphi_j$ are compatible on overlap.
 		\item\label{ex3.11.4} Let $\mathfrak{a}_i=\ker\!\left(A_i\rightarrow\Gamma\!\left(f^{-1}\!\left(U_i\right),\mathcal{O}_Z\right)\right)$, and let $Y_i=\operatorname{Spec}\!\left(A_i/\mathfrak{a}_i\right)$. By \Cref{ex2.4}, the ring homomorphism $A_i/\mathfrak{a}_i\rightarrow\Gamma\!\left(f^{-1}\!\left(U_i\right),\mathcal{O}_Z\right)$ induces a morphism $\varphi_i:f^{-1}\!\left(U_i\right)\rightarrow Y_i$. Combine $\varphi_i$ with $Y_i\rightarrow U_i$ and use \Cref{ex2.4} again to prove the corresponding diagram commutes. Combine $\varphi_i$ with $Y_i\rightarrow Y$ and use a method similar to \hyperref[ex3.11.3]{(c)}, $\varphi_i$ can be glued.
 	\end{enumerate}
@@ -92,7 +96,7 @@
 		\item Let $f:Y\rightarrow X$ be a closed immersion. For each affine open $U\subseteq X$, $f^{-1}(U)\rightarrow U$ is a closed immersion. Using \Cref{ex3.11.2} to prove that $f^{-1}(U)$ is of finite type over $U$.
 		\item Let $U=\operatorname{Spec}A$. Since $f^{-1}(U)\rightarrow U$ is an open immersion, $f^{-1}(U)$ can be covered by $D_U(a)$ for all $a\in A$, so $f$ is locally of finite type. Then use \hyperref[ex3.3]{Exercise 3.3(a)}.
 		\addtocounter{enumi}{1}
-		\item Affine case is similar to \textcolor{cyan}{Atiyah-Macdonald Proposition 2.17}. If $X$ and $Y$ are affine, let $U_i^\prime$ be affine cover of $X^\prime$. Then $Y\times_XU_i^\prime$ is affine. Similarly, reduce to only $X$ is affine. For arbitrary schemes $X$, take an affine cover $U_i$, then $f^{-1}\!\left(U_i\right)\times_{U_i}g^{-1}\!\left(U_i\right)$ is of finite type over $g^{-1}\!\left(U_i\right)$. Similar to the proof of \Cref{ex3.11.1}, $f^{-1}\!\left(U_i\right)\times_Xg^{-1}\!\left(U_i\right)=f^{-1}\!\left(U_i\right)\times_{U_i}g^{-1}\!\left(U_i\right)$.
+		\item Use \textcolor{cyan}{Atiyah-Macdonald Proposition 2.17} and \hyperref[affinebaseext]{Affine base extension criterion}.
 		\item Factor the morphism to $X\times_SY\rightarrow Y\rightarrow S$.
 		\item Let $V\subseteq Y$ be affine open, $W\subseteq Z$ affine over $g(V)$. By \Cref{ex3.3.3}, each open affine subset $U\subseteq f^{-1}(V)\subseteq(g\circ f)^{-1}(W)$ is of finite type over $W$. The morphisms $U\rightarrow V\rightarrow W$ induce ring homomorphisms $C\rightarrow B\rightarrow A$. Let $a_1,\dots,a_n$ be the generators of $A$ over $C$, so $C\!\left[a_1,\dots,a_n\right]\rightarrow B\!\left[a_1,\dots,a_n\right]\rightarrow A$ is surjective, so is $B\!\left[a_1,\dots,a_n\right]\rightarrow A$. Thus $A$ is a finitely generated $B$-module.
 		\item \textcolor{cyan}{Hilbert basis theorem}.
@@ -140,13 +144,18 @@
 
 \begin{exercise}\label{ex3.20}
 	\textcolor{red}{The logic of this exercise is kind of messy because we need to prove \hyperref[ex3.20.5]{(e)} first.}
-	\begin{enumerate}
-		\item[(e)]\label{ex3.20.5} Let $Y_0\subsetneq\cdots\subsetneq Y_n$ be a chain of irreducible subspaces in $X$. Since $U$ dense in $X$, $U\cap Y_i$ is not empty. Prove that $U\cap Y_i$ is irreducible in $U$, and $Y_i\subsetneq Y_j$ $\Rightarrow$ $U\cap Y_i\subsetneq U\cap Y_j$. Then $\dim U\geqslant\dim X$. If $Z_0\subsetneq\cdots\subsetneq Z_n$ is a chain in $U$, prove that $Z_i\subsetneq Z_j$ $\Rightarrow$ $\overline{Z_i}^X\subsetneq\overline{Z_j}^X$, so $\dim U\leqslant\dim X$.
-		\item[(a)]\label{ex3.20.1} By \hyperref[ex3.20.5]{(e)}, each open subset has a same dimension, which is equal to $\dim X$. Let $U=\operatorname{Spec}A$ be an affine open such that $x\in U$. Then $A=k\!\left[x_1,\dots,x_n\right]/\mathfrak{p}$, and $\mathcal{O}_{X,x}=A_{\mathfrak{m}_x}$.
-		\item[(b)]\label{ex3.20.2} Change $\dim X$ to $\dim U$ of an affine open by \hyperref[ex3.20.5]{(e)} and use \textcolor{cyan}{Theorem I.1.8A(a)}.
-		\item[(d)]\label{ex3.20.4} Let $Z\subseteq Y$ be maximal irreducible. Then $\dim Y=\dim Z$, $\operatorname{codim}(Y,X)=\operatorname{codim}(Z,X)$.
-		\item[(c)]\label{ex3.20.3} Let $U_i$ be an affine cover of $X$. Then $U_i\cap Y$ is closed in $U_i$. By \Cref{ex3.11.2}, $U_i\cap Y=\operatorname{Spec}\!\left(R_i/\mathfrak{a}_i\right)$. Use a similar method to \hyperref[ex3.20.4]{(d)} and \hyperref[ex3.20.5]{(e)}, $\operatorname{codim}\!\left(U_i\cap Y,U_i\right)=\operatorname{codim}\!\left(Y,X\right)$. Therefore, $\operatorname{codim}(Y,X)=\inf_i\!\left(\operatorname{codim}\!\left(\operatorname{Spec}\!\left(R_i/\mathfrak{a}_i\right),\operatorname{Spec}\!\left(R_i\right)\right)\right)$. On the other hand, 		$\operatorname{codim}\!\left(\operatorname{Spec}(A/I),\operatorname{Spec}A\right)=\inf_{\mathfrak{p}\supseteq I}\!\left(\operatorname{Spec}(A/I),\operatorname{Spec}A\right)=\inf_{\mathfrak{p}\supseteq I}\operatorname{ht}\mathfrak{p}=\inf_{x\in\operatorname{Spec}(A/I)}\dim\mathcal{O}_{X,x}$.
-		\item[(f)]\label{ex3.20.6} Take $U\subseteq X$ be affine open and use \hyperref[ex3.20.5]{(e)}.
+	\begin{enumerate}[label=(\alph*),ref=\theexercise(\alph*)]\crefalias{enumi}{exercise}
+		\addtocounter{enumi}{4}
+		\item\label{ex3.20.5} Let $Y_0\subsetneq\cdots\subsetneq Y_n$ be a chain of irreducible subspaces in $X$. Since $U$ dense in $X$, $U\cap Y_i$ is not empty. Prove that $U\cap Y_i$ is irreducible in $U$, and $Y_i\subsetneq Y_j$ $\Rightarrow$ $U\cap Y_i\subsetneq U\cap Y_j$. Then $\dim U\geqslant\dim X$. If $Z_0\subsetneq\cdots\subsetneq Z_n$ is a chain in $U$, prove that $Z_i\subsetneq Z_j$ $\Rightarrow$ $\overline{Z_i}^X\subsetneq\overline{Z_j}^X$, so $\dim U\leqslant\dim X$.
+		\addtocounter{enumi}{-5}
+		\item\label{ex3.20.1} By \hyperref[ex3.20.5]{(e)}, each open subset has a same dimension, which is equal to $\dim X$. Let $U=\operatorname{Spec}A$ be an affine open such that $x\in U$. Then $A=k\!\left[x_1,\dots,x_n\right]/\mathfrak{p}$, and $\mathcal{O}_{X,x}=A_{\mathfrak{m}_x}$.
+		\item\label{ex3.20.2} Change $\dim X$ to $\dim U$ of an affine open by \hyperref[ex3.20.5]{(e)} and use \textcolor{cyan}{Theorem I.1.8A(a)}.
+		\addtocounter{enumi}{1}
+		\item\label{ex3.20.4} Let $Z\subseteq Y$ be maximal irreducible. Then $\dim Y=\dim Z$, $\operatorname{codim}(Y,X)=\operatorname{codim}(Z,X)$.
+		\addtocounter{enumi}{-2}
+		\item\label{ex3.20.3} Let $U_i$ be an affine cover of $X$. Then $U_i\cap Y$ is closed in $U_i$. By \Cref{ex3.11.2}, $U_i\cap Y=\operatorname{Spec}\!\left(R_i/\mathfrak{a}_i\right)$. Use a method similar to \hyperref[ex3.20.5]{(e)} to prove $\dim Y=\dim\!\left(U_i\cap Y\right)$. By \hyperref[ex3.20.4]{(d)}, $\operatorname{codim}(Y,X)=\operatorname{codim}\!\left(U_i\cap Y,U_i\right)$. On the other hand, 		$\operatorname{codim}\!\left(\operatorname{Spec}(R/\mathfrak{a}),\operatorname{Spec}R\right)=\inf_{\mathfrak{p}\supseteq \mathfrak{a}}\!\left(\operatorname{Spec}(R/\mathfrak{a}),\operatorname{Spec}R\right)=\inf_{\mathfrak{p}\supseteq \mathfrak{a}}\operatorname{ht}\mathfrak{p}=\inf_{x\in\operatorname{Spec}(R/\mathfrak{a})}\dim\mathcal{O}_{\operatorname{Spec}R,x}$.
+		\addtocounter{enumi}{2}
+		\item\label{ex3.20.6} Take $U\subseteq X$ be affine open and use \hyperref[ex3.20.5]{(e)}.
 	\end{enumerate}
 \end{exercise}
 
